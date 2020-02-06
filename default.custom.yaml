@@ -8,6 +8,7 @@ patch:
   menu:
     page_size: 10
   schema_list:
+    - {schema: tygfhzb_cjbcq_wubi06}
     - {schema: tygfhzb_wubi06}
     - {schema: tygfhzb_dz_wubi06}
     - {schema: unicodecjk_wubi06}
