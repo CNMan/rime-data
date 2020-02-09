@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
-# 新世紀五筆字型QQ群：38021162
+# 新世紀五筆字型QQ羣：38021162
 # 仅含GB18030-2000范围内的单字
 # 修正、统一了王码大一统新世纪版五笔字型错误编码
 # 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
@@ -16,7 +16,7 @@ schema:
     - 整理人 cnnexus5x@gmail.com
   description: |
     新世紀五筆字型資源庫：https://06wb.github.io
-    新世紀五筆字型QQ群：38021162
+    新世紀五筆字型QQ羣：38021162
     敲 z 鍵進入拼音反查
     敲 / 鍵進入symbols.yaml中的特殊字符輸入
   dependencies:
@@ -93,6 +93,8 @@ key_binder:
   bindings:
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
 
 recognizer:
   import_preset: default

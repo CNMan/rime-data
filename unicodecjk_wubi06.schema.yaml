@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
-# 新世紀五筆字型QQ群：38021162
+# 新世紀五筆字型QQ羣：38021162
 # 含 Unicode 12.1.0 已定义 CJK/CJK-A/CJK-B/CJK-C/CJK-D/CJK-E/CJK-F 编码区共 87875 个单字
 # 含 Unicode 12.1.0 已定义 CJK Compatibility Ideographs 编码区共 472 个单字
 # 含 Unicode 12.1.0 已定义 CJK Compatibility Ideographs Supplement 编码区共 542 个单字
@@ -30,7 +30,7 @@ schema:
     - 整理人 cnnexus5x@gmail.com
   description: |
     新世紀五筆字型資源庫：https://06wb.github.io
-    新世紀五筆字型QQ群：38021162
+    新世紀五筆字型QQ羣：38021162
     敲 z 鍵進入拼音反查
     敲 / 鍵進入symbols.yaml中的特殊字符輸入
   dependencies:
@@ -80,11 +80,11 @@ speller:
   max_code_length: 4
   #自動上屛
   auto_select: true
-  #无重码自动上屏
+  #無重碼自動上屛
   auto_select_unique_candidate: true
   #以空格作輸入碼
   use_space: false
-  #自動清屛（四碼以內空碼不自動清屏；四碼空碼時，第五碼清空前四碼）
+  #自動清屛（四碼以內空碼不自動清屛；四碼空碼時，第五碼清空前四碼）
   auto_clear: max_length
 
 translator:
@@ -132,6 +132,9 @@ key_binder:
     - {accept: semicolon, send: 2, when: has_menu}
     #引號選第三重碼
     - {accept: apostrophe, send: 3, when: has_menu}
+    #空格清屛
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
 
 recognizer:
   import_preset: default

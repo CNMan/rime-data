@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
-# 新世紀五筆字型QQ群：38021162
+# 新世紀五筆字型QQ羣：38021162
 # 仅含《通用规范汉字表》8105字范围内的字和词语
 # 修正、统一了王码大一统新世纪版五笔字型错误编码
 # 以大陆商务印书馆《现代汉语词典》（第7版）（约5.9万词）、上海辞书出版社《现代汉语大词典》（约10万词）及《现代汉语新词语词典》（第2版）（约1万词）和台湾教育部《重編國語辭典修訂本》（约15.1万词）、《成語典》（约0.75万词）（以下简称“五词典”）为基准
@@ -26,7 +26,7 @@ schema:
     - 整理人 cnnexus5x@gmail.com
   description: |
     新世紀五筆字型資源庫：https://06wb.github.io
-    新世紀五筆字型QQ群：38021162
+    新世紀五筆字型QQ羣：38021162
     敲 z 鍵進入拼音反查
     敲 / 鍵進入symbols.yaml中的特殊字符輸入
   dependencies:
@@ -103,6 +103,8 @@ key_binder:
   bindings:
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
 
 recognizer:
   import_preset: default

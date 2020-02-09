@@ -85,6 +85,8 @@ key_binder:
   bindings:
     - {accept: semicolon, send: 2, when: has_menu}
     - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
 
 recognizer:
   import_preset: default
