@@ -11,5 +11,5 @@ patch:
     - {schema: tygfhzb_cjbcq_wubi06}
     - {schema: tygfhzb_wubi06}
     - {schema: tygfhzb_dz_wubi06}
-    - {schema: unicodecjk_wubi06}
     - {schema: gb18030-2000_dz_wubi06}
+    - {schema: unicodecjk_wubi06}

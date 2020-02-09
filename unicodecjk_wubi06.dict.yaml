@@ -18,7 +18,7 @@
 #內部字典名，也即schema所引用的字典名，確保與文件名相一致
 name: unicodecjk_wubi06
 #如果發佈，請確保每次改動陞版本號
-version: "20200107"
+version: "20200209"
 #字典初始排序，可選original或by_weight
 sort: by_weight
 #是否引入「八股文」〔含字詞頻、詞庫〕
@@ -566,11 +566,11 @@ encoder:
 𦷔	adfh
 萘	adfi
 𦬠	adfj
+𮑂	adfj
 荂	adfn
 𫉌	adfn
 𫊐	adfq
 𫈻	adfy
-𮑂	adfy
 葳	adg
 𦰃	adga
 𭺶	adgg
@@ -910,10 +910,10 @@ encoder:
 𦵐	aeff
 𧀂	aefi
 𠦶	aefj
+𮒱	aefj
 𩍞	aefm
 𦯟	aefn
 巭	aefw
-𮒱	aefy
 苴	aeg
 莇	aeg
 萲	aegc
@@ -5474,11 +5474,11 @@ encoder:
 𭪙	aufi
 莘	aufj
 𫉑	aufj
+𮒼	aufj
 𧆈	aufm
 𫉭	aufq
 𦸯	aufs
 蓤	auft
-𮒼	aufy
 葁	aug
 蒫	auga
 𦼠	auga
@@ -20400,13 +20400,13 @@ encoder:
 𡊈	fnfh
 𡊓	fnfh
 𠜩	fnfj
+𭏴	fnfj
 𡌷	fnfm
 𠄥	fnfn
 𪤞	fnfp
 𫯇	fnfp
 𡏺	fnfy
 𫭺	fnfy
-𭏴	fnfy
 𡌈	fngb
 𡎔	fngf
 𩄌	fngf
@@ -21609,7 +21609,6 @@ encoder:
 㗯	ftjx
 𡳣	ftjy
 𬯯	ftjy
-者	ftjy
 𩂣	ftkf
 𭏹	ftkf
 垎	ftkg
@@ -21692,6 +21691,7 @@ encoder:
 耆	ftxj
 𦓀	ftxj
 𦓊	ftxj
+𫅶	ftxj
 𮧹	ftxj
 耈	ftxk
 㖈	ftxk
@@ -21736,10 +21736,10 @@ encoder:
 𦓋	ftxx
 𫅳	ftxx
 㙁	ftxy
-𫅶	ftxy
 坆	fty
 攼	fty
 𫀂	ftyi
+者	ftyj
 𠹫	ftyk
 𡌜	ftym
 𪤣	ftyn
@@ -28143,6 +28143,7 @@ encoder:
 卓	hjfj
 𫝒	hjfj
 𭅭	hjfj
+𭿦	hjfj
 𠃵	hjfn
 𢛂	hjfn
 鵫	hjfo
@@ -28150,7 +28151,6 @@ encoder:
 𣂣	hjfr
 𠣳	hjfy
 𨿧	hjfy
-𭿦	hjfy
 旧	hjg
 睼	hjg
 𥇹	hjgf
@@ -34534,6 +34534,7 @@ encoder:
 𭦭	jdff
 𫜀	jdfg
 𭦛	jdfi
+𭧤	jdfj
 𫋏	jdfk
 晇	jdfn
 𧊘	jdfn
@@ -34541,7 +34542,6 @@ encoder:
 㬄	jdfo
 𩀭	jdfy
 𭥱	jdfy
-𭧤	jdfy
 蛄	jdg
 䖨	jdg
 蛎	jdg
@@ -40574,11 +40574,11 @@ encoder:
 呥	kmfg
 𠯍	kmfg
 𠱡	kmfj
+𭌙	kmfj
 啁	kmfk
 𡁩	kmfn
 𠿽	kmfy
 𪡮	kmfy
-𭌙	kmfy
 哃	kmg
 𠱋	kmg
 𫪇	kmgg
@@ -69197,6 +69197,7 @@ encoder:
 𭠕	rtfh
 卑	rtfj
 𠜱	rtfj
+𢷷	rtfj
 𧌠	rtfj
 𧓎	rtfj
 卑	rtfj
@@ -69219,7 +69220,6 @@ encoder:
 𪏒	rtfw
 𢮿	rtfx
 㼰	rtfy
-𢷷	rtfy
 𨿵	rtfy
 手	rtg
 𢻩	rtgc
@@ -72489,11 +72489,11 @@ encoder:
 㭄	snf
 𣐓	snfg
 㭄	snfh
+𬄫	snfj
 𭬱	snfp
 𣕑	snfs
 𣗢	snfs
 𪳬	snfy
-𬄫	snfy
 栩	sng
 梛	sngb
 楃	sngf
@@ -76817,6 +76817,8 @@ encoder:
 𢔪	tftj
 𫂓	tftj
 𭥬	tftj
+𭷭	tftj
+𮃔	tftj
 𥭻	tftk
 𥵈	tftl
 𥬯	tftn
@@ -76828,8 +76830,6 @@ encoder:
 𤛪	tftx
 𥞠	tftx
 𠆕	tfty
-𭷭	tfty
-𮃔	tfty
 乖	tfu
 穑	tfu
 𫔦	tfua
@@ -77911,8 +77911,8 @@ encoder:
 𡡏	tiev
 𮅔	tifc
 𥢳	tifj
+𮆑	tifj
 𥷰	tify
-𮆑	tify
 簿	tig
 衍	tig
 愆	tig
