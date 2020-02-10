@@ -13,3 +13,4 @@ patch:
     - {schema: tygfhzb_dz_wubi06}
     - {schema: gb18030-2000_dz_wubi06}
     - {schema: unicodecjk_wubi06}
+    - {schema: luna_pinyin}
