@@ -19,7 +19,7 @@
 
 ---
 name: tygfhzb_wubi06
-version: "202002062010"
+version: "202002102225"
 sort: by_weight
 columns:
   - text
@@ -1989,6 +1989,7 @@ encoder:
 七十二行	afft
 蔡元培	affu
 劳动教养	affu
+贰零	affw
 七十二行，庄稼为强	affx
 节孝坊	affy
 菱形	afga
@@ -2317,6 +2318,7 @@ encoder:
 期末考	agft
 葬玉埋香	agft
 匡教	agft
+七零	agfw
 荆棘载途	agfw
 东亚运动会	agfw
 草珊瑚	aggd
@@ -9677,6 +9679,7 @@ encoder:
 耳垢	bgfr
 除残去秽	bgft
 孙政才	bgft
+陆零	bgfw
 陋规	bgfw
 隔开	bgga
 耳珥	bggb
@@ -13150,6 +13153,7 @@ encoder:
 对不起	cdfh
 鸡犬无惊	cdfn
 参考	cdft
+叁零	cdfw
 通古博今	cdfw
 勇而无谋	cdfy
 参天	cdgd
@@ -16506,6 +16510,7 @@ encoder:
 不能彀	dcfp
 码元	dcfq
 雄才	dcft
+肆零	dcfw
 码垛	dcfw
 有勇无谋	dcfy
 码	dcg
@@ -19142,6 +19147,7 @@ encoder:
 大环境	dgfu
 三境	dgfu
 太平真君	dgfv
+三零	dgfw
 厂规	dgfw
 石墩	dgfy
 石坊	dgfy
@@ -33429,6 +33435,7 @@ encoder:
 博考	fgft
 雨雪	fgfv
 干雪	fgfv
+二零	fgfw
 士夫	fgfw
 地下夫人	fgfw
 夫妻无隔夜之仇	fgfw
@@ -37630,6 +37637,7 @@ encoder:
 过考	fpft
 过境	fpfu
 封家十八姨	fpfv
+壹零	fpfw
 规定动作	fpfw
 壹	fpg
 过形	fpga
@@ -40472,6 +40480,8 @@ encoder:
 地段医院	fwab
 零散	fwae
 雷公藤	fwae
+零贰	fwaf
+零七	fwag
 规范	fwai
 零落	fwai
 规划	fwaj
@@ -40502,6 +40512,7 @@ encoder:
 堆随	fwbd
 截阻	fwbe
 零陵	fwbf
+零陆	fwbg
 替聘	fwbm
 老人院	fwbp
 规限	fwbv
@@ -40509,6 +40520,7 @@ encoder:
 动作戏	fwca
 霍桑	fwcc
 堆叠	fwcc
+零叁	fwcd
 土人参	fwcd
 规劝	fwce
 卖风骚	fwcg
@@ -40518,8 +40530,10 @@ encoder:
 堆砌	fwda
 无伤大雅	fwda
 直偷硬取	fwdb
+零肆	fwdc
 塅	fwdc
 去伪存真	fwdf
+零三	fwdg
 起伏不平	fwdg
 堆存	fwdh
 无风三尺浪	fwdi
@@ -40558,6 +40572,7 @@ encoder:
 零付款	fwff
 真人真事	fwfg
 雷人雷事	fwfg
+零二	fwfg
 都人士	fwfg
 零雨	fwfg
 堆起	fwfh
@@ -40573,6 +40588,7 @@ encoder:
 零卖	fwfn
 赍志	fwfn
 逵	fwfp
+零壹	fwfp
 霍索	fwfp
 规元	fwfq
 无凭无据	fwfr
@@ -40583,6 +40599,7 @@ encoder:
 无父无君	fwfv
 霍霍	fwfw
 堆垛	fwfw
+零零	fwfw
 十全老人	fwfw
 堆堆	fwfw
 零替	fwfw
@@ -40595,6 +40612,8 @@ encoder:
 截至	fwgc
 嘉偶天成	fwgd
 十八五	fwgg
+零一	fwgg
+零五	fwgg
 零下	fwgh
 规正	fwgh
 老人与海	fwgi
@@ -40604,6 +40623,7 @@ encoder:
 声像带	fwgk
 赍带	fwgk
 无债一身轻	fwgl
+零玖	fwgq
 无从下手	fwgr
 二傻青年	fwgr
 吉人天相	fwgs
@@ -40619,6 +40639,7 @@ encoder:
 韩信点兵	fwhr
 夫	fwi
 堆满	fwia
+零柒	fwia
 零削	fwie
 二分法	fwif
 规法	fwif
@@ -40668,6 +40689,7 @@ encoder:
 堆置	fwlf
 老爷车	fwlg
 辇车	fwlg
+零四	fwlh
 替罪	fwlh
 十八罗汉	fwli
 趁风转帆	fwlm
@@ -40762,6 +40784,7 @@ encoder:
 霍邱	fwrg
 十八扯	fwrh
 零担	fwrj
+零捌	fwrk
 规制	fwrm
 干休所	fwrn
 规拟	fwrn
@@ -40849,6 +40872,7 @@ encoder:
 夫君	fwvt
 十拿九稳	fwvt
 十八九	fwvt
+零九	fwvt
 坋	fwvt
 十拿九准	fwvu
 夫妇	fwvv
@@ -40859,6 +40883,7 @@ encoder:
 老公公	fwwc
 替代作用	fwwe
 老促会	fwwf
+零伍	fwwg
 志人人殊	fwwg
 规例	fwwg
 直僵僵	fwwg
@@ -40875,6 +40900,7 @@ encoder:
 墙倒众人推	fwwr
 零售价格	fwws
 零件	fwwt
+零八	fwwt
 零作	fwwt
 替僧	fwwu
 零位	fwwu
@@ -40924,6 +40950,7 @@ encoder:
 零售商	fwyu
 吉他谱	fwyu
 进化论	fwyw
+零六	fwyw
 武偃文修	fwyw
 截	fwyy
 土食主义	fwyy
@@ -44113,6 +44140,8 @@ encoder:
 一霎	ggfu
 一堆	ggfw
 一夫	ggfw
+一零	ggfw
+五零	ggfw
 一垛	ggfw
 一替	ggfw
 一截	ggfw
@@ -48519,6 +48548,7 @@ encoder:
 残雪	gqfv
 麸	gqfw
 平铺直叙	gqfw
+玖零	gqfw
 万夫	gqfw
 残	gqfy
 正色直言	gqfy
@@ -55205,6 +55235,7 @@ encoder:
 港都	iaft
 江雪	iafv
 港埠	iafw
+柒零	iafw
 江	iag
 汇到	iagc
 满天	iagd
@@ -80955,6 +80986,7 @@ encoder:
 甲坼	lhfr
 四教	lhft
 四境	lhfu
+四零	lhfw
 甲型	lhga
 罪刑	lhga
 四击	lhgb
@@ -117310,6 +117342,7 @@ encoder:
 后患无穷	rkfp
 手足无措	rkfr
 扣考	rkft
+捌零	rkfw
 扣	rkg
 捉弄	rkga
 打嘴现世	rkga
@@ -155817,6 +155850,7 @@ encoder:
 女秀才	vtft
 杂乱无章	vtfu
 姊夫	vtfw
+九零	vtfw
 九垓	vtfy
 恕我直言	vtfy
 姓	vtg
@@ -159581,6 +159615,7 @@ encoder:
 全境	wgfu
 全副武装	wgfu
 人一走，茶就凉	wgfu
+伍零	wgfw
 公开场合	wgfw
 例规	wgfw
 倒替	wgfw
@@ -164155,6 +164190,7 @@ encoder:
 傻老	wtft
 八垠	wtfv
 凭	wtfw
+八零	wtfw
 作坊	wtfy
 人生地不熟	wtfy
 八垓	wtfy
@@ -180072,6 +180108,7 @@ encoder:
 文人无行	ywft
 设境	ywfu
 交替	ywfw
+六零	ywfw
 交规	ywfw
 文修武偃	ywfw
 夜夫	ywfw
