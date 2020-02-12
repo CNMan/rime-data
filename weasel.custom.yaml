@@ -3,5 +3,13 @@
 patch:
   style:
     color_scheme: dark_temple
-    font_face: "ZhongHuaSongPlane00"
-    font_point: 16
+#    font_face: "ZhongHuaSongPlane00"	#中华书局宋体
+#    font_face: "Source Han Sans HW SC"	#思源黑体等宽中国大陆字形
+#    font_face: "Source Han Sans HW TC"	#思源黑体等宽中国台湾字形
+#    font_face: "Source Han Sans HW HC"	#思源黑体等宽中国香港字形
+#    font_face: "Source Han Sans HW"	#思源黑体等宽日本字形
+#    font_face: "Source Han Sans HW K"	#思源黑体等宽韩国字形
+#    font_face: "MingLiu"	#细明体(中国台湾字形)(XP自带V3.21为旧字形)
+#    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
+    font_face: "HYFangSongS"	#汉仪仿宋S
+    font_point: 24
