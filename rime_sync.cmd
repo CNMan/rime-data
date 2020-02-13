@@ -15,6 +15,7 @@ cd /d "E:\GitHub\rime\rime\rime-essay\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-jyutping\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-luna-pinyin\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-pinyin-simp\" && git pull
+cd /d "E:\GitHub\rime\rime\rime-prelude\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-stroke\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-terra-pinyin\" && git pull
 cd /d "E:\GitHub\rime\rime\rime-wubi\" && git pull
@@ -50,7 +51,9 @@ del "E:\VMware\Rime\Weasel\data\bopomofo_tw.schema.yaml"
 del "E:\VMware\Rime\Weasel\data\cangjie5.dict.yaml"
 del "E:\VMware\Rime\Weasel\data\cangjie5.schema.yaml"
 del "E:\VMware\Rime\Weasel\data\cangjie5_express.schema.yaml"
+del "E:\VMware\Rime\Weasel\data\default.yaml"
 del "E:\VMware\Rime\Weasel\data\essay.txt"
+del "E:\VMware\Rime\Weasel\data\key_bindings.yaml"
 del "E:\VMware\Rime\Weasel\data\luna_pinyin.dict.yaml"
 del "E:\VMware\Rime\Weasel\data\luna_pinyin.schema.yaml"
 del "E:\VMware\Rime\Weasel\data\luna_pinyin_fluency.schema.yaml"
@@ -59,8 +62,10 @@ del "E:\VMware\Rime\Weasel\data\luna_pinyin_tw.schema.yaml"
 del "E:\VMware\Rime\Weasel\data\luna_quanpin.schema.yaml"
 del "E:\VMware\Rime\Weasel\data\pinyin_simp.dict.yaml"
 del "E:\VMware\Rime\Weasel\data\pinyin_simp.schema.yaml"
+del "E:\VMware\Rime\Weasel\data\punctuation.yaml"
 del "E:\VMware\Rime\Weasel\data\stroke.dict.yaml"
 del "E:\VMware\Rime\Weasel\data\stroke.schema.yaml"
+del "E:\VMware\Rime\Weasel\data\symbols.yaml"
 del "E:\VMware\Rime\Weasel\data\terra_pinyin.dict.yaml"
 del "E:\VMware\Rime\Weasel\data\terra_pinyin.schema.yaml"
 copy "E:\GitHub\rime\rime\rime-bopomofo\bopomofo.schema.yaml" "E:\VMware\Rime\data\bopomofo.schema.yaml" /y
@@ -78,12 +83,17 @@ copy "E:\GitHub\rime\rime\rime-luna-pinyin\luna_pinyin_tw.schema.yaml" "E:\VMwar
 copy "E:\GitHub\rime\rime\rime-luna-pinyin\luna_quanpin.schema.yaml" "E:\VMware\Rime\data\luna_quanpin.schema.yaml" /y
 copy "E:\GitHub\rime\rime\rime-pinyin-simp\pinyin_simp.dict.yaml" "E:\VMware\Rime\data\pinyin_simp.dict.yaml" /y
 copy "E:\GitHub\rime\rime\rime-pinyin-simp\pinyin_simp.schema.yaml" "E:\VMware\Rime\data\pinyin_simp.schema.yaml" /y
+copy "e:\GitHub\rime\rime\rime-prelude\default.yaml" "E:\VMware\Rime\data\default.yaml" /y
+copy "e:\GitHub\rime\rime\rime-prelude\key_bindings.yaml" "E:\VMware\Rime\data\key_bindings.yaml" /y
+copy "e:\GitHub\rime\rime\rime-prelude\punctuation.yaml" "E:\VMware\Rime\data\punctuation.yaml" /y
+copy "e:\GitHub\rime\rime\rime-prelude\symbols.yaml" "E:\VMware\Rime\data\symbols.yaml" /y
 copy "E:\GitHub\rime\rime\rime-stroke\stroke.dict.yaml" "E:\VMware\Rime\data\stroke.dict.yaml" /y
 copy "E:\GitHub\rime\rime\rime-stroke\stroke.schema.yaml" "E:\VMware\Rime\data\stroke.schema.yaml" /y
 copy "E:\GitHub\rime\rime\rime-terra-pinyin\terra_pinyin.dict.yaml" "E:\VMware\Rime\data\terra_pinyin.dict.yaml" /y
 copy "E:\GitHub\rime\rime\rime-terra-pinyin\terra_pinyin.schema.yaml" "E:\VMware\Rime\data\terra_pinyin.schema.yaml" /y
 rd /s /q "E:\VMware\Rime\data\build\"
 rd /s /q "E:\VMware\Rime\data\luna_pinyin.userdb\"
+rd /s /q "e:\VMware\Rime\data\terra_pinyin.userdb\"
 cd /d "E:\VMware\Rime\Weasel\"
 start /wait WeaselDeployer /deploy
 nircmd exec2 hide "E:\VMware\Rime\Weasel\" "E:\VMware\Rime\Weasel\WeaselServer.exe"

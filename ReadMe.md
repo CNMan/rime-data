@@ -33,6 +33,7 @@ QQ羣：38021162、857031696
 粵拼：https://github.com/rime/rime-jyutping
 朙月拼音：https://github.com/rime/rime-luna-pinyin
 袖珍簡化字拼音：https://github.com/rime/rime-pinyin-simp
+基礎默認配置：https://github.com/rime/rime-prelude
 五筆畫：https://github.com/rime/rime-stroke
 地球拼音：https://github.com/rime/rime-terra-pinyin
 86五筆（極爽詞庫6.0）：https://github.com/rime/rime-wubi
