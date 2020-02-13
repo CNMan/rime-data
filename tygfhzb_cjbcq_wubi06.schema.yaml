@@ -62,6 +62,11 @@ engine:
     - punct_translator
     - table_translator
     - reverse_lookup_translator
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@week_translator
+  filters:
+    - lua_filter@reverse_lookup_filter
 
 speller:
   delimiter: " ;'"
