@@ -96,11 +96,11 @@ copy "E:\GitHub\rime\rime\rime-terra-pinyin\terra_pinyin.schema.yaml" "E:\VMware
 rd /s /q "E:\VMware\Rime\data\build\"
 rd /s /q "E:\VMware\Rime\data\luna_pinyin.userdb\"
 rd /s /q "e:\VMware\Rime\data\terra_pinyin.userdb\"
+cd /d E:\VMware\Rime\data\
+sed -i 's/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/bbbbbbbbbbbbbbbbbbbbbbbbbbbb/g' *.yaml
 cd /d "E:\VMware\Rime\Weasel\"
 start /wait WeaselDeployer /deploy
 nircmd exec2 hide "E:\VMware\Rime\Weasel\" "E:\VMware\Rime\Weasel\WeaselServer.exe"
-cd /d E:\VMware\Rime\data\
-sed -i 's/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/bbbbbbbbbbbbbbbbbbbbbbbbbbbb/g' *.yaml
 git diff
 git add .
 git commit -m "Sync Pre-Installed Official Schemas"

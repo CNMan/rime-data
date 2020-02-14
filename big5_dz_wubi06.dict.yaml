@@ -3567,7 +3567,6 @@ encoder:
 遨	gqt	10635
 贅	gqt	9713
 兀	gqv	9339
-兀	gqv	8293
 琤	gqv	7377
 殲	gqw	9920
 餮	gqw	7951
@@ -9172,7 +9171,6 @@ encoder:
 藶	adth	1389
 蕨	aduw	8620
 戡	adwa	8091
-碁	adwd	#N/A
 期	adwe	12821
 勘	adwe	9907
 基	adwf	12618
@@ -9274,7 +9272,6 @@ encoder:
 莆	agey	7135
 芋	agfj	10309
 廿	aghg	10487
-卄	aghh	#N/A
 蔫	agho	8905
 芐	aghu	3389
 莍	agiy	3051
@@ -10656,20 +10653,14 @@ encoder:
 砥	dqay	8912
 厎	dqay	7795
 硊	dqdb	2964
-兣	dqdf	#N/A
-兡	dqdj	#N/A
 兢	dqdq	9388
 确	dqeh	2789
 勀	dqet	1201
-兙	dqfk	#N/A
 剋	dqjk	10301
 砲	dqnn	11493
 奓	dqqu	5900
 奅	dqtb	27
-兛	dqtf	#N/A
-兞	dqtn	#N/A
 碀	dqvh	2725
-兝	dqwv	#N/A
 砍	dqwy	11868
 磃	drhw	385
 原	drii	12837
@@ -10906,7 +10897,6 @@ encoder:
 哿	eksk	6102
 架	eksu	12076
 毠	ektn	5316
-嗧	ekwa	#N/A
 鴐	ekwo	4607
 胑	ekwy	187
 袈	ekye	7739
@@ -11217,7 +11207,6 @@ encoder:
 恚	ffnu	8358
 麉	ffox	4822
 堵	fftj	10486
-墻	ffwk	#N/A
 堎	ffwt	7564
 坉	fgbn	3505
 垤	fgcf	5769
@@ -11469,9 +11458,8 @@ encoder:
 縠	fpgc	7102
 瞉	fpgc	6752
 彀	fpgc	6056
-嗀	fpgc	3268
+嗀	fpgc	3268
 觳	fpgc	2658
-嗀	fpgc	7
 壼	fpgg	8220
 螜	fpgj	1120
 懿	fpgn	10642
@@ -11903,7 +11891,6 @@ encoder:
 瑕	gnhc	9949
 瑂	gnhg	3865
 瑋	gnkh	10703
-瓩	gnnf	#N/A
 瓦	gnny	11141
 珌	gntt	5130
 攷	gnty	7901
@@ -14379,7 +14366,6 @@ encoder:
 疊	lllg	10576
 纍	llli	7827
 轟	lllj	11149
-〇	llll	#N/A
 田	llll	12288
 轠	llll	3428
 罍	lllm	7043
@@ -14984,7 +14970,6 @@ encoder:
 恆	nghg	11383
 怔	nghg	9384
 慱	ngjf	93
-恒	ngjg	#N/A
 憓	ngjn	6810
 司	ngkd	12408
 悟	ngkg	11342
@@ -15386,7 +15371,6 @@ encoder:
 煘	odgy	549
 緳	odhi	1896
 廈	odht	9889
-糎	odjf	#N/A
 粨	odjg	6844
 庵	odjn	8987
 煩	odmy	12389
@@ -15550,7 +15534,6 @@ encoder:
 爌	ooaw	6615
 郯	oobh	4820
 顃	oodm	669
-粧	oofg	#N/A
 敥	oohc	1144
 煔	oohk	2738
 覢	oohq	308
@@ -16740,7 +16723,6 @@ encoder:
 猻	qtbi	7011
 猛	qtbl	11378
 犯	qtbn	12004
-銹	qtbt	#N/A
 獝	qtck	2067
 狁	qtcq	5784
 猱	qtcs	4998
@@ -19708,7 +19690,6 @@ encoder:
 婑	vtvg	3963
 姘	vuah	7663
 婘	vudb	2322
-嫺	vueg	#N/A
 媊	vuej	6359
 媄	vugd	9084
 姅	vugh	3292
@@ -20906,7 +20887,6 @@ encoder:
 讜	yipo	6259
 訬	yitt	815
 斔	yjew	2730
-裏	yjfe	#N/A
 諟	yjgh	6191
 螤	yjjw	4997
 謾	yjlc	9132
@@ -21275,3 +21255,31 @@ encoder:
 誶	yywf	6652
 詨	yywr	6768
 言	yyyy	12775
+#CJK Compatibility Ideographs区2字（重复收字导致）
+兀	gqv	
+嗀	fpgc	
+#符号1个
+卄	aghh	
+#倚天扩充字7个
+碁	adwd	
+墻	ffwk	
+恒	ngjg	
+粧	oofg	
+銹	qtbt	
+嫺	vueg	
+裏	yjfe	
+#计量汉字9个
+兣	dqdf	
+兡	dqdj	
+兙	dqfk	
+兛	dqtf	
+兞	dqtn	
+兝	dqwv	
+嗧	ekwa	
+瓩	gnnf	
+糎	odjf	
+#大写0
+〇	llll	
+#CNS11643（BIG5－2003）中调整了影射的两字
+〹	aghh	
+彞	voxa	
