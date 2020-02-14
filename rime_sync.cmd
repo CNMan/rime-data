@@ -1,7 +1,9 @@
 mode con cols=500 lines=500
 cd /d "E:\GitHub\OpenCC\" && git pull
+cd /d "e:\GitHub\rime\Arthurmcarthur\Cangjie3-Plus\" && git pull
 cd /d "E:\GitHub\rime\DictTool\" && git pull
 cd /d "E:\GitHub\rime\hchunhui\librime-lua\" && git pull
+cd /d "e:\GitHub\rime\Jackchows\Cangjie5\" && git pull
 cd /d "E:\GitHub\rime\lotem\rime-guhuwubi\" && git pull
 cd /d "E:\GitHub\rime\lotem\rime-linguistic-wubi\" && git pull
 cd /d "E:\GitHub\rime\lotem\rime-wubi98\" && git pull
