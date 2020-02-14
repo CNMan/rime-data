@@ -16,6 +16,7 @@ QQ羣：38021162、857031696
 * 通規單字版新世紀五筆(CNMan)：tygfhzb_dz_wubi06.dict.yaml、tygfhzb_dz_wubi06.schema.yaml
 * GB18030單字版新世紀五筆(CNMan)：gb18030-2000_dz_wubi06.dict.yaml、gb18030-2000_dz_wubi06.schema.yaml
 * 超集單字版新世紀五筆(CNMan)：unicodecjk_wubi06.dict.yaml、unicodecjk_wubi06.schema.yaml
+* 大五碼單字版新世紀五筆(CNMan)：big5_dz_wubi06.dict.yaml、big5_dz_wubi06.schema.yaml
 * 86五筆（極爽詞庫4.3）：jishuang_wubi86.dict.yaml、jishuang_wubi86.schema.yaml
 * 98五筆（昱瓊詞庫2.1）：yuqiong_wubi98.dict.yaml、yuqiong_wubi98.schema.yaml
 * 98五筆（至善詞庫2.0.191211）：zhishan_wubi98.dict.yaml、zhishan_wubi98.schema.yaml
