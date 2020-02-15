@@ -1,15 +1,15 @@
-# Rime schema: tygfhzb_dz_wubi06
+# Rime schema: wubi06_gb18030-2000_dz
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ羣：38021162
-# 仅含《通用规范汉字表》8105字范围内的字
+# 仅含GB18030-2000范围内的单字
 # 修正、统一了王码大一统新世纪版五笔字型错误编码
 # 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
 schema:
-  schema_id: tygfhzb_dz_wubi06
-  name: "通規單字版新世紀五筆(CNMan)"
+  schema_id: wubi06_gb18030-2000_dz
+  name: "新世紀五筆GB18030單字版(CNMan)"
   version: “20200107”
   author:
     - 發明人 王永民先生
@@ -62,7 +62,7 @@ speller:
   auto_clear: max_length
 
 translator:
-  dictionary: tygfhzb_dz_wubi06
+  dictionary: wubi06_gb18030-2000_dz
   enable_charset_filter: false
   enable_encoder: false
   encode_commit_history: false

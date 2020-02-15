@@ -1,4 +1,4 @@
-# Rime schema: tygfhzb_wubi06
+# Rime schema: wubi06_tygfhzb
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
@@ -18,8 +18,8 @@
 # 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
 schema:
-  schema_id: tygfhzb_wubi06
-  name: "通規詞庫版新世紀五筆(CNMan)"
+  schema_id: wubi06_tygfhzb
+  name: "新世紀五筆通規詞庫版(CNMan)"
   version: “202002102225”
   author:
     - 發明人 王永民先生
@@ -72,7 +72,7 @@ speller:
   auto_clear: max_length
 
 translator:
-  dictionary: tygfhzb_wubi06
+  dictionary: wubi06_tygfhzb
   enable_charset_filter: false
   enable_encoder: false
   encode_commit_history: false

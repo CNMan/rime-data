@@ -1,14 +1,22 @@
-# Rime schema: zhishan_wubi98
+# Rime schema: wubi06_big5_dz
 # encoding: utf-8
 #
+# 新世紀五筆字型資源庫：https://06wb.github.io
+# 新世紀五筆字型QQ羣：38021162
+# 仅含大五码范围内的字
+# 修正、统一了王码大一统新世纪版五笔字型错误编码
+# 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
 schema:
-  schema_id: zhishan_wubi98
-  name: "98五筆（至善詞庫2.0.191211）"
-  version: “2.0.191211”
+  schema_id: wubi06_big5_dz
+  name: "新世紀五筆大五碼單字版(CNMan)"
+  version: “20200107”
   author:
     - 發明人 王永民先生
+    - 整理人 cnnexus5x@gmail.com
   description: |
+    新世紀五筆字型資源庫：https://06wb.github.io
+    新世紀五筆字型QQ羣：38021162
     敲 z 鍵進入拼音反查
     敲 / 鍵進入symbols.yaml中的特殊字符輸入
   dependencies:
@@ -54,7 +62,7 @@ speller:
   auto_clear: max_length
 
 translator:
-  dictionary: zhishan_wubi98
+  dictionary: wubi06_big5_dz
   enable_charset_filter: false
   enable_encoder: false
   encode_commit_history: false

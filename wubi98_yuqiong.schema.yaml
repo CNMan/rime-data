@@ -1,22 +1,14 @@
-# Rime schema: gb18030-2000_dz_wubi06
+# Rime schema: wubi98_yuqiong
 # encoding: utf-8
 #
-# 新世紀五筆字型資源庫：https://06wb.github.io
-# 新世紀五筆字型QQ羣：38021162
-# 仅含GB18030-2000范围内的单字
-# 修正、统一了王码大一统新世纪版五笔字型错误编码
-# 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
 schema:
-  schema_id: gb18030-2000_dz_wubi06
-  name: "GB18030單字版新世紀五筆(CNMan)"
-  version: “20200107”
+  schema_id: wubi98_yuqiong
+  name: "98五筆（昱瓊詞庫2.1）"
+  version: “2.1”
   author:
     - 發明人 王永民先生
-    - 整理人 cnnexus5x@gmail.com
   description: |
-    新世紀五筆字型資源庫：https://06wb.github.io
-    新世紀五筆字型QQ羣：38021162
     敲 z 鍵進入拼音反查
     敲 / 鍵進入symbols.yaml中的特殊字符輸入
   dependencies:
@@ -62,7 +54,7 @@ speller:
   auto_clear: max_length
 
 translator:
-  dictionary: gb18030-2000_dz_wubi06
+  dictionary: wubi98_yuqiong
   enable_charset_filter: false
   enable_encoder: false
   encode_commit_history: false

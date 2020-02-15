@@ -1,4 +1,4 @@
-# Rime schema: unicodecjk_wubi06
+# Rime schema: wubi06_unicodecjk
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
@@ -22,8 +22,8 @@
 #  https://github.com/lotem/rime-linguistic-wubi/blob/master/linguistic_wubi.schema.yaml
 
 schema:
-  schema_id: unicodecjk_wubi06
-  name: "超集單字版新世紀五筆(CNMan)"
+  schema_id: wubi06_unicodecjk
+  name: "新世紀五筆超集單字版(CNMan)"
   version: "20200209"
   author:
     - 發明人 王永民先生
@@ -89,7 +89,7 @@ speller:
 
 translator:
   #翻譯器將調取此字典文件
-  dictionary: unicodecjk_wubi06
+  dictionary: wubi06_unicodecjk
   #是否開啓字符集過濾
   enable_charset_filter: false
   #是否開啓自動造詞

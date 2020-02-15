@@ -36,6 +36,8 @@ cd /d "E:\GitHub\rime\rime-configuration\rtransformation\rime-opencc_emoji_symbo
 cd /d "E:\GitHub\rime\rime-configuration\tigren\rime_configs\" && git pull
 cd /d "E:\GitHub\rime\rime-configuration\youanan\rime\" && git pull
 taskkill /IM WeaselServer.exe /F
+del "E:\VMware\Rime\data\user.yaml"
+del "E:\VMware\Rime\data\installation.yaml"
 del "E:\VMware\Rime\Weasel\7z.dll"
 del "E:\VMware\Rime\Weasel\7z.exe"
 del "E:\VMware\Rime\Weasel\7-zip-license.txt"
@@ -101,6 +103,7 @@ sed -i 's/aaaaaaaaaaaaaaaaaaaaaaaaaaaa/bbbbbbbbbbbbbbbbbbbbbbbbbbbb/g' *.yaml
 cd /d "E:\VMware\Rime\Weasel\"
 start /wait WeaselDeployer /deploy
 nircmd exec2 hide "E:\VMware\Rime\Weasel\" "E:\VMware\Rime\Weasel\WeaselServer.exe"
+cd /d E:\VMware\Rime\data\
 git diff
 git add .
 git commit -m "Sync Pre-Installed Official Schemas"

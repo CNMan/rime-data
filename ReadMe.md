@@ -11,15 +11,15 @@ QQ羣：38021162、857031696
 ## 檔案說明
 
 ```
-* 通規詞庫版新世紀五筆(CNMan)：tygfhzb_wubi06.dict.yaml、tygfhzb_wubi06.schema.yaml
-* 通規詞庫版新世紀五筆[出簡不出全](CNMan)：tygfhzb_cjbcq_wubi06.dict.yaml、tygfhzb_cjbcq_wubi06.schema.yaml
-* 通規單字版新世紀五筆(CNMan)：tygfhzb_dz_wubi06.dict.yaml、tygfhzb_dz_wubi06.schema.yaml
-* GB18030單字版新世紀五筆(CNMan)：gb18030-2000_dz_wubi06.dict.yaml、gb18030-2000_dz_wubi06.schema.yaml
-* 超集單字版新世紀五筆(CNMan)：unicodecjk_wubi06.dict.yaml、unicodecjk_wubi06.schema.yaml
-* 大五碼單字版新世紀五筆(CNMan)：big5_dz_wubi06.dict.yaml、big5_dz_wubi06.schema.yaml
-* 86五筆（極爽詞庫4.3）：jishuang_wubi86.dict.yaml、jishuang_wubi86.schema.yaml
-* 98五筆（昱瓊詞庫2.1）：yuqiong_wubi98.dict.yaml、yuqiong_wubi98.schema.yaml
-* 98五筆（至善詞庫2.0.191211）：zhishan_wubi98.dict.yaml、zhishan_wubi98.schema.yaml
+* 新世紀五筆通規詞庫版(CNMan)：wubi06_tygfhzb.dict.yaml、wubi06_tygfhzb.schema.yaml
+* 新世紀五筆通規詞庫版[出簡不出全](CNMan)：wubi06_tygfhzb_cjbcq.dict.yaml、wubi06_tygfhzb_cjbcq.schema.yaml
+* 新世紀五筆通規單字版(CNMan)：wubi06_tygfhzb_dz.dict.yaml、wubi06_tygfhzb_dz.schema.yaml
+* 新世紀五筆GB18030單字版(CNMan)：wubi06_gb18030-2000_dz.dict.yaml、wubi06_gb18030-2000_dz.schema.yaml
+* 新世紀五筆超集單字版(CNMan)：wubi06_unicodecjk.dict.yaml、wubi06_unicodecjk.schema.yaml
+* 新世紀五筆大五碼單字版(CNMan)：wubi06_big5_dz.dict.yaml、wubi06_big5_dz.schema.yaml
+* 86五筆（極爽詞庫4.3）：wubi86_jishuang.dict.yaml、wubi86_jishuang.schema.yaml
+* 98五筆（昱瓊詞庫2.1）：wubi98_yuqiong.dict.yaml、wubi98_yuqiong.schema.yaml
+* 98五筆（至善詞庫2.0.191211）：wubi98_zhishan.dict.yaml、wubi98_zhishan.schema.yaml
 ```
 
 另有Rime官方維護或預裝的：

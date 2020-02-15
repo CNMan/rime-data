@@ -1,9 +1,9 @@
-# Rime dictionary: yuqiong_wubi98
+# Rime dictionary: wubi98_yuqiong
 # encoding: utf-8
 #
 
 ---
-name: yuqiong_wubi98
+name: wubi98_yuqiong
 version: "2.1"
 sort: by_weight
 columns:

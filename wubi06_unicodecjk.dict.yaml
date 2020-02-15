@@ -1,4 +1,4 @@
-# Rime dictionary: unicodecjk_wubi06
+# Rime dictionary: wubi06_unicodecjk
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
@@ -16,7 +16,7 @@
 
 ---
 #內部字典名，也即schema所引用的字典名，確保與文件名相一致
-name: unicodecjk_wubi06
+name: wubi06_unicodecjk
 #如果發佈，請確保每次改動陞版本號
 version: "20200209"
 #字典初始排序，可選original或by_weight

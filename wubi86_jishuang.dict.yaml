@@ -1,9 +1,9 @@
-# Rime dictionary: jishuang_wubi86
+# Rime dictionary: wubi86_jishuang
 # encoding: utf-8
 #
 
 ---
-name: jishuang_wubi86
+name: wubi86_jishuang
 version: "4.3"
 sort: by_weight
 columns:

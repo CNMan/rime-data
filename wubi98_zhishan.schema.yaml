@@ -1,11 +1,11 @@
-# Rime schema: jishuang_wubi86
+# Rime schema: wubi98_zhishan
 # encoding: utf-8
 #
 
 schema:
-  schema_id: jishuang_wubi86
-  name: "86五筆（極爽詞庫4.3）"
-  version: “4.3”
+  schema_id: wubi98_zhishan
+  name: "98五筆（至善詞庫2.0.191211）"
+  version: “2.0.191211”
   author:
     - 發明人 王永民先生
   description: |
@@ -54,7 +54,7 @@ speller:
   auto_clear: max_length
 
 translator:
-  dictionary: jishuang_wubi86
+  dictionary: wubi98_zhishan
   enable_charset_filter: false
   enable_encoder: false
   encode_commit_history: false

@@ -1,9 +1,9 @@
-# Rime dictionary: zhishan_wubi98
+# Rime dictionary: wubi98_zhishan
 # encoding: utf-8
 #
 
 ---
-name: zhishan_wubi98
+name: wubi98_zhishan
 version: "2.0.191211"
 sort: by_weight
 columns:

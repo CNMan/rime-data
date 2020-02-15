@@ -1,4 +1,4 @@
-# Rime dictionary: tygfhzb_dz_wubi06
+# Rime dictionary: wubi06_tygfhzb_dz
 # encoding: utf-8
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
@@ -8,7 +8,7 @@
 # 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
 ---
-name: tygfhzb_dz_wubi06
+name: wubi06_tygfhzb_dz
 version: "20200107"
 sort: by_weight
 columns:
