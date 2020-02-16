@@ -36,7 +36,9 @@ cd /d "E:\GitHub\rime\rime-configuration\rtransformation\rime-opencc_emoji_symbo
 cd /d "E:\GitHub\rime\rime-configuration\tigren\rime_configs\" && git pull
 cd /d "E:\GitHub\rime\rime-configuration\youanan\rime\" && git pull
 taskkill /IM WeaselServer.exe /F
-del "E:\VMware\Rime\data\user.yaml"
+sed -i '/luna_pinyin/d' "E:\VMware\Rime\data\user.yaml"
+sed -i '/pinyin_simp/d' "E:\VMware\Rime\data\user.yaml"
+sed -i '/terra_pinyin/d' "E:\VMware\Rime\data\user.yaml"
 del "E:\VMware\Rime\data\installation.yaml"
 del "E:\VMware\Rime\Weasel\7z.dll"
 del "E:\VMware\Rime\Weasel\7z.exe"
