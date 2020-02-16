@@ -25,6 +25,8 @@ local function translator(input, seg)
       if (os.date("%w") == "6") then
          weekstr = "六"
 	  end
+      yield(Candidate("week", seg.start, seg._end, "".."星期"..weekstr.."","星期"))
+      yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日").."".."星期"..weekstr.."","星期"))
       yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日").."".."星期"..weekstr..""..os.date("%H:%M:%S"),"星期"))
    end
 end
