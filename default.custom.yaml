@@ -9,6 +9,7 @@ patch:
     page_size: 10
   schema_list:
     - {schema: "luna_pinyin"}
+    - {schema: "pinyin_simp"}
     - {schema: "terra_pinyin"}
     - {schema: "wubi06_big5_dz"}
     - {schema: "wubi06_gb18030-2000_dz"}

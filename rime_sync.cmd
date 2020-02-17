@@ -96,6 +96,7 @@ copy "E:\GitHub\rime\rime\rime-terra-pinyin\terra_pinyin.dict.yaml" "E:\VMware\R
 copy "E:\GitHub\rime\rime\rime-terra-pinyin\terra_pinyin.schema.yaml" "E:\VMware\Rime\data\terra_pinyin.schema.yaml" /y
 rd /s /q "E:\VMware\Rime\data\build\"
 rd /s /q "E:\VMware\Rime\data\luna_pinyin.userdb\"
+rd /s /q "E:\VMware\Rime\data\pinyin_simp.userdb\"
 rd /s /q "e:\VMware\Rime\data\terra_pinyin.userdb\"
 cd /d E:\VMware\Rime\data\
 sed -i '/luna_pinyin/d' user.yaml
