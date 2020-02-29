@@ -9,7 +9,8 @@ patch:
 #    font_face: "Source Han Sans HW HC"	#思源黑体等宽中国香港字形
 #    font_face: "Source Han Sans HW"	#思源黑体等宽日本字形
 #    font_face: "Source Han Sans HW K"	#思源黑体等宽韩国字形
-    font_face: "MingLiu"	#细明体(中国台湾字形)(XP自带V3.21为旧字形)
+#    font_face: "MingLiu"	#细明体(中国台湾字形)(XP自带V3.21为旧字形)
 #    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
 #    font_face: "HYFangSongS"	#汉仪仿宋S
+    font_face: "DFRareBook-MagnoliaA JTC W3"	#ＤＦ古籍木蘭A Std W3
     font_point: 24
