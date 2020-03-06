@@ -21316,7 +21316,6 @@ encoder:
 怷	fqyn
 𬩋	fqyp
 𪲭	fqyq
-㫄	yqyr
 圴	fqyy
 㽌	fqyy
 𡉌	fqyy
@@ -31677,6 +31676,7 @@ encoder:
 渭	ile
 渭	ileg
 𪶀	ilet
+潈	iley
 泴	ilf
 畄	ilf
 畓	ilf
@@ -33117,7 +33117,6 @@ encoder:
 洫	itl
 𪶣	itla
 𤀈	itld
-潈	iley
 𬐦	itlf
 𭻂	itlf
 洫	itlg
@@ -44700,7 +44699,6 @@ encoder:
 𨍙	lwlh
 𭝾	lwln
 𡈶	lwlw
-𡜸	mwmv
 䡄	lwn
 𨌺	lwng
 𨋱	lwnn
@@ -48262,6 +48260,7 @@ encoder:
 𢚊	mwmn
 𢝕	mwmn
 𣰡	mwmn
+𡜸	mwmv
 㞦	mwn
 𭀻	mwnb
 䞀	mwnd
@@ -54730,10 +54729,8 @@ encoder:
 𮇸	orwf
 𭴓	orwy
 廏	orx
-廐	orx
 廏	orxc
 𤈥	orxn
-廐	orxq
 爍	orxs
 𥽗	orxs
 燩	oryt
@@ -55326,10 +55323,12 @@ encoder:
 𬞺	ovaj
 𪹻	ovas
 㶢	ovb
+廐	ovc
 𤊵	ovcb
 𪪗	ovcb
 廄	ovcc
 𢊨	ovci
+廐	ovcq
 𬊨	ovcx
 𬖗	ovcy
 𢇘	ovd
@@ -99090,6 +99089,7 @@ encoder:
 𧨥	yqyj
 𧪭	yqyl
 𧫘	yqyq
+㫄	yqyr
 訋	yqyy
 义	yr
 离	yr
