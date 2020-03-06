@@ -24822,7 +24822,6 @@ encoder:
 𠀟	gnni
 𣎺	gnni
 𣐺	gnni
-𣦶	gnni
 𤭯	gnni
 瓸	gnnj
 𤭵	gnnj
@@ -24847,6 +24846,7 @@ encoder:
 𩿺	gnno
 𪼸	gnno
 𤬱	gnnr
+𣦶	gnnv
 瓰	gnnv
 𤮌	gnnv
 𤮒	gnnv
@@ -39885,6 +39885,7 @@ encoder:
 𨂇	khyh
 𨂙	khyi
 𮛕	khyi
+𨁕	khyi
 跻	khyj
 躋	khyj
 𨂋	khyj
@@ -39919,7 +39920,6 @@ encoder:
 𨈊	khyx
 蹴	khyy
 䠙	khyy
-𨁕	khyy
 𨁸	khyy
 𨂒	khyy
 𨇹	khyy
@@ -58811,6 +58811,7 @@ encoder:
 𬒬	pyag
 𬓑	pyag
 𥛣	pyah
+𡨜	pyai
 䄍	pyaj
 𥛼	pyaj
 𥜲	pyaj
@@ -58825,7 +58826,6 @@ encoder:
 祺	pyaw
 𥙖	pyaw
 䄀	pyay
-𡨜	pyay
 𥘒	pyay
 𥜍	pyay
 祁	pyb
@@ -73637,7 +73637,6 @@ encoder:
 梯	su
 栏	su
 栟	suah
-𣓙	suai
 㮶	sube
 𣒂	subh
 𣓱	subh
@@ -74383,8 +74382,9 @@ encoder:
 述	sy
 校	sy
 𭫲	syae
+𣒏	syai
+𣓙	syao
 𭫳	syas
-𣒏	syay
 𭬹	sybg
 𣒒	sybh
 梳	syc
@@ -98318,8 +98318,6 @@ encoder:
 𫼉	ynay
 㐎	ynb
 邙	ynb
-𪜊	ynb
-𭚥	ynb
 𢩇	ynbd
 邙	ynbh
 𠨑	ynbh
@@ -98713,6 +98711,8 @@ encoder:
 𣂋	ynuk
 𧭋	ynup
 𢩞	ynuy
+𪜊	ynv
+𭚥	ynv
 亡	ynv
 妄	ynv
 𬼁	ynv
@@ -100364,6 +100364,7 @@ encoder:
 ⽅	yygt
 文	yygy
 ⽂	yygy
+𬻿	yyi
 𧩽	yyjb
 𪯼	yyjg
 谅	yyk
@@ -100439,7 +100440,6 @@ encoder:
 谛	yyu
 谪	yyu
 𣁅	yyu
-𬻿	yyu
 谪	yyud
 謫	yyud
 𮘷	yyug
