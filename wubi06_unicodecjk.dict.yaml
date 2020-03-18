@@ -63291,6 +63291,7 @@ encoder:
 𰴥	qehj	1	# U+30D25	199973
 𰴦	qehj	1	# U+30D26	199974
 ⻆	qehj	0	# U+2EC6	11974
+⾓	qehj	0	# U+2F93	12179
 觡	qehk	10711	# U+89E1	35297
 觭	qehk	10703	# U+89ED	35309
 觿	qehk	10687	# U+89FF	35327
@@ -63306,7 +63307,6 @@ encoder:
 𧥏	qehk	1	# U+2794F	162127
 𮗰	qehk	1	# U+2E5F0	189936
 𮗲	qehk	1	# U+2E5F2	189938
-⾓	qehk	0	# U+2F93	12179
 觯	qehl	21263	# U+89EF	35311
 觶	qehl	10696	# U+89F6	35318
 𧣛	qehl	1	# U+278DB	162011
