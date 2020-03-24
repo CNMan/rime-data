@@ -81675,7 +81675,6 @@ encoder:
 臫	thnn	12078	# U+81EB	33259
 𥞐	thnn	1	# U+25790	153488
 𥭱	thnn	1	# U+25B71	154481
-⻕	thnn	0	# U+2ED5	11989
 㷗	thno	1	# U+3DD7	15831
 𤋅	thno	1	# U+242C5	148165
 𪃼	thno	1	# U+2A0FC	172284
@@ -95133,6 +95132,7 @@ encoder:
 𨺀	wnnn	1	# U+28E80	167552
 𫡞	wnnn	1	# U+2B85E	178270
 𱁄	wnnn	1	# U+31044	200772
+⻕	wnnn	0	# U+2ED5	11989
 鴭	wnno	7128	# U+9D2D	40237
 𠃆	wnno	1	# U+200C6	131270
 𤒮	wnno	1	# U+244AE	148654
@@ -101008,10 +101008,12 @@ encoder:
 畿	xxal	23853	# U+757F	30079
 𤳀	xxal	1	# U+24CC0	150720
 𧗇	xxal	1	# U+275C7	161223
+𧗒	xxal	1	# U+275D2	161234
 𭙌	xxan	1	# U+2D64C	185932
 𮋑	xxan	1	# U+2E2D1	189137
 㡬	xxaq	1	# U+386C	14444
 𫷣	xxav	1	# U+2BDE3	179683
+幾	xxaw	18150	# U+5E7E	24190
 𫧇	xxb	1	# U+2B9C7	178631
 𡥝	xxbf	1	# U+2195D	137565
 𠨒	xxbh	1	# U+20A12	133650
@@ -101034,8 +101036,6 @@ encoder:
 𨗂	xxdp	1	# U+285C2	165314
 𡗬	xxdu	1	# U+215EC	136684
 𢇈	xxdu	1	# U+221C8	139720
-幾	xxdy	18150	# U+5E7E	24190
-𧗒	xxdy	1	# U+275D2	161234
 𥿌	xxet	1	# U+25FCC	155596
 毕	xxf	26318	# U+6BD5	27605
 㩺	xxfc	1	# U+3A7A	14970
