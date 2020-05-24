@@ -60,4 +60,5 @@ patch:
 #    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
 #    font_face: "HYFangSongS"	#汉仪仿宋S
     font_face: "DFRareBook-MagnoliaA JTC W3"	#ＤＦ古籍木蘭A Std W3
+#    font_face: "FZYouSongJ 18030 503L"	#方正悠宋+ 18030 503L
     font_point: 24
