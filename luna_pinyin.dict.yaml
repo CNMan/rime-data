@@ -10521,7 +10521,6 @@ use_preset_vocabulary: true
 大	da	99.85%
 大	dai	0.15%
 大	tai	0%
-大	xiao	0%
 夨	ze
 天	tian
 太	tai	100%
@@ -26749,6 +26748,7 @@ use_preset_vocabulary: true
 诿	wei
 谀	yu
 谁	shei	22.31%
+谁	shui	77.69%
 谂	shen
 调	diao	30.33%
 调	tiao	69.67%
@@ -32790,6 +32790,8 @@ use_preset_vocabulary: true
 龤	yue
 龥	yu
 鿃	shan
+鿫	ao
+鿬	tian
 𠀀	he
 𠀁	qi
 𠀃	ji
