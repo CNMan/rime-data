@@ -1981,6 +1981,7 @@ encoder:
 花朝节	afab
 贰节	afab
 甘苦	afad
+某项	afad
 甘茂	afad
 芫荽	afae
 某某	afaf
@@ -29394,6 +29395,7 @@ encoder:
 彩坊	esfy
 彩球	esgg
 膝下	esgh
+加权平均法	esgi
 腰带	esgk
 彩带	esgk
 彩画	esgl
@@ -48206,6 +48208,7 @@ encoder:
 列岛	gqqy
 正色危言	gqqy
 殊	gqr
+列报	gqrb
 万把	gqrc
 殊技	gqrf
 残兵	gqrg
@@ -60500,6 +60503,7 @@ encoder:
 测估	imwd
 尚佳	imwf
 测候	imwh
+注册会计师	imwj
 洞仙	imwm
 党同伐异	imwn
 梁山伯	imwr
@@ -64510,6 +64514,7 @@ encoder:
 油立方	iuyy
 清立方	iuyy
 当	iv
+当期	ivad
 涩苦	ivad
 粱菽	ivah
 当东	ivai
@@ -113037,6 +113042,7 @@ encoder:
 盾牌	rfth
 探索片	rfth
 扶竹	rfth
+后进先出法	rfti
 持身	rftm
 遁身	rftm
 质管	rftp
@@ -133378,6 +133384,7 @@ encoder:
 午牌	tfth
 选自	tfth
 筀竹	tfth
+先进先出法	tfti
 箸	tftj
 奥地利	tftj
 毛利	tftj
@@ -143477,6 +143484,7 @@ encoder:
 头伏	udwd
 眷佑	udwd
 站不住脚	udwe
+减值	udwf
 卷舒	udwf
 眷舍	udwf
 凑付	udwf
@@ -155053,6 +155061,7 @@ encoder:
 公人	wcww
 公价	wcww
 俊人	wcww
+公允价值	wcww
 傩	wcwy
 公信	wcwy
 公顷	wcxd
@@ -158910,6 +158919,7 @@ encoder:
 食味方丈	wkyd
 保证	wkyg
 促请	wkyg
+个别计价法	wkyi
 催吐剂	wkyj
 保亭	wkyk
 保户	wkyn
@@ -163258,6 +163268,7 @@ encoder:
 人日	wwjj
 例假日	wwjj
 公休日	wwjj
+低值易耗品	wwjk
 人帅	wwjm
 人蛇	wwjp
 坐果	wwjs
@@ -171043,6 +171054,7 @@ encoder:
 诗笔	yftt
 计税	yftu
 诗律	yftv
+计入	yfty
 诗篇	yfty
 讲稿	yfty
 诗稿	yfty
