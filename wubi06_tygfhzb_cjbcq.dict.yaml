@@ -7700,6 +7700,7 @@ encoder:
 共度	awoa
 花序	awoc
 共庆	awod
+其他应付款	awof
 茶庄	awof
 茶灶	awof
 茶业	awog
@@ -47898,6 +47899,7 @@ encoder:
 趸卖	gqfn
 熬过	gqfp
 迈过	gqfp
+万元	gqfq
 万无	gqfq
 死者	gqft
 一锅煮	gqft
@@ -95790,6 +95792,7 @@ encoder:
 烩	owfc
 府城	owfd
 腐坏	owfd
+应付款	owff
 粉墙	owff
 糊仔栽培	owff
 粉垣	owfg
@@ -95913,8 +95916,8 @@ encoder:
 腐朽	owsg
 粉本	owsg
 糊假棺	owsp
-粉板	owsr
 应付票据	owsr
+粉板	owsr
 座机	owsw
 座舱	owte
 唐人街	owtf
@@ -108296,6 +108299,7 @@ encoder:
 猢	qtde
 独有	qtde
 犯有	qtde
+银行存款	qtdf
 狂奔	qtdf
 铁片大鼓	qtdf
 锆石	qtdg
@@ -118397,6 +118401,7 @@ encoder:
 白豆	rrgk
 白赖	rrgk
 折柬	rrgl
+折现	rrgm
 白刺	rrgm
 反打瓦	rrgn
 誓与	rrgn
@@ -154409,12 +154414,12 @@ encoder:
 贷	waym
 岱	waym
 借调	waym
+借记	wayn
+贷记	wayn
 代词	wayn
 供词	wayn
 借词	wayn
 僭妄	wayn
-借记	wayn
-贷记	wayn
 黛	wayo
 代谢	wayt
 代为	wayt
@@ -178443,3 +178448,11 @@ encoder:
 放言高论	yyyy
 话言话语	yyyy
 谤言	yyyy
+在建工程	dvat
+当期损益	iaru
+财务费用	mtxe
+折现率	rgyx
+进项税额	fatp
+应交增值税	oyft
+应交税费	oytx
+运杂费	fvxj
