@@ -37,7 +37,7 @@ patch:
 #    font_face: "Source Han Sans K"	#思源黑体Adobe版韩国字形
 
 #Noto Sans Mono CJK/Source Han Sans HW = Source Han Sans + Source Sans Pro
-#    font_face: "Noto Sans Mono CJK SC"	#思源黑体Google版等宽中国大陆字形
+    font_face: "Noto Sans Mono CJK SC"	#思源黑体Google版等宽中国大陆字形
 #    font_face: "Noto Sans Mono CJK TC"	#思源黑体Google版等宽中国台湾字形
 #    font_face: "Noto Sans Mono CJK HK"	#思源黑体Google版等宽中国香港字形
 #    font_face: "Noto Sans Mono CJK JP"	#思源黑体Google版等宽日本字形
@@ -59,6 +59,6 @@ patch:
 #    font_face: "MingLiu"	#细明体(中国台湾字形)(XP自带V3.21为旧字形)
 #    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
 #    font_face: "HYFangSongS"	#汉仪仿宋S
-    font_face: "DFRareBook-MagnoliaA JTC W3"	#ＤＦ古籍木蘭A Std W3
+#    font_face: "DFRareBook-MagnoliaA JTC W3"	#ＤＦ古籍木蘭A Std W3
 #    font_face: "FZYouSongJ 18030 503L"	#方正悠宋+ 18030 503L
     font_point: 24
