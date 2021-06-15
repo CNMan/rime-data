@@ -35,10 +35,11 @@
 # szc126 (@szc126)
 # Bing Jeung <bing@ososo.io>
 # Ayaka Mikazuki <ayaka@mail.shn.hk>
+# Henry Chan (@hfhchan)
 
 ---
 name: jyut6ping3
-version: "2020.12.22"
+version: "2021.06.13"
 sort: by_weight
 use_preset_vocabulary: true
 import_tables:
@@ -994,7 +995,7 @@ import_tables:
 潷	bei3
 珌	bei3	0%
 琲	bei3	0%
-畀	bei3	90%
+畀	bei3	3%
 疪	bei3
 痹	bei3
 痺	bei3	0%
@@ -3514,6 +3515,8 @@ import_tables:
 錢	cin2	0%
 闡	cin2
 刋	cin3	0%
+刋	hon1	0%
+刋	hon2	0%
 硟	cin3	0%
 㕓	cin4
 㙻	cin4
@@ -4045,7 +4048,7 @@ import_tables:
 采	coi3
 𡤐	coi3
 𡧳	coi3
-㐧	coi4
+㐧	dai6
 㒲	coi4
 䴭	coi4
 才	coi4
@@ -14339,6 +14342,7 @@ import_tables:
 已	ji5
 擬	ji5
 攺	ji5	0%
+攺	goi2	0%
 旀	ji5	0%
 栮	ji5
 洱	ji5
@@ -21438,13 +21442,13 @@ import_tables:
 𣕚	mau6
 乜	me1	3%
 咩	me1
-哶	me1
+哶	me1	3%
 孭	me1
-羋	me1
+羋	me1	3%
 蝆	me1
-𠤖	me1
+𠤖	me1	3%
 𡥼	me1
-𦍋	me1
+𦍋	me1	3%
 𧴯	me1
 乜	me2	0%
 歪	me2	3%
@@ -21453,7 +21457,7 @@ import_tables:
 𦍋	me5
 乜	me6
 㵟	mei1
-咪	mei1
+咪	mei1	0%
 屘	mei1
 溦	mei1
 眯	mei1
@@ -26610,7 +26614,7 @@ import_tables:
 𩅰	si1
 𪀔	si1
 𪆓	si1
-㐪	si2	0%
+㐪	hoi6	0%
 㕜	si2
 㹬	si2
 䂠	si2
@@ -38298,7 +38302,6 @@ import_tables:
 跛腳	bai1 goek3
 跛腳鴨	bai1 goek3 aap2
 跛腳鴨	bai1 goek3 aap3
-跛腳鴨	bai1 goek3 aap6
 跛腳了哥自有飛來蜢	bai1 goek3 liu1 go1 zi6 jau5 fei1 loi4 maang2
 跛腳了哥	bai1 goek3 liu5 go1
 跛腳佬	bai1 goek3 lou2
@@ -63621,6 +63624,7 @@ import_tables:
 當臭四	dong3 cau3 sei3
 檔次	dong3 ci3
 當掉	dong3 diu6
+當係	dong3 hai6
 檔口	dong3 hau2
 當隠形	dong3 jan2 jing4
 當日	dong3 jat6
@@ -63640,7 +63644,6 @@ import_tables:
 當冇嚟	dong3 mou5 lai4
 當你神噉拜	dong3 nei5 san4 gam2 baai3
 當我流	dong3 ngo5 lau4
-檔案	dong3 on3
 當票	dong3 piu3
 當舖	dong3 pou2
 當舖	dong3 pou3
@@ -64196,11 +64199,10 @@ import_tables:
 杜松子酒	dou6 cung4 zi2 zau2
 導彈	dou6 daan2
 導彈潛艇	dou6 daan2 cim4 teng5
+導彈系統	dou6 daan2 hai6 tung2
 導彈核潛艇	dou6 daan2 hat6 cim4 teng5
 導彈武器技術控制制度	dou6 daan2 mou5 hei3 gei6 seot6 hung3 zai3 zai3 dou6
-導彈	dou6 daan6
-導彈系統	dou6 daan6 hai6 tung2
-導彈網	dou6 daan6 mong5
+導彈網	dou6 daan2 mong5
 道德	dou6 dak1
 道德敗壞	dou6 dak1 baai6 waai6
 道德品質	dou6 dak1 ban2 zat1
@@ -64242,8 +64244,8 @@ import_tables:
 道教徒	dou6 gaau3 tou4
 鍍金	dou6 gam1
 道具	dou6 geoi6
-道高一尺，魔高一丈	dou6 gou1 jat1 cek3 mo1 gou1 jat1 zoeng6
-道高益安，勢高益危	dou6 gou1 jik1 on1 sai3 gou1 jik1 ngai4
+道高一尺	dou6 gou1 jat1 cek3
+道高益安	dou6 gou1 jik1 on1
 道姑	dou6 gu1
 稻穀	dou6 guk1
 導管	dou6 gun2
@@ -65043,6 +65045,7 @@ import_tables:
 東頭村	dung1 tau4 cyun1
 冬天	dung1 tin1
 東鐵	dung1 tit3
+東鐵綫	dung1 tit3 sin3
 東條英機	dung1 tiu4 jing1 gei1
 東臺	dung1 toi4
 東臺市	dung1 toi4 si5
@@ -77502,6 +77505,7 @@ import_tables:
 九宮山鎮	gau2 gung1 saan1 zan3
 九歸	gau2 gwai1
 狗棍	gau2 gwan3
+九廣東鐵	gau2 gwong2 dung1 tit3
 九廣西鐵	gau2 gwong2 sai1 tit3
 九廣鐵路	gau2 gwong2 tit3 lou6
 九廣鐵路公司	gau2 gwong2 tit3 lou6 gung1 si1
@@ -88104,7 +88108,6 @@ import_tables:
 赫本	haak1 bun2
 黑柴	haak1 caai4
 黑沉沉	haak1 cam4 cam4
-嚇親	haak1 can1
 黑漆漆	haak1 cat1 cat1
 黑廁	haak1 ci3
 黑錢	haak1 cin2
@@ -123259,7 +123262,6 @@ import_tables:
 唔係噉話，你過獎喇	m4 hai6 gam2 waa2 nei5 gwo3 zoeng2 laa3
 唔係噉話	m4 hai6 gam2 waa6
 唔係嘅話	m4 hai6 ge3 waa2
-唔係嘅話	m4 hai6 ge3 waa6
 唔係幾	m4 hai6 gei2
 唔係幾似	m4 hai6 gei2 ci5
 唔係嗰皮	m4 hai6 go2 pei4
@@ -124202,6 +124204,7 @@ import_tables:
 馬鞍形	maa5 on1 jing4
 馬鞍山	maa5 on1 saan1
 馬鞍山市	maa5 on1 saan1 si5
+馬鞍山綫	maa5 on1 saan1 sin3
 馬趴	maa5 paa1
 馬牌	maa5 paai2
 馬棚	maa5 paang4
@@ -128582,8 +128585,7 @@ import_tables:
 摩根史丹利	mo1 gan1 si2 daan1 lei6
 摩根士丹利	mo1 gan1 si6 daan1 lei6
 摩肩接踵	mo1 gin1 zip3 zung2
-魔高一尺，道高一丈	mo1 gou1 jat1 cek3 dou6 gou1 jat1 zoeng6
-魔高一丈，道高一尺	mo1 gou1 jat1 zoeng6 dou6 gou1 jat1 cek3
+魔高一丈	mo1 gou1 jat1 zoeng6
 魔宮	mo1 gung1
 魔宮傳奇	mo1 gung1 zyun6 kei4
 魔怪	mo1 gwaai3
@@ -142014,7 +142016,6 @@ import_tables:
 判讀	pun3 duk6
 判斷	pun3 dyun3
 判斷力	pun3 dyun3 lik6
-判㫁	pun3 dyun6
 判斷	pun3 dyun6
 判監	pun3 gaam1
 判感化	pun3 gam2 faa3
@@ -144585,7 +144586,6 @@ import_tables:
 西天	sai1 tin1
 西鐵	sai1 tit3
 西鐵綫	sai1 tit3 sin3
-西鐵線	sai1 tit3 sin3
 西屯區	sai1 tyun4 keoi1
 西華	sai1 waa4
 西華縣	sai1 waa4 jyun6
@@ -144957,6 +144957,7 @@ import_tables:
 細個仔	sai3 go3 zai2
 細個仔嗰陣	sai3 go3 zai2 go2 zan6
 勢降	sai3 gong3
+勢高益危	sai3 gou1 jik1 ngai4
 細姑	sai3 gu1
 勢孤力弱	sai3 gu1 lik6 joek6
 勢估唔到	sai3 gu2 m4 dou3
@@ -145096,7 +145097,7 @@ import_tables:
 勢所必然	sai3 so2 bit1 jin4
 勢所難免	sai3 so2 naan4 min5
 勢想不到	sai3 soeng2 bat1 dou2
-世上無難事，只怕有心人	sai3 soeng5 mou4 naan4 si6 zi2 paa3 jau5 sam1 jan4
+世上無難事	sai3 soeng5 mou4 naan4 si6
 世上	sai3 soeng6
 細數	sai3 sou2
 細訴	sai3 sou3
@@ -162843,7 +162844,6 @@ import_tables:
 天下無不是之父母	tin1 haa6 mou4 bat1 si6 zi1 fu6 mou5
 天下無敵	tin1 haa6 mou4 dik6
 天下無難事	tin1 haa6 mou4 naan4 si6
-天下無難事，只怕有心人	tin1 haa6 mou4 naan4 si6 zi2 paa3 jau5 sam1 jan4
 天下無雙	tin1 haa6 mou4 soeng1
 天下沒有不散的宴席	tin1 haa6 mut6 jau5 bat1 saan3 dik1 jin3 zik6
 天下沒有不散的筵席	tin1 haa6 mut6 jau5 bat1 saan3 dik1 jin4 zik6
@@ -176897,6 +176897,7 @@ import_tables:
 紙尿片	zi2 niu6 pin2
 子囊菌	zi2 nong4 kwan2
 只怕	zi2 paa3
+只怕有心人	zi2 paa3 jau5 sam1 jan4
 紙牌	zi2 paai2
 指派	zi2 paai3
 紙皮	zi2 pei4
