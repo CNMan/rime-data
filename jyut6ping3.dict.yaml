@@ -570,7 +570,6 @@ import_tables:
 闆	baan2
 阪	baan2
 魬	baan2
-扮	baan3
 丬	baan6	0%
 埿	baan6	0%
 扮	baan6
@@ -5607,7 +5606,6 @@ import_tables:
 琔	din6	0%
 甸	din6
 癜	din6
-跈	din6
 鈿	din6
 電	din6
 靛	din6
@@ -33257,7 +33255,7 @@ import_tables:
 𦭒	zing3
 㣏	zing6
 䝼	zing6
-凈	zing6
+凈	zing6 3%
 凊	zing6
 剩	zing6	3%
 坓	zing6	0%
@@ -37690,16 +37688,6 @@ import_tables:
 版築	baan2 zuk1
 版主	baan2 zyu2
 板磚	baan2 zyun1
-扮家家酒	baan3 gaa1 gaa1 zau2
-扮蟹	baan3 haai5
-扮酷	baan3 huk6
-扮演	baan3 jin2
-扮呢扮嚕	baan3 ni1 baan3 lou3
-扮呢扮路	baan3 ni1 baan3 lou3
-扮傻	baan3 so4
-扮相	baan3 soeng3
-扮裝皇后	baan3 zong1 wong4 hau6
-扮煮飯仔	baan3 zyu2 faan6 zai2
 辦不到	baan6 bat1 dou3
 辦報	baan6 bou3
 扮蠢	baan6 ceon2
@@ -37712,6 +37700,7 @@ import_tables:
 辦到	baan6 dou3
 辦法	baan6 faat3
 辦貨	baan6 fo3
+扮家家酒	baan6 gaa1 gaa1 zau2
 扮嗰樣似嗰樣	baan6 go2 joeng6 ci5 go2 joeng6
 辦館	baan6 gun2
 扮工	baan6 gung1
@@ -37733,6 +37722,7 @@ import_tables:
 辦好	baan6 hou2
 扮好人	baan6 hou2 jan4
 扮豪	baan6 hou4
+扮酷	baan6 huk6
 扮嘢	baan6 je5
 扮演	baan6 jin2
 扮英雄	baan6 jing1 hung4
@@ -37741,6 +37731,8 @@ import_tables:
 扮靚靚	baan6 leng3 leng3
 扮老醒	baan6 lou5 sing2
 扮懵	baan6 mung2
+扮呢扮嚕	baan6 ni1 baan6 lou3
+扮呢扮路	baan6 ni1 baan6 lou3
 辦年貨	baan6 nin4 fo3
 辦案	baan6 on3
 扮晒串	baan6 saai3 cyun3
@@ -37766,8 +37758,10 @@ import_tables:
 辦咗	baan6 zo2
 扮作	baan6 zok3
 扮裝	baan6 zong1
+扮裝皇后	baan6 zong1 wong4 hau6
 扮豬吃老虎	baan6 zyu1 hek3 lou5 fu2
 扮豬食老虎	baan6 zyu1 sik6 lou5 fu2
+扮煮飯仔	baan6 zyu2 faan6 zai2
 嘭嘭聲	baang4 baang2 seng1
 嘭嘭聲	baang4 baang4 seng1
 嘭一聲	baang4 jat1 seng1
@@ -40320,9 +40314,8 @@ import_tables:
 畀電話	bei2 din6 waa6
 吡啶	bei2 ding6
 畀都唔	bei2 dou1 m4
-畀翻	bei2 faan1
 畀返	bei2 faan1
-畀翻錢	bei2 faan1 cin2
+畀返錢	bei2 faan1 cin2
 比分	bei2 fan1
 比佛利山	bei2 fat6 lei6 saan1
 畀非士	bei2 fei1 si2
@@ -42911,8 +42904,6 @@ import_tables:
 寶島	bou2 dou2
 補花	bou2 faa1
 補返	bou2 faan1
-補番數	bou2 faan1 sou3
-補翻數	bou2 faan1 sou3
 補返數	bou2 faan1 sou3
 保飯碗	bou2 faan6 wun2
 補法	bou2 faat3
@@ -48493,9 +48484,7 @@ import_tables:
 出花臣	ceot1 faa1 san2
 出番啖氣	ceot1 faan1 daam6 hei3
 出返啖氣	ceot1 faan1 daam6 hei3
-出翻嚟	ceot1 faan1 lai4
 出返嚟	ceot1 faan1 lai4
-出翻嚟	ceot1 faan1 lei4
 出返嚟	ceot1 faan1 lei4
 出飯	ceot1 faan6
 出發	ceot1 faat3
@@ -54575,7 +54564,7 @@ import_tables:
 穿咗	cyun1 zo2
 穿咗窿	cyun1 zo2 lung1
 穿着	cyun1 zoek3
-穿着打扮	cyun1 zoek3 daa2 baan3
+穿着打扮	cyun1 zoek3 daa2 baan6
 穿着講究	cyun1 zoek3 gong2 gau3
 村長	cyun1 zoeng2
 穿鑿	cyun1 zok6
@@ -55197,7 +55186,6 @@ import_tables:
 打敗仗	daa2 baai6 zoeng3
 打白鴿轉	daa2 baak6 gaap3 zyun3
 打白條	daa2 baak6 tiu4
-打扮	daa2 baan3
 打扮	daa2 baan6
 打扮成	daa2 baan6 sing4
 打八爪	daa2 baat3 zaau2
@@ -59098,7 +59086,6 @@ import_tables:
 德清縣	dak1 cing1 jyun6
 得逞	dak1 cing2
 得切	dak1 cit3
-得撤	dak1 cit3
 德昌	dak1 coeng1
 德昌縣	dak1 coeng1 jyun6
 德才	dak1 coi4
@@ -59641,7 +59628,7 @@ import_tables:
 登機樓	dang1 gei1 lau4
 登機廊橋	dang1 gei1 long4 kiu4
 登機門	dang1 gei1 mun4
-登機牌	dang1 gei1 paai4
+登機牌	dang1 gei1 paai2
 登機手續	dang1 gei1 sau2 zuk6
 登機手續櫃檯	dang1 gei1 sau2 zuk6 gwai6 toi2
 登機證	dang1 gei1 zing3
@@ -61463,11 +61450,8 @@ import_tables:
 顛三倒四	din1 saam1 dou2 sei3
 典押	din2 aat3
 典藏	din2 cong4
-典牀典蓆	din2 cong4 din2 zek6
-捵牀捵席	din2 cong4 din2 zek6
-痶牀痶席	din2 cong4 din2 zek6
+捵牀捵蓆	din2 cong4 din2 zek6
 捵地	din2 dei2
-跈地	din2 dei2
 捵地沙	din2 dei6 saa1
 典當	din2 dong3
 碘化鉀	din2 faa3 gaap3
@@ -61476,6 +61460,7 @@ import_tables:
 典範	din2 faan6
 典解	din2 gaai2
 典故	din2 gu3
+捵下捵下	din2 haa5 din2 haa5
 典型	din2 jing4
 典型登革熱	din2 jing4 dang1 gaak3 jit6
 典型調查	din2 jing4 diu6 caa4
@@ -61484,6 +61469,8 @@ import_tables:
 墊褥	din2 juk2
 典獄長	din2 juk6 zoeng2
 典禮	din2 lai5
+捵嚟捵去	din2 lai4 din2 heoi3
+捵嚟捵去	din2 lei4 din2 heoi3
 典雅	din2 ngaa5
 碘酸	din2 syun1
 典質	din2 zat1
@@ -65372,7 +65359,7 @@ import_tables:
 短處	dyun2 cyu3
 短傳	dyun2 cyun4
 短打	dyun2 daa2
-短打扮	dyun2 daa2 baan3
+短打扮	dyun2 daa2 baan6
 短笛	dyun2 dek6
 短多	dyun2 do1
 短度闊封	dyun2 dou2 fut3 fung1
@@ -66177,9 +66164,7 @@ import_tables:
 幡杆燈籠	faan1 gon1 dang1 lung4
 翻江倒海	faan1 gong1 dou2 hoi2
 翻供	faan1 gung1
-翻工	faan1 gung1
 返工	faan1 gung1
-翻公司	faan1 gung1 si1
 返公司	faan1 gung1 si1
 番瓜	faan1 gwaa1
 返歸	faan1 gwai1
@@ -66250,7 +66235,6 @@ import_tables:
 翻企	faan1 kei2
 返企	faan1 kei2
 翻卷	faan1 kyun4
-翻嚟	faan1 lai4
 返嚟	faan1 lai4
 番荔枝	faan1 lai6 zi1
 返嚟	faan1 lei4
@@ -66264,7 +66248,6 @@ import_tables:
 翻老賬	faan1 lou5 zoeng3
 番路	faan1 lou6
 番路鄉	faan1 lou6 hoeng1
-翻唔切	faan1 m4 cit3
 返唔切	faan1 m4 cit3
 番蠻	faan1 maan4
 番麥	faan1 mak6
@@ -66326,7 +66309,6 @@ import_tables:
 翻天覆地	faan1 tin1 fuk1 dei6
 返天家	faan1 tin1 gaa1
 翻糖	faan1 tong4
-翻屋企	faan1 uk1 kei2
 返屋企	faan1 uk1 kei2
 返屋企飲奶	faan1 uk1 kei2 jam2 naai5
 返屋企咬蔗	faan1 uk1 kei2 ngaau5 ze3
@@ -66343,7 +66325,6 @@ import_tables:
 翻造	faan1 zou6
 番族	faan1 zuk6
 翻轉	faan1 zyun3
-翻轉頭	faan1 zyun3 tau4
 返轉頭	faan1 zyun3 tau4
 反敗爲勝	faan2 baai6 wai4 sing3
 反白	faan2 baak6
@@ -70190,6 +70171,7 @@ import_tables:
 放射性碎片	fong3 se6 sing3 seoi3 pin2
 放射性同位素	fong3 se6 sing3 tung4 wai2 sou3
 放射性同位素	fong3 se6 sing3 tung4 wai6 sou3
+放射性威脅	fong3 se6 sing3 wai1 hip3
 放射性污染	fong3 se6 sing3 wu1 jim5
 放射性活度	fong3 se6 sing3 wut6 dou6
 放射性最強點	fong3 se6 sing3 zeoi3 koeng4 dim2
@@ -73302,7 +73284,6 @@ import_tables:
 加總	gaa1 zung2
 加注	gaa1 zyu3
 賈伯斯	gaa2 baak3 si1
-假扮	gaa2 baan3
 假扮	gaa2 baan6
 假膊	gaa2 bok3
 賈寶玉	gaa2 bou2 juk2
@@ -73449,7 +73430,6 @@ import_tables:
 價錢	gaa3 cin2
 價錢	gaa3 cin4
 價錢牌	gaa3 cin4 paai2
-價錢牌	gaa3 cin4 paai4
 架設	gaa3 cit3
 假單	gaa3 daan1
 價電子	gaa3 din6 zi2
@@ -75738,7 +75718,7 @@ import_tables:
 計都	gai3 dou1
 計到	gai3 dou3
 檵花	gai3 faa1
-計翻條數	gai3 faan1 tiu4 sou3
+計返條數	gai3 faan1 tiu4 sou3
 計分	gai3 fan1
 計分卡	gai3 fan1 kaat1
 計分環	gai3 fan1 waan4
@@ -80470,7 +80450,6 @@ import_tables:
 結晶水	git3 zing1 seoi2
 結晶體	git3 zing1 tai2
 結晶狀	git3 zing1 zong6
-潔凈	git3 zing6
 潔淨	git3 zing6
 潔淨無瑕	git3 zing6 mou4 haa4
 結節	git3 zit3
@@ -80800,9 +80779,7 @@ import_tables:
 嗰日	go2 jat6
 嗰晚	go2 maan5
 嗰排	go2 paai2
-嗰牌	go2 paai2
 嗰排	go2 paai4
-嗰牌	go2 paai4
 嗰時	go2 si2
 嗰時	go2 si4
 嗰處	go2 syu3
@@ -81333,7 +81310,7 @@ import_tables:
 各式	gok3 sik1
 各色	gok3 sik1
 角色	gok3 sik1
-角色扮演遊戲	gok3 sik1 baan3 jin2 jau4 hei3
+角色扮演遊戲	gok3 sik1 baan6 jin2 jau4 hei3
 角色設定	gok3 sik1 cit3 ding6
 各式各樣	gok3 sik1 gok3 joeng6
 各色各樣	gok3 sik1 gok3 joeng6
@@ -81522,7 +81499,6 @@ import_tables:
 乾塘	gon1 tong4
 乾噌噌	gon1 zang1 zang1
 乾爭爭	gon1 zang1 zang1
-乾凈	gon1 zeng6
 乾淨	gon1 zeng6
 乾淨企理	gon1 zeng6 kei5 lei5
 乾淨俐落	gon1 zeng6 lei6 lok6
@@ -81579,7 +81555,6 @@ import_tables:
 趕浪頭	gon2 long6 tau4
 趕路	gon2 lou6
 趕唔切	gon2 m4 cit3
-趕唔撤	gon2 m4 cit3
 趕唔得切	gon2 m4 dak1 cit3
 擀麪杖	gon2 min6 zoeng6
 趕明兒	gon2 ming4 ji4
@@ -81875,7 +81850,6 @@ import_tables:
 港督府	gong2 duk1 fu2
 港獨	gong2 duk6
 講返	gong2 faan1
-講翻轉頭	gong2 faan1 zyun3 tau4
 講返轉頭	gong2 faan1 zyun3 tau4
 講法	gong2 faat3
 港埠	gong2 fau6
@@ -86051,8 +86025,6 @@ import_tables:
 骨癌	gwat1 ngaam4
 骨牌	gwat1 paai2
 骨牌效應	gwat1 paai2 haau6 jing3
-骨牌	gwat1 paai4
-骨牌效應	gwat1 paai4 haau6 jing3
 橘皮組織	gwat1 pei4 zou2 zik1
 骨片	gwat1 pin3
 骨盆	gwat1 pun4
@@ -87194,7 +87166,6 @@ import_tables:
 廣角鏡頭	gwong2 gok3 geng3 tau4
 廣告	gwong2 gou3
 廣告牌	gwong2 gou3 paai2
-廣告牌	gwong2 gou3 paai4
 廣告片	gwong2 gou3 pin2
 廣告衫	gwong2 gou3 saam1
 廣告商	gwong2 gou3 soeng1
@@ -88571,10 +88542,7 @@ import_tables:
 慳啲使	haan1 di1 sai2
 慳電	haan1 din6
 慳電膽	haan1 din6 daam2
-慳翻	haan1 faan1
 慳返	haan1 faan1
-慳番啖氣	haan1 faan1 daam6 hei3
-慳翻啖氣	haan1 faan1 daam6 hei3
 慳返啖氣	haan1 faan1 daam6 hei3
 慳家	haan1 gaa1
 慳雞	haan1 gai1
@@ -88739,7 +88707,6 @@ import_tables:
 行花街	haang4 faa1 gaai1
 行花市	haang4 faa1 si5
 行返	haang4 faan1
-行翻去	haang4 faan1 heoi3
 行返去	haang4 faan1 heoi3
 行街	haang4 gaai1
 行街街	haang4 gaai1 gaai1
@@ -96013,10 +95980,7 @@ import_tables:
 好端端	hou2 dyun1 dyun1
 好快過	hou2 faai3 gwo3
 好快手	hou2 faai3 sau2
-好番	hou2 faan1
-好翻	hou2 faan1
 好返	hou2 faan1
-好返	hou2 faan2
 好飯不怕晚	hou2 faan6 bat1 paa3 maan5
 好瞓	hou2 fan3
 好方	hou2 fong1
@@ -98200,7 +98164,6 @@ import_tables:
 淫棍	jam4 gwan3
 淫行	jam4 hang6
 檐口	jam4 hau2
-任何	jam4 ho4
 壬寅	jam4 jan4
 淫逸	jam4 jat6
 任丘	jam4 jau1
@@ -105620,10 +105583,9 @@ import_tables:
 燃料電池	jin4 liu2 din6 ci4
 燃料油	jin4 liu2 jau4
 燃料元件細棒	jin4 liu2 jyun4 gin2 sai3 paang5
+燃料棒	jin4 liu2 paang5
 燃料芯塊	jin4 liu2 sam1 faai3
 燃料組合	jin4 liu2 zou2 hap6
-燃料	jin4 liu6
-燃料油	jin4 liu6 jau4
 賢良	jin4 loeng4
 賢勞	jin4 lou4
 言路	jin4 lou6
@@ -113784,7 +113746,6 @@ import_tables:
 葵青區	kwai4 cing1 keoi1
 攜程旅行網	kwai4 cing4 leoi5 hang4 mong5
 葵涌	kwai4 cung1
-㩗帶	kwai4 daai3
 攜帶	kwai4 daai3
 攜帶者	kwai4 daai3 ze2
 葵花	kwai4 faa1
@@ -115559,7 +115520,6 @@ import_tables:
 黎川	lai4 cyun1
 黎川縣	lai4 cyun1 jyun6
 嚟得切	lai4 dak1 cit3
-嚟得撤	lai4 dak1 cit3
 嚟得啱	lai4 dak1 ngaam1
 犁地	lai4 dei6
 嚟㗎	lai4 gaa3
@@ -115582,7 +115542,6 @@ import_tables:
 嚟臨	lai4 lam4
 嚟料	lai4 liu2
 嚟唔切	lai4 m4 cit3
-嚟唔撤	lai4 m4 cit3
 嚟唔得切	lai4 m4 dak1 cit3
 黎曼	lai4 maan6
 黎曼幾何	lai4 maan6 gei2 ho4
@@ -116427,10 +116386,7 @@ import_tables:
 硫化	lau4 faa3
 硫化氫	lau4 faa3 hing1
 流花路	lau4 faa3 lou6
-留番	lau4 faan1
-留翻	lau4 faan1
 留返	lau4 faan1
-留番拜山先講	lau4 faan1 baai3 saan1 sin1 gong2
 留返拜山先講	lau4 faan1 baai3 saan1 sin1 gong2
 婁煩	lau4 faan4
 婁煩縣	lau4 faan4 jyun6
@@ -118762,9 +118718,7 @@ import_tables:
 拎出嚟	ling1 ceot1 lai4
 拎出嚟	ling1 ceot1 lei4
 拎得起放得低	ling1 dak1 hei2 fong3 dak1 dai1
-拎翻去	ling1 faan1 heoi3
 拎返去	ling1 faan1 heoi3
-拎翻屋企	ling1 faan1 uk1 kei2
 拎返屋企	ling1 faan1 uk1 kei2
 軨蓋	ling1 goi3
 鈴蓋	ling1 goi3
@@ -119565,11 +119519,8 @@ import_tables:
 裸地化	lo2 dei6 faa3
 攞掂	lo2 dim6
 攞到	lo2 dou2
-攞翻	lo2 faan1
 攞返	lo2 faan1
-攞翻公道	lo2 faan1 gung1 dou6
 攞返公道	lo2 faan1 gung1 dou6
-攞翻去	lo2 faan1 heoi3
 攞返去	lo2 faan1 heoi3
 裸婚	lo2 fan1
 攞苦嚟辛	lo2 fu2 lai4 san1
@@ -120291,7 +120242,7 @@ import_tables:
 兩粒	loeng5 nap1
 兩粒花	loeng5 nap1 faa1
 兩粒一班	loeng5 nap1 jat1 baan1
-兩粒一扮	loeng5 nap1 jat1 baan3
+兩粒一扮	loeng5 nap1 jat1 baan6
 兩粒一瓣	loeng5 nap1 jat1 faan6
 兩眼溼溼	loeng5 ngaan5 sap1 sap1
 兩訖	loeng5 ngat6
@@ -123074,7 +123025,6 @@ import_tables:
 唔清楚	m4 cing1 co2
 唔清唔楚	m4 cing1 m4 co2
 唔切	m4 cit3
-唔撤	m4 cit3
 唔錯	m4 co3
 唔錯唔錯	m4 co3 m4 co3
 唔睬佢	m4 coi2 keoi5
@@ -123099,7 +123049,6 @@ import_tables:
 唔抵得諗	m4 dai2 dak1 nam2
 唔得	m4 dak1
 唔得切	m4 dak1 cit3
-唔得撤	m4 dak1 cit3
 唔得掂	m4 dak1 dim6
 唔得𠶧	m4 dak1 dim6
 唔得閒	m4 dak1 haan4
@@ -128291,7 +128240,6 @@ import_tables:
 明政	ming4 zing3
 明證	ming4 zing3
 名正言順	ming4 zing3 jin4 seon6
-明凈	ming4 zing6
 明淨	ming4 zing6
 名節	ming4 zit3
 明哲	ming4 zit3
@@ -132148,7 +132096,6 @@ import_tables:
 南亞大草鶯	naam4 aa3 daai6 cou2 ang1
 南亞區域合作聯盟	naam4 aa3 keoi1 wik6 hap6 zok3 lyun4 mang4
 南歐	naam4 au1
-男扮女裝	naam4 baan3 neoi5 zong1
 男扮女裝	naam4 baan6 neoi5 zong1
 南北	naam4 bak1
 南北朝	naam4 bak1 ciu4
@@ -132900,9 +132847,7 @@ import_tables:
 諗得過	nam2 dak1 gwo3
 恁掂	nam2 dim6
 諗掂	nam2 dim6
-諗翻	nam2 faan1
 諗返	nam2 faan1
-諗翻轉頭	nam2 faan1 zyun3 tau4
 諗返轉頭	nam2 faan1 zyun3 tau4
 諗法	nam2 faat3
 恁計	nam2 gai2
@@ -133228,7 +133173,6 @@ import_tables:
 呢呢嚕嚕	nei1 nei1 lou3 lou3
 呢排	nei1 paai2
 呢排	nei1 paai4
-呢牌	nei1 paai4
 呢篇	nei1 pin1
 呢處	nei1 syu3
 呢頭	nei1 tau4
@@ -133540,7 +133484,7 @@ import_tables:
 女女	neoi4 neoi1
 囡囡	neoi4 neoi2
 女女	neoi4 neoi2
-女扮男裝	neoi5 baan3 naam4 zong1
+女扮男裝	neoi5 baan6 naam4 zong1
 女儐相	neoi5 ban1 soeng3
 女僕	neoi5 buk6
 女伴	neoi5 bun6
@@ -147834,7 +147778,7 @@ import_tables:
 修道會	sau1 dou6 wui2
 修道張	sau1 dou6 zoeng3
 收冬	sau1 dung1
-收翻	sau1 faan1
+收返	sau1 faan1
 收發	sau1 faat3
 收發短信	sau1 faat3 dyun2 seon3
 收發室	sau1 faat3 sat1
@@ -153022,6 +152966,8 @@ import_tables:
 色光	sik1 gwong1
 釋卷	sik1 gyun2
 識行識走	sik1 haang4 sik1 zau2
+識閪	sik1 hai1
+識閪咩	sik1 hai1 me1
 色系	sik1 hai6
 適合	sik1 hap6
 息口	sik1 hau2
@@ -153106,6 +153052,7 @@ import_tables:
 釋名	sik1 ming4
 熄滅	sik1 mit6
 色魔	sik1 mo1
+識毛毛	sik1 mou4 mou1
 拭目	sik1 muk6
 色目	sik1 muk6
 色目人	sik1 muk6 jan4
@@ -153115,6 +153062,7 @@ import_tables:
 識諗	sik1 nam2
 悉尼	sik1 nei4
 悉尼老鼠	sik1 nei4 lou5 syu2
+識你	sik1 nei5
 釋念	sik1 nim6
 昔年	sik1 nin4
 息怒	sik1 nou6
@@ -153167,6 +153115,7 @@ import_tables:
 識睇	sik1 tai2
 識睇人眉頭眼額	sik1 tai2 jan4 mei4 tau4 ngaan5 ngaak6
 識聽	sik1 teng1
+識條毛	sik1 tiu4 mou4
 識條鐵	sik1 tiu4 tit3
 識途老馬	sik1 tou4 lou5 maa5
 蜥臀目	sik1 tyun4 muk6
@@ -153283,7 +153232,7 @@ import_tables:
 食道	sik6 dou6
 食道癌	sik6 dou6 ngaam4
 食花生	sik6 faa1 sang1
-食翻餐勁嘅	sik6 faan1 caan1 ging6 ge3
+食返餐勁嘅	sik6 faan1 caan1 ging6 ge3
 食飯	sik6 faan6
 食飯檯	sik6 faan6 toi2
 食法	sik6 faat3
@@ -153316,7 +153265,6 @@ import_tables:
 食季	sik6 gwai3
 食果果	sik6 gwo2 gwo2
 食過	sik6 gwo3
-食過番尋味	sik6 gwo3 faan1 cam4 mei6
 食過翻尋味	sik6 gwo3 faan1 cam4 mei6
 食過返尋味	sik6 gwo3 faan1 cam4 mei6
 食過夜粥	sik6 gwo3 je6 zuk1
@@ -168684,7 +168632,7 @@ import_tables:
 搵刀切	wan2 dou1 cit3
 搵到	wan2 dou2
 搵快錢	wan2 faai3 cin2
-搵翻	wan2 faan1
+搵返	wan2 faan1
 搵飯食	wan2 faan6 sik6
 搵機會	wan2 gei1 wui6
 穩健	wan2 gin6
@@ -168732,7 +168680,7 @@ import_tables:
 搵路	wan2 lou6
 搵窿捐	wan2 lung1 gyun1
 搵唔到	wan2 m4 dou2
-搵唔翻	wan2 m4 faan1
+搵唔返	wan2 m4 faan1
 搵唔搵到	wan2 m4 wan2 dou2
 搵米路	wan2 mai5 lou6
 搵乜嘢	wan2 mat1 je5
@@ -173947,12 +173895,9 @@ import_tables:
 執董	zap1 dung2
 執番梘	zap1 faan1 gaan2
 執返一身彩	zap1 faan1 jat1 san1 coi2
-執翻身彩	zap1 faan1 san1 coi2
-執番條命	zap1 faan1 tiu4 meng6
-執翻條命	zap1 faan1 tiu4 meng6
+執返身彩	zap1 faan1 san1 coi2
+執返條命	zap1 faan1 tiu4 meng6
 執返條命仔	zap1 faan1 tiu4 meng6 zai2
-執番條命	zap1 faan1 tiu4 ming6
-執番劑	zap1 faan1 zai1
 執返劑	zap1 faan1 zai1
 執法	zap1 faat3
 輯髮腳	zap1 faat3 goek3
@@ -175291,7 +175236,6 @@ import_tables:
 鄭玄	zeng6 jyun4
 鄭碼	zeng6 maa5
 鄭夢準	zeng6 mung6 zeon2
-凈身出戶	zeng6 san1 ceot1 wu6
 鄭秀文	zeng6 sau3 man4
 鄭成功	zeng6 sing4 gung1
 鄭濤	zeng6 tou4
@@ -179177,10 +179121,10 @@ import_tables:
 整頓	zing2 deon6
 整定	zing2 ding6
 整到	zing2 dou2
-整翻	zing2 faan1
+整返	zing2 faan1
 整返幾味	zing2 faan1 gei2 mei2
-整翻幾味	zing2 faan1 gei2 mei6
-整翻好	zing2 faan1 hou2
+整返幾味	zing2 faan1 gei2 mei6
+整返好	zing2 faan1 hou2
 整飯	zing2 faan6
 整訓	zing2 fan3
 整風	zing2 fung1
@@ -179687,7 +179631,6 @@ import_tables:
 靜電感應	zing6 din6 gam2 jing3
 淨化	zing6 faa3
 剩番	zing6 faan1
-剩翻	zing6 faan1
 剩返	zing6 faan1
 剩飯	zing6 faan6
 靜雞雞	zing6 gai1 gai1
@@ -179700,7 +179643,6 @@ import_tables:
 靖國	zing6 gwok3
 靖國神社	zing6 gwok3 san4 se5
 剩下	zing6 haa6
-凈係	zing6 hai6
 剩係	zing6 hai6
 淨係	zing6 hai6
 淨含量	zing6 ham4 loeng6
@@ -179751,8 +179693,9 @@ import_tables:
 靖西	zing6 sai1
 靖西縣	zing6 sai1 jyun6
 靜心	zing6 sam1
-凈心修身	zing6 sam1 sau1 san1
-凈身	zing6 san1
+淨心修身	zing6 sam1 sau1 san1
+淨身	zing6 san1
+淨身出戶	zing6 san1 ceot1 wu6
 淨收入	zing6 sau1 jap6
 淨手	zing6 sau2
 淨水	zing6 seoi2
@@ -181876,8 +181819,7 @@ import_tables:
 濯濯	zok6 zok6
 昨早	zok6 zou2
 濯足	zok6 zuk1
-妝扮	zong1 baan3
-裝扮	zong1 baan3
+妝扮	zong1 baan6
 裝扮	zong1 baan6
 裝不裝	zong1 bat1 zong1
 裝屄	zong1 bei1
@@ -182224,9 +182166,7 @@ import_tables:
 祖傳	zou2 cyun4
 組隊	zou2 deoi6
 早啲	zou2 di1
-早啲翻嚟	zou2 di1 faan1 lai4
 早啲返嚟	zou2 di1 faan1 lai4
-早啲翻嚟	zou2 di1 faan1 lei4
 早啲返嚟	zou2 di1 faan1 lei4
 早啲瞓	zou2 di1 fan3
 早點	zou2 dim2
