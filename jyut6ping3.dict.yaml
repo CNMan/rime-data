@@ -7806,7 +7806,6 @@ import_tables:
 闊	fut3
 㗎	ga3
 嘎	ga4
-噶	ga6
 㔔	gaa1	0%
 㔖	gaa1	0%
 㖙	gaa1	0%
@@ -7823,7 +7822,7 @@ import_tables:
 傢	gaa1
 加	gaa1
 嘉	gaa1
-噶	gaa1	3%
+噶	gaa1	5%
 家	gaa1
 尕	gaa1
 枷	gaa1
@@ -8185,7 +8184,7 @@ import_tables:
 呷	gaat3	3%
 嘎	gaat3
 嘠	gaat3	0%
-噶	gaat3
+噶	gaat3	3%
 尜	gaat3
 恝	gaat3
 戛	gaat3
@@ -9733,7 +9732,7 @@ import_tables:
 䈓	got3
 割	got3
 匄	got3	3%
-噶	got3
+噶	got3	3%
 嶱	got3
 獦	got3
 葛	got3
@@ -21599,7 +21598,8 @@ import_tables:
 鮇	mei6
 𥧌	mei6
 𧙕	mei6
-名	meng2	3%
+喵	meu1
+名	meng2
 名	meng4	3%
 命	meng6	3%
 咪	mi1	3%
@@ -21710,7 +21710,7 @@ import_tables:
 䊅	ming4
 䳟	ming4
 冥	ming4
-名	ming4
+名	ming4	3%
 嫇	ming4
 明	ming4
 暝	ming4
@@ -21786,7 +21786,7 @@ import_tables:
 鴓	mit6	0%
 𩴾	mit6
 咪	miu1	3%
-喵	miu1
+喵	miu1	3%
 廟	miu2	3%
 𠴕	miu2
 䁧	miu4
@@ -39202,6 +39202,7 @@ import_tables:
 筆記本計算機	bat1 gei3 bun2 gai3 syun3 gei1
 筆記型電腦	bat1 gei3 jing4 din6 nou5
 不記名	bat1 gei3 meng2
+不記名	bat1 gei3 ming4
 不記名投票	bat1 gei3 ming4 tau4 piu3
 不舉	bat1 geoi2
 不兼容性	bat1 gim1 jung4 sing3
@@ -48715,7 +48716,6 @@ import_tables:
 出牌	ceot1 paai4
 出盤	ceot1 pun4
 出晒名	ceot1 saai3 meng2
-出晒名	ceot1 saai3 meng4
 出晒位	ceot1 saai3 wai2
 出山	ceot1 saan1
 出生	ceot1 saang1
@@ -49579,6 +49579,7 @@ import_tables:
 纖微	cim1 mei4
 纖美	cim1 mei5
 簽名	cim1 meng2
+簽名簿	cim1 meng2 bou2
 簽名會	cim1 meng2 wui2
 簽名	cim1 ming4
 殲滅	cim1 mit6
@@ -53155,8 +53156,10 @@ import_tables:
 操屄	cou1 bei1
 操逼	cou1 bik1
 操兵	cou1 bing1
+操膊	cou1 bok3
 粗布	cou1 bou3
 粗暴	cou1 bou6
+操背	cou1 bui3
 粗茶淡飯	cou1 caa4 daam6 faan6
 操持	cou1 ci4
 粗纖維	cou1 cim1 wai4
@@ -53181,6 +53184,7 @@ import_tables:
 粗放	cou1 fong3
 操斧伐柯	cou1 fu2 fat6 o1
 操肌	cou1 gei1
+操腳	cou1 goek3
 操觚	cou1 gu1
 粗估	cou1 gu2
 粗管麪	cou1 gun2 min6
@@ -53195,6 +53199,7 @@ import_tables:
 粗糠	cou1 hong1
 操航	cou1 hong4
 粗豪	cou1 hou4
+操胸	cou1 hung1
 操控	cou1 hung3
 操控杆	cou1 hung3 gon1
 粗人	cou1 jan4
@@ -67331,6 +67336,7 @@ import_tables:
 發抆憎	faat3 mang2 zang2
 發𤷪𤺧	faat3 mang2 zang2
 髮尾	faat3 mei5
+法名	faat3 meng2
 發麪	faat3 min6
 法名	faat3 ming4
 發明	faat3 ming4
@@ -73028,9 +73034,6 @@ import_tables:
 加強	gaa1 koeng4
 加強管制	gaa1 koeng4 gun2 zai3
 加權平均	gaa1 kyun4 ping4 gwan1
-嘎啦	gaa1 laa1
-噶喇	gaa1 laa1
-噶拉	gaa1 laai1
 加拉巴哥斯	gaa1 laai1 baa1 go1 si1
 加拉巴哥斯羣島	gaa1 laai1 baa1 go1 si1 kwan4 dou2
 加拉加斯	gaa1 laai1 gaa1 si1
@@ -73418,7 +73421,6 @@ import_tables:
 假種皮	gaa2 zung2 pei4
 駕崩	gaa3 bang1
 架不住	gaa3 bat1 zyu6
-咖逼	gaa3 bik1
 假膊	gaa3 bok3
 架步	gaa3 bou6
 駕步	gaa3 bou6
@@ -73450,7 +73452,6 @@ import_tables:
 咖啡因	gaa3 fe1 jan1
 咖啡佬	gaa3 fe1 lou2
 咖啡妹	gaa3 fe1 mui1
-咖啡妹	gaa3 fe1 mui6
 咖啡婆	gaa3 fe1 po2
 咖啡室	gaa3 fe1 sat1
 咖啡師	gaa3 fe1 si1
@@ -73495,13 +73496,12 @@ import_tables:
 架橋	gaa3 kiu4
 駕臨	gaa3 lam4
 假柳	gaa3 lau5
-加哩	gaa3 le1
-咖哩	gaa3 lei1
 咖喱	gaa3 lei1
 咖喱粉	gaa3 lei1 fan2
-咖哩雞	gaa3 lei1 gai1
 咖喱雞	gaa3 lei1 gai1
 咖喱角	gaa3 lei1 gok3
+咖喱魷魚	gaa3 lei1 jau4 jyu2
+咖喱魚蛋	gaa3 lei1 jyu4 daan2
 價廉物美	gaa3 lim4 mat6 mei5
 駕齡	gaa3 ling4
 架兩	gaa3 loeng2
@@ -73644,6 +73644,7 @@ import_tables:
 偕老	gaai1 lou5
 街路	gaai1 lou6
 佳美	gaai1 mei5
+街名	gaai1 meng2
 佳妙	gaai1 miu6
 街舞	gaai1 mou5
 佳木斯	gaai1 muk6 si1
@@ -84889,13 +84890,13 @@ import_tables:
 怪誕	gwaai3 daan3
 怪誕不經	gwaai3 daan3 bat1 ging1
 怪道	gwaai3 dou6
-怪咖	gwaai3 gaa3
 怪雞	gwaai3 gai1
 怪傑	gwaai3 git6
 怪叫	gwaai3 giu3
 怪怪地	gwaai3 gwaai2 dei2
 怪怪	gwaai3 gwaai3
 怪怪地	gwaai3 gwaai3 dei2
+怪咖	gwaai3 kaa1
 怪氣	gwaai3 hei3
 怪圈	gwaai3 hyun1
 怪人	gwaai3 jan4
@@ -112043,10 +112044,7 @@ import_tables:
 舅仔	kau5 zai2
 舅仔鞋	kau5 zai2 haai4
 茄瓜	ke1 gwaa1
-茄喱	ke1 le1
-咖哩啡	ke1 le1 fe1
 茄哩啡	ke1 le1 fe1
-茄喱啡	ke1 le1 fe1
 茄輪	ke1 leon2
 茄士咩	ke1 si6 me1
 茄萣	ke2 ding6
@@ -116607,6 +116605,7 @@ import_tables:
 流紋岩	lau4 man4 ngaam4
 流氓集團	lau4 man4 zaap6 tyun4
 流氓罪	lau4 man4 zeoi6
+留名	lau4 meng2
 留尾巴	lau4 mei5 baa1
 劉美君	lau4 mei5 gwan1
 樓面	lau4 min2
@@ -127490,7 +127489,10 @@ import_tables:
 命仔	meng6 zai2
 命仔都冇埋	meng6 zai2 dou1 mou5 maai4
 命正	meng6 zeng3
-咪錶	mi1 biu1
+喵喵	meu1 meu1
+喵喵喵	meu1 meu1 meu1
+喵喵喵喵喵	meu1 meu1 meu1 meu1 meu1
+喵星人	meu1 sing1 jan4
 咪媽爛臭	mi1 maa1 laan6 cau3
 眯埋	mi1 maai4
 咪埋眼	mi1 maai4 ngaan5
@@ -128375,7 +128377,6 @@ import_tables:
 滅絕	mit6 zyut6
 滅絕人性	mit6 zyut6 jan4 sing3
 滅絕種族	mit6 zyut6 zung2 zuk6
-喵星人	miu1 sing1 jan4
 𠴕𠴕嘴	miu2 miu2 zeoi2
 廟細燈籠大	miu2 sai3 dang1 lung4 daai6
 廟會	miu2 wui2
@@ -128975,13 +128976,13 @@ import_tables:
 網段	mong5 dyun6
 妄加	mong5 gaa1
 網架	mong5 gaa2
-網咖	mong5 gaa3
 網格	mong5 gaak3
 網禁	mong5 gam3
 網景	mong5 ging2
 網罟座	mong5 gu2 zo6
 罔顧	mong5 gu3
 網管	mong5 gun2
+網咖	mong5 kaa1
 網管系統	mong5 gun2 hai6 tung2
 網管員	mong5 gun2 jyun4
 網管網	mong5 gun2 mong5
@@ -150237,7 +150238,6 @@ import_tables:
 浽溦	seoi1 mei4
 衰微	seoi1 mei4
 衰名	seoi1 meng2
-衰名	seoi1 meng4
 衰明	seoi1 ming4
 衰滅	seoi1 mit6
 衰亡	seoi1 mong4
@@ -173359,10 +173359,10 @@ import_tables:
 真分數	zan1 fan1 sou3
 真否定句	zan1 fau2 ding6 geoi3
 真火滾	zan1 fo2 gwan2
-真噶	zan1 gaa1
 真傢伙	zan1 gaa1 fo2
 真家伙	zan1 gaa1 fo2
 真假	zan1 gaa2
+真㗎	zan1 gaa4
 真假難辨	zan1 gaa2 naan4 bin6
 真格	zan1 gaak3
 真金	zan1 gam1
@@ -180773,7 +180773,7 @@ import_tables:
 鵲報	zoek3 bou3
 雀巢	zoek3 caau4
 鵲巢鳩佔	zoek3 caau4 gau1 zim3
-雀巢咖啡	zoek3 caau4 kaa1 fei1
+雀巢咖啡	zoek3 caau4 gaa3 fe1
 酌情	zoek3 cing4
 酌情辦理	zoek3 cing4 baan6 lei5
 酌情處理	zoek3 cing4 cyu2 lei5
