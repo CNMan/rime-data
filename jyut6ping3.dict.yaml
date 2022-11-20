@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# jyut6ping3 - 粵拼詞庫
+#
+# Source: https://github.com/CanCLID/rime-cantonese-upstream
+
+---
+name: jyut6ping3
+version: "2022.03.17"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - jyut6ping3.chars
+  - jyut6ping3.words
+  - jyut6ping3.phrase
+  - jyut6ping3.lettered
+  - jyut6ping3.maps
+...

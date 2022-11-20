@@ -1,0 +1,106 @@
+# Rime schema: wubi06_tygfhzb_cjbcq
+# encoding: utf-8
+#
+# 新世紀五筆字型資源庫：https://06wb.github.io
+# 新世紀五筆字型QQ羣：38021162
+# 仅含《通用规范汉字表》8105字范围内的字和词语
+# 修正、统一了王码大一统新世纪版五笔字型错误编码
+# 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
+
+schema:
+  schema_id: wubi06_tygfhzb_cjbcq
+  name: "新世紀五筆通規詞庫版[出簡不出全](CNMan)"
+  version: “20221020”
+  author:
+    - 發明人 王永民先生
+    - 整理人 cnnexus5x@gmail.com
+  description: |
+    新世紀五筆字型資源庫：https://06wb.github.io
+    新世紀五筆字型QQ羣：38021162
+    敲 z 鍵進入拼音反查
+    敲 / 鍵進入symbols.yaml中的特殊字符輸入
+  dependencies:
+    - luna_pinyin
+    - symbols
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+    - reverse_lookup_translator
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@week_translator
+  filters:
+    - lua_filter@reverse_lookup_filter
+
+speller:
+  delimiter: " ;'"
+  max_code_length: 4
+  auto_select: true
+  auto_select_unique_candidate: true
+  use_space: false
+  auto_clear: max_length
+
+translator:
+  dictionary: wubi06_tygfhzb_cjbcq
+  enable_charset_filter: false
+  enable_encoder: false
+  encode_commit_history: false
+  max_phrase_length: 4
+  enable_completion: false
+  sentence_over_completion: false
+  strict_spelling: false
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_sentence: false
+  enable_user_dict: false
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "z"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "^z[a-z]*'?$"
+    punct: "/[a-z]*$"

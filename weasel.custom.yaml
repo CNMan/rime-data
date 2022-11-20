@@ -1,0 +1,59 @@
+# encoding: utf-8
+
+patch:
+  style:
+    color_scheme: dark_temple
+
+#https://github.com/googlefonts/noto-cjk
+#https://github.com/adobe-fonts/source-han-mono
+#https://github.com/adobe-fonts/source-han-sans
+#https://github.com/adobe-fonts/source-han-serif
+
+#Noto Serif CJK/Source Han Serif
+#    font_face: "Noto Serif CJK SC"	#思源宋体Google版中国大陆字形
+#    font_face: "Noto Serif CJK TC"	#思源宋体Google版中国台湾字形
+#    font_face: "Noto Serif CJK JP"	#思源宋体Google版日本字形
+#    font_face: "Noto Serif CJK KR"	#思源宋体Google版韩国字形
+
+#    font_face: "Source Han Serif SC"	#思源宋体Adobe版中国大陆字形
+#    font_face: "Source Han Serif TC"	#思源宋体Adobe版中国台湾字形
+#    font_face: "Source Han Serif"	#思源宋体Adobe版日本字形
+#    font_face: "Source Han Serif K"	#思源宋体Adobe版韩国字形
+
+#Noto Sans CJK/Source Han Sans
+#    font_face: "Noto Sans CJK SC"	#思源黑体Google版中国大陆字形
+#    font_face: "Noto Sans CJK TC"	#思源黑体Google版中国台湾字形
+#    font_face: "Noto Sans CJK HK"	#思源黑体Google版中国香港字形
+#    font_face: "Noto Sans CJK JP"	#思源黑体Google版日本字形
+#    font_face: "Noto Sans CJK KR"	#思源黑体Google版韩国字形
+
+#    font_face: "Source Han Sans SC"	#思源黑体Adobe版中国大陆字形
+#    font_face: "Source Han Sans TC"	#思源黑体Adobe版中国台湾字形
+#    font_face: "Source Han Sans HC"	#思源黑体Adobe版中国香港字形
+#    font_face: "Source Han Sans"	#思源黑体Adobe版日本字形
+#    font_face: "Source Han Sans K"	#思源黑体Adobe版韩国字形
+
+#Noto Sans Mono CJK/Source Han Sans HW = Source Han Sans + Source Sans Pro
+#    font_face: "Noto Sans Mono CJK SC"	#思源黑体Google版等宽中国大陆字形
+#    font_face: "Noto Sans Mono CJK TC"	#思源黑体Google版等宽中国台湾字形
+#    font_face: "Noto Sans Mono CJK HK"	#思源黑体Google版等宽中国香港字形
+#    font_face: "Noto Sans Mono CJK JP"	#思源黑体Google版等宽日本字形
+#    font_face: "Noto Sans Mono CJK KR"	#思源黑体Google版等宽韩国字形
+
+#    font_face: "Source Han Sans HW SC"	#思源黑体Adobe版等宽中国大陆字形
+#    font_face: "Source Han Sans HW TC"	#思源黑体Adobe版等宽中国台湾字形
+#    font_face: "Source Han Sans HW HC"	#思源黑体Adobe版等宽中国香港字形
+#    font_face: "Source Han Sans HW"	#思源黑体Adobe版等宽日本字形
+#    font_face: "Source Han Sans HW K"	#思源黑体Adobe版等宽韩国字形
+
+#Source Han Mono = Source Han Sans + Source Code Pro
+#    font_face: "Source Han Mono SC"	#思源等宽中国大陆字形
+#    font_face: "Source Han Mono TC"	#思源等宽中国台湾字形
+#    font_face: "Source Han Mono HC"	#思源等宽中国香港字形
+#    font_face: "Source Han Mono"	#思源等宽日本字形
+#    font_face: "Source Han Mono K"	#思源等宽韩国字形
+
+#    font_face: "MingLiu"	#细明体(中国台湾字形)(XP自带V3.21为旧字形)
+#    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
+    font_face: "KaiTi"	#楷体(系统自带)
+    font_point: 24

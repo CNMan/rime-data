@@ -1,0 +1,111 @@
+# Rime schema: wubi06_tygfhzb
+# encoding: utf-8
+#
+# 新世紀五筆字型資源庫：https://06wb.github.io
+# 新世紀五筆字型QQ羣：38021162
+# 仅含《通用规范汉字表》8105字范围内的字和词语
+# 修正、统一了王码大一统新世纪版五笔字型错误编码
+# 以大陆商务印书馆《现代汉语词典》（第7版）（约5.9万词）、上海辞书出版社《现代汉语大词典》（约10万词）及《现代汉语新词语词典》（第2版）（约1万词）和台湾教育部《重編國語辭典修訂本》（约15.1万词）、《成語典》（约0.75万词）（以下简称“五词典”）为基准
+# 完整包括《现代汉语词典》（第7版）、《现代汉语大词典》、《现代汉语新词语词典》（第2版）词头
+# 整合了9种五笔码表（王码大一统、QQ五笔、极点五笔、孤狐世纪词库、至善词库、冰凌五笔、黄狗五笔、精灵五笔、花儿五笔）的公共词语
+# 原则上不含5字以上词语（“五词典”词头除外）
+# 原则上不含外国人名、地名、品牌名等（“五词典”词头除外）
+# 完整包括民政部县以上行政区划简称（即只有“北京”，没有“北京市”等），并清理了地域词（即没有“北京动物园”等）
+# 完整包括教育部76所直属大学名称
+# 完整包括各届中国大陆及港澳台地区领导人姓名，其他国内人名仅含“五词典”词头中的历史人物姓名
+# 词语总数拟控制在15万左右，其中“五词典”以外词语总数约1.5万
+# 旨在打造整体偏“学术”的字词码表，欢迎大家提出意见和建议，谢谢！
+# 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
+
+schema:
+  schema_id: wubi06_tygfhzb
+  name: "新世紀五筆通規詞庫版(CNMan)"
+  version: “20221020”
+  author:
+    - 發明人 王永民先生
+    - 整理人 cnnexus5x@gmail.com
+  description: |
+    新世紀五筆字型資源庫：https://06wb.github.io
+    新世紀五筆字型QQ羣：38021162
+    敲 z 鍵進入拼音反查
+    敲 / 鍵進入symbols.yaml中的特殊字符輸入
+  dependencies:
+    - luna_pinyin
+    - symbols
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+    - reverse_lookup_translator
+
+speller:
+  delimiter: " ;'"
+  max_code_length: 4
+  auto_select: true
+  auto_select_unique_candidate: true
+  use_space: false
+  auto_clear: max_length
+
+translator:
+  dictionary: wubi06_tygfhzb
+  enable_charset_filter: false
+  enable_encoder: false
+  encode_commit_history: false
+  max_phrase_length: 4
+  enable_completion: false
+  sentence_over_completion: false
+  strict_spelling: false
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  enable_sentence: false
+  enable_user_dict: false
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "z"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "^z[a-z]*'?$"
+    punct: "/[a-z]*$"

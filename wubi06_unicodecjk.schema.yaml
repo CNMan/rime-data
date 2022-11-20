@@ -1,0 +1,147 @@
+# Rime schema: wubi06_unicodecjk
+# encoding: utf-8
+#
+# 新世紀五筆字型資源庫：https://06wb.github.io
+# 新世紀五筆字型QQ羣：38021162
+# 含 Unicode 15.0.0 已定义 CJK/CJK-A/CJK-B/CJK-C/CJK-D/CJK-E/CJK-F/CJK-G/CJK-H 编码区共 97046 个单字
+# 含 Unicode 15.0.0 已定义 CJK Compatibility Ideographs 编码区共 472 个单字
+# 含 Unicode 15.0.0 已定义 CJK Compatibility Ideographs Supplement 编码区共 542 个单字
+# 含 Unicode 15.0.0 已定义 Counting Rod Numerals 编码区 5 个正字算筹字符“𝍲𝍳𝍴𝍵𝍶”
+# 含 Unicode 15.0.0 已定义 CJK Symbols and Punctuation 编码区 1 个汉字“〇”
+# 含 Unicode 15.0.0 已定义 Kangxi Radicals 编码区 214 个部首
+# 含 Unicode 15.0.0 已定义 CJK Radicals Supplement 编码区 115 个部首
+# 含 Unicode 15.0.0 已定义 CJK Strokes 编码区 36 个笔画
+# 专为输入“生僻字”而生，日常使用请购买正版王码五笔字型大一统 2018 高级版(人民币 9.90 元)：http://www.wangma.net.cn/prodetail.aspx?sm=2&p=7
+# 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
+
+# 參考資料：
+#  https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
+#  https://github.com/rime/rime-wubi/blob/master/wubi86.schema.yaml
+#  https://github.com/lotem/rime-wubi98/blob/master/wubi98.schema.yaml
+#  https://github.com/lotem/rime-guhuwubi/blob/master/guhuwubi.schema.yaml
+#  https://github.com/lotem/rime-linguistic-wubi/blob/master/linguistic_wubi.schema.yaml
+
+schema:
+  schema_id: wubi06_unicodecjk
+  name: "新世紀五筆超集單字版(CNMan)"
+  version: "20221020"
+  author:
+    - 發明人 王永民先生
+    - 整理人 cnnexus5x@gmail.com
+  description: |
+    新世紀五筆字型資源庫：https://06wb.github.io
+    新世紀五筆字型QQ羣：38021162
+    敲 z 鍵進入拼音反查
+    敲 / 鍵進入symbols.yaml中的特殊字符輸入
+  dependencies:
+    - luna_pinyin
+    - symbols
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  #Unicode 區段提示，1為默認開，0為默認關
+  - name: charset_comment_filter
+    reset: 1
+    states: [ 關, 開 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+    - reverse_lookup_translator
+    - lua_translator@date_translator
+    - lua_translator@time_translator
+    - lua_translator@week_translator
+  filters:
+    - lua_filter@charset_comment_filter
+    - lua_filter@reverse_lookup_filter
+
+speller:
+  #上屛時的音節間分音符
+  delimiter: " ;'"
+  #形碼最大碼長，超過則頂字上屛
+  max_code_length: 4
+  #自動上屛
+  auto_select: true
+  #無重碼自動上屛
+  auto_select_unique_candidate: true
+  #以空格作輸入碼
+  use_space: false
+  #自動清屛（四碼以內空碼不自動清屛；四碼空碼時，第五碼清空前四碼）
+  auto_clear: max_length
+
+translator:
+  #翻譯器將調取此字典文件
+  dictionary: wubi06_unicodecjk
+  #是否開啓字符集過濾
+  enable_charset_filter: false
+  #是否開啓自動造詞
+  enable_encoder: false
+  #是否對已上屛詞自動成詞
+  encode_commit_history: false
+  #最大自動成詞詞長
+  max_phrase_length: 4
+  #提前顯示尚未輸入完整碼的字
+  enable_completion: false
+  #在無全碼對應字而僅有逐鍵提示時也開啓智能組句
+  sentence_over_completion: false
+  #配合speller中的fuzz規則，僅以畧拼碼組詞
+  strict_spelling: false
+  #禁止某些編碼錄入用戶詞典
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+  #是否開啓自動造句
+  enable_sentence: false
+  #是否開啓用戶詞典
+  enable_user_dict: false
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "z"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  bindings:
+    #分號選第二重碼
+    - {accept: semicolon, send: 2, when: has_menu}
+    #引號選第三重碼
+    - {accept: apostrophe, send: 3, when: has_menu}
+    #空格清屛
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
+
+recognizer:
+  import_preset: default
+  patterns:
+    #敲 z 鍵進入拼音反查
+    reverse_lookup: "^z[a-z]*'?$"
+    #敲 / 鍵進入symbols.yaml中的特殊字符輸入
+    punct: "/[a-z]*$"

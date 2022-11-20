@@ -1,0 +1,50 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: unicode
+  name: 統一碼
+  version: "20221020"
+  author:
+    - Tsjinsin
+  description: |
+    輸入 Unicode 碼位，輸出對應字符。
+
+switches:
+  - name: ascii_mode
+    states: [ 碼位, 鍵位 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+translator:
+  dictionary: unicode
+  enable_sentence: false
+  enable_user_dict: false
+
+speller:
+  alphabet: 0123456789abcdef
+  auto_select: true
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
