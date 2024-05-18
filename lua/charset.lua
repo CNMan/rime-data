@@ -194,6 +194,7 @@ local charset = {
    ["Elbasan"] = { first = 0x10500, last = 0x1052F },
    ["Caucasian Albanian"] = { first = 0x10530, last = 0x1056F },
    ["Vithkuqi"] = { first = 0x10570, last = 0x105BF },
+   ["Todhri"] = { first = 0x105C0, last = 0x105FF },
    ["Linear A"] = { first = 0x10600, last = 0x1077F },
    ["Latin Extended-F"] = { first = 0x10780, last = 0x107BF },
    ["Cypriot Syllabary"] = { first = 0x10800, last = 0x1083F },
@@ -216,6 +217,7 @@ local charset = {
    ["Old Turkic"] = { first = 0x10C00, last = 0x10C4F },
    ["Old Hungarian"] = { first = 0x10C80, last = 0x10CFF },
    ["Hanifi Rohingya"] = { first = 0x10D00, last = 0x10D3F },
+   ["Garay"] = { first = 0x10D40, last = 0x10D8F },
    ["Rumi Numeral Symbols"] = { first = 0x10E60, last = 0x10E7F },
    ["Yezidi"] = { first = 0x10E80, last = 0x10EBF },
    ["Arabic Extended-C"] = { first = 0x10EC0, last = 0x10EFF },
@@ -235,12 +237,14 @@ local charset = {
    ["Multani"] = { first = 0x11280, last = 0x112AF },
    ["Khudawadi"] = { first = 0x112B0, last = 0x112FF },
    ["Grantha"] = { first = 0x11300, last = 0x1137F },
+   ["Tulu-Tigalari"] = { first = 0x11380, last = 0x113FF },
    ["Newa"] = { first = 0x11400, last = 0x1147F },
    ["Tirhuta"] = { first = 0x11480, last = 0x114DF },
    ["Siddham"] = { first = 0x11580, last = 0x115FF },
    ["Modi"] = { first = 0x11600, last = 0x1165F },
    ["Mongolian Supplement"] = { first = 0x11660, last = 0x1167F },
    ["Takri"] = { first = 0x11680, last = 0x116CF },
+   ["Myanmar Extended-C"] = { first = 0x116D0, last = 0x116FF },
    ["Ahom"] = { first = 0x11700, last = 0x1174F },
    ["Dogra"] = { first = 0x11800, last = 0x1184F },
    ["Warang Citi"] = { first = 0x118A0, last = 0x118FF },
@@ -251,6 +255,7 @@ local charset = {
    ["Unified Canadian Aboriginal Syllabics Extended-A"] = { first = 0x11AB0, last = 0x11ABF },
    ["Pau Cin Hau"] = { first = 0x11AC0, last = 0x11AFF },
    ["Devanagari Extended-A"] = { first = 0x11B00, last = 0x11B5F },
+   ["Sunuwar"] = { first = 0x11BC0, last = 0x11BFF },
    ["Bhaiksuki"] = { first = 0x11C00, last = 0x11C6F },
    ["Marchen"] = { first = 0x11C70, last = 0x11CBF },
    ["Masaram Gondi"] = { first = 0x11D00, last = 0x11D5F },
@@ -265,12 +270,15 @@ local charset = {
    ["Cypro-Minoan"] = { first = 0x12F90, last = 0x12FFF },
    ["Egyptian Hieroglyphs"] = { first = 0x13000, last = 0x1342F },
    ["Egyptian Hieroglyph Format Controls"] = { first = 0x13430, last = 0x1345F },
+   ["Egyptian Hieroglyphs Extended-A"] = { first = 0x13460, last = 0x143FF },
    ["Anatolian Hieroglyphs"] = { first = 0x14400, last = 0x1467F },
+   ["Gurung Khema"] = { first = 0x16100, last = 0x1613F },
    ["Bamum Supplement"] = { first = 0x16800, last = 0x16A3F },
    ["Mro"] = { first = 0x16A40, last = 0x16A6F },
    ["Tangsa"] = { first = 0x16A70, last = 0x16ACF },
    ["Bassa Vah"] = { first = 0x16AD0, last = 0x16AFF },
    ["Pahawh Hmong"] = { first = 0x16B00, last = 0x16B8F },
+   ["Kirat Rai"] = { first = 0x16D40, last = 0x16D7F },
    ["Medefaidrin"] = { first = 0x16E40, last = 0x16E9F },
    ["Miao"] = { first = 0x16F00, last = 0x16F9F },
    ["Ideographic Symbols and Punctuation"] = { first = 0x16FE0, last = 0x16FFF },
@@ -285,6 +293,7 @@ local charset = {
    ["Nushu"] = { first = 0x1B170, last = 0x1B2FF },
    ["Duployan"] = { first = 0x1BC00, last = 0x1BC9F },
    ["Shorthand Format Controls"] = { first = 0x1BCA0, last = 0x1BCAF },
+   ["Symbols for Legacy Computing Supplement"] = { first = 0x1CC00, last = 0x1CEBF },
    ["Znamenny Musical Notation"] = { first = 0x1CF00, last = 0x1CFCF },
    ["Byzantine Musical Symbols"] = { first = 0x1D000, last = 0x1D0FF },
    ["Musical Symbols"] = { first = 0x1D100, last = 0x1D1FF },
@@ -302,6 +311,7 @@ local charset = {
    ["Toto"] = { first = 0x1E290, last = 0x1E2BF },
    ["Wancho"] = { first = 0x1E2C0, last = 0x1E2FF },
    ["Nag Mundari"] = { first = 0x1E4D0, last = 0x1E4FF },
+   ["Ol Onal"] = { first = 0x1E5D0, last = 0x1E5FF },
    ["Ethiopic Extended-B"] = { first = 0x1E7E0, last = 0x1E7FF },
    ["Mende Kikakui"] = { first = 0x1E800, last = 0x1E8DF },
    ["Adlam"] = { first = 0x1E900, last = 0x1E95F },
@@ -329,6 +339,7 @@ local charset = {
    ["CJK Unified Ideographs Extension D"] = { first = 0x2B740, last = 0x2B81F },
    ["CJK Unified Ideographs Extension E"] = { first = 0x2B820, last = 0x2CEAF },
    ["CJK Unified Ideographs Extension F"] = { first = 0x2CEB0, last = 0x2EBEF },
+   ["CJK Unified Ideographs Extension I"] = { first = 0x2EBF0, last = 0x2EE5F },
    ["CJK Compatibility Ideographs Supplement"] = { first = 0x2F800, last = 0x2FA1F },
    ["CJK Unified Ideographs Extension G"] = { first = 0x30000, last = 0x3134F },
    ["CJK Unified Ideographs Extension H"] = { first = 0x31350, last = 0x323AF },
@@ -539,6 +550,7 @@ local function is_cjk_ext(c)
       is_charset("Elbasan")(c) or
       is_charset("Caucasian Albanian")(c) or
       is_charset("Vithkuqi")(c) or
+      is_charset("Todhri")(c) or
       is_charset("Linear A")(c) or
       is_charset("Latin Extended-F")(c) or
       is_charset("Cypriot Syllabary")(c) or
@@ -561,6 +573,7 @@ local function is_cjk_ext(c)
       is_charset("Old Turkic")(c) or
       is_charset("Old Hungarian")(c) or
       is_charset("Hanifi Rohingya")(c) or
+      is_charset("Garay")(c) or
       is_charset("Rumi Numeral Symbols")(c) or
       is_charset("Yezidi")(c) or
       is_charset("Arabic Extended-C")(c) or
@@ -580,12 +593,14 @@ local function is_cjk_ext(c)
       is_charset("Multani")(c) or
       is_charset("Khudawadi")(c) or
       is_charset("Grantha")(c) or
+      is_charset("Tulu-Tigalari")(c) or
       is_charset("Newa")(c) or
       is_charset("Tirhuta")(c) or
       is_charset("Siddham")(c) or
       is_charset("Modi")(c) or
       is_charset("Mongolian Supplement")(c) or
       is_charset("Takri")(c) or
+      is_charset("Myanmar Extended-C")(c) or
       is_charset("Ahom")(c) or
       is_charset("Dogra")(c) or
       is_charset("Warang Citi")(c) or
@@ -596,6 +611,7 @@ local function is_cjk_ext(c)
       is_charset("Unified Canadian Aboriginal Syllabics Extended-A")(c) or
       is_charset("Pau Cin Hau")(c) or
       is_charset("Devanagari Extended-A")(c) or
+      is_charset("Sunuwar")(c) or
       is_charset("Bhaiksuki")(c) or
       is_charset("Marchen")(c) or
       is_charset("Masaram Gondi")(c) or
@@ -610,12 +626,15 @@ local function is_cjk_ext(c)
       is_charset("Cypro-Minoan")(c) or
       is_charset("Egyptian Hieroglyphs")(c) or
       is_charset("Egyptian Hieroglyph Format Controls")(c) or
+      is_charset("Egyptian Hieroglyphs Extended-A")(c) or
       is_charset("Anatolian Hieroglyphs")(c) or
+      is_charset("Gurung Khema")(c) or
       is_charset("Bamum Supplement")(c) or
       is_charset("Mro")(c) or
       is_charset("Tangsa")(c) or
       is_charset("Bassa Vah")(c) or
       is_charset("Pahawh Hmong")(c) or
+      is_charset("Kirat Rai")(c) or
       is_charset("Medefaidrin")(c) or
       is_charset("Miao")(c) or
       is_charset("Ideographic Symbols and Punctuation")(c) or
@@ -630,6 +649,7 @@ local function is_cjk_ext(c)
       is_charset("Nushu")(c) or
       is_charset("Duployan")(c) or
       is_charset("Shorthand Format Controls")(c) or
+      is_charset("Symbols for Legacy Computing Supplement")(c) or
       is_charset("Znamenny Musical Notation")(c) or
       is_charset("Byzantine Musical Symbols")(c) or
       is_charset("Musical Symbols")(c) or
@@ -647,6 +667,7 @@ local function is_cjk_ext(c)
       is_charset("Toto")(c) or
       is_charset("Wancho")(c) or
       is_charset("Nag Mundari")(c) or
+      is_charset("Ol Onal")(c) or
       is_charset("Ethiopic Extended-B")(c) or
       is_charset("Mende Kikakui")(c) or
       is_charset("Adlam")(c) or
@@ -674,6 +695,7 @@ local function is_cjk_ext(c)
       is_charset("CJK Unified Ideographs Extension D")(c) or
       is_charset("CJK Unified Ideographs Extension E")(c) or
       is_charset("CJK Unified Ideographs Extension F")(c) or
+      is_charset("CJK Unified Ideographs Extension I")(c) or
       is_charset("CJK Compatibility Ideographs Supplement")(c) or
       is_charset("CJK Unified Ideographs Extension G")(c) or
       is_charset("CJK Unified Ideographs Extension H")(c) or
