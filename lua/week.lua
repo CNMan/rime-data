@@ -6,25 +6,25 @@ local function translator(input, seg)
    if (input == "week") then
       if (os.date("%w") == "0") then
          weekstr = "日"
-	  end
+      end
       if (os.date("%w") == "1") then
          weekstr = "一"
-	  end	  
+      end
       if (os.date("%w") == "2") then
          weekstr = "二"
-	  end	  
+      end
       if (os.date("%w") == "3") then
          weekstr = "三"
-	  end	  
+      end
       if (os.date("%w") == "4") then
          weekstr = "四"
-	  end
+      end
       if (os.date("%w") == "5") then
          weekstr = "五"
-	  end
+      end
       if (os.date("%w") == "6") then
          weekstr = "六"
-	  end
+      end
       yield(Candidate("week", seg.start, seg._end, "".."星期"..weekstr.."","星期"))
       yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日").."".."星期"..weekstr.."","星期"))
       yield(Candidate("week", seg.start, seg._end, os.date("%Y年%m月%d日").."".."星期"..weekstr..""..os.date("%H:%M:%S"),"星期"))

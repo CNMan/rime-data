@@ -1,6 +1,17 @@
 --[[
-charset_filter: 滤除含 CJK 扩展汉字的候选项
-charset_comment_filter: 为候选项加上其所属字符集的注释
+关于CJK扩展字符
+  CJK = 中日韩（China, Japan, Korea），这个主要是指的东亚地区使用汉字及部分衍生偏僻字的字符集
+  （由于其使用频率非常低，一般的电脑系统里没有相关的字符，因此不能显示这些字）
+
+查询unicode 编码
+  1. https://unicode.org/charts/
+
+查询 Unicode 编码区
+  https://www.unicode.org/Public/UCD/latest/ucd/Blocks.txt
+
+导出函数
+  1. charset_filter: 滤除含 CJK 扩展汉字的候选项
+  2. charset_comment_filter: 为候选项加上其所属字符集的注释
 
 本例说明了 filter 最基本的写法。
 
