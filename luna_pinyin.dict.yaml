@@ -7340,7 +7340,7 @@ use_preset_vocabulary: true
 你	ni
 佡	xian
 佡	xuan
-佢	ju
+佢	ju	5%
 佢	qu
 佣	yong
 佤	wa
@@ -9795,7 +9795,7 @@ use_preset_vocabulary: true
 囀	zhuan
 囁	nie
 囁	zhe
-囂	qi
+囂	ao	1%
 囂	xiao
 囃	ca
 囄	li
@@ -14438,7 +14438,6 @@ use_preset_vocabulary: true
 擴	kuo
 擵	mo
 擶	jian
-擷	ji
 擷	jie
 擷	xie
 擸	la
@@ -15303,7 +15302,7 @@ use_preset_vocabulary: true
 枞	zong
 枟	yun
 枡	dou
-枢	qu
+枢	ou	1%
 枢	shu
 枣	zao
 枥	li
@@ -16060,7 +16059,7 @@ use_preset_vocabulary: true
 樛	jiu
 樜	zhe
 樝	zha
-樞	qu
+樞	ou	1%
 樞	shu
 樟	zhang
 樠	man
@@ -20943,7 +20942,6 @@ use_preset_vocabulary: true
 禇	chu
 禈	hui
 禉	you
-禊	qi
 禊	xi
 禋	yan
 禋	yin
@@ -57055,7 +57053,6 @@ use_preset_vocabulary: true
 掠食	lve shi
 採取行動	cai qu xing dong
 採摭	cai zhi
-採擷	cai jie
 採行	cai xing
 探囊胠篋	tan nang qu qie
 探本溯源	tan ben su yuan
@@ -57502,7 +57499,6 @@ use_preset_vocabulary: true
 擲色	zhi shai
 擲還	zhi huan
 擲骰子	zhi tou zi
-擷取	jie qu
 擺地攤	bai di tan
 擺番	bai fan
 擺行陣	bai hang zhen
