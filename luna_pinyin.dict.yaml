@@ -17240,9 +17240,10 @@ use_preset_vocabulary: true
 淓	fang
 淔	chi
 淕	lu
-淖	diao
+淖	chuo	1%
 淖	nao
-淖	zhao
+淖	zhao	1%
+淖	zhuo	1%
 淗	ju
 淘	tao
 淙	cong
@@ -23119,7 +23120,6 @@ use_preset_vocabulary: true
 肯	keng	0%
 肰	ran
 肱	gong
-肱	hong
 育	yu
 肳	wen
 肴	xiao
@@ -23773,7 +23773,6 @@ use_preset_vocabulary: true
 芮	rui	100%
 芯	xin
 芰	ji
-芰	zhi
 花	hua
 芲	hua
 芲	lun
