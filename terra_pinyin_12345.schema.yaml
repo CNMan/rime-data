@@ -1,0 +1,53 @@
+# Rime schema
+# encoding: utf-8
+
+__include: terra_pinyin.schema:/
+
+schema:
+  schema_id: terra_pinyin_12345
+  name: 地球拼音（數字標調）
+  version: '0.20'
+  author:
+    - 佛振 <chen.sst@gmail.com>
+  description: |
+    數字 12345 輸入聲調
+    用空格或 67890 選詞
+
+    猜成語專用：
+    - 聲母韻母聲調任意組合
+    - 不知道聲母輸入 ?
+    - 不知道韻母不用輸入
+    - 不知道聲調不用標調
+    - 知道聲調寫數字 12345
+  dependencies:
+    - stroke
+
+menu:
+  alternative_select_keys: 67890
+
+recognizer:
+
+speller:
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba?12345'
+  initials: zyxwvutsrqponmlkjihgfedcba?
+  algebra:
+    - xform/^r5$/er5/
+    - abbrev/^(.+)([0-5])$/?$2/
+    - abbrev/^([bpmfdtnlgkhjqxryw]|[zcs]h?)(.+)([0-5])$/?$2$3/
+    - abbrev/^([bpmfdtnlgkhjqxrywaoe]|[zcs]h?)(.+)([0-5])$/$1$3/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/([dtnlgkhrzcs])un/$1uen/
+    - derive/ui/uei/
+    - derive/iu/iou/
+    - derive/ao/oa/
+    - derive/([aeiou])ng/$1gn/
+    - derive/([iu])a(o|ng?)/a$1$2/
+    - derive/^([a-z]+)[0-5]$/$1/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+
+translator:
+  prism: terra_pinyin_12345
