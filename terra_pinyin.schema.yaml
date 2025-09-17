@@ -4,11 +4,14 @@
 schema:
   schema_id: terra_pinyin
   name: 地球拼音
-  version: '0.20'
+  version: '0.30'
   author:
     - 佛振 <chen.sst@gmail.com>
   description: |
-    「漢語拼音」，以符號按鍵 - / < \ 輸入四聲
+    「漢語拼音」
+    用與聲調符號形似的 - / < \ 輸入四聲
+    也可用指法較便捷的 ; / , .
+    用 - = 鍵翻頁
     拼音碼表根據 CC-CEDICT 改編
   dependencies:
     - stroke
@@ -50,13 +53,18 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,>\'
+  alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,\.'
   initials: zyxwvutsrqponmlkjihgfedcba
+  finals: '-;/<,\.'
   delimiter: " '"
   algebra:
     - xform/^r5$/er5/
+    # 省略韻母和聲調
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([zcs]h).+$/$1/
+    # 省略韻母
+    - abbrev/^([a-z])(.+)([0-5])$/$1$3/
+    - abbrev/^([zcs]h)(.+)([0-5])$/$1$3/
     - derive/^([nl])ve/$1ue/
     - derive/^([jqxy])u/$1v/
     - derive/([dtnlgkhrzcs])un/$1uen/
@@ -65,14 +73,16 @@ speller:
     - derive/ao/oa/
     - derive/([aeiou])ng/$1gn/
     - derive/([iu])a(o|ng?)/a$1$2/
+    # 省略聲調
     - derive/^([a-z]+)[0-5]$/$1/
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/
     - derive/ong$/on/
     - 'erase/^.*5$/'
+    # 符號標調
     - 'xlit 1234 -/<\'
     - 'derive/^(.*)-$/$1;/'
     - 'derive/^(.*)<$/$1,/'
-    - 'derive/^(.*)\\$/$1>/'
+    - 'derive/^(.*)\\$/$1./'
 
 translator:
   dictionary: terra_pinyin
@@ -83,32 +93,36 @@ translator:
     - xform/([nl])üen/$1uen/
     - xform/([jqxy])v/$1u/
     - xform/eh/ê/
-    - 'xform ([aeiou])(ng?|r)([-;/<,>\\]) $1$3$2'
-    - 'xform ([aeo])([iuo])([-;/<,>\\]) $1$3$2'
-    - 'xform a[-;] ā'
-    - 'xform a/ á'
-    - 'xform a[<,] ǎ'
-    - 'xform a[>\\] à'
-    - 'xform e[-;] ē'
-    - 'xform e/ é'
-    - 'xform e[<,] ě'
-    - 'xform e[>\\] è'
-    - 'xform o[-;] ō'
-    - 'xform o/ ó'
-    - 'xform o[<,] ǒ'
-    - 'xform o[>\\] ò'
-    - 'xform i[-;] ī'
-    - 'xform i/ í'
-    - 'xform i[<,] ǐ'
-    - 'xform i[>\\] ì'
-    - 'xform u[-;] ū'
-    - 'xform u/ ú'
-    - 'xform u[<,] ǔ'
-    - 'xform u[>\\] ù'
-    - 'xform ü[-;] ǖ'
-    - 'xform ü/ ǘ'
-    - 'xform ü[<,] ǚ'
-    - 'xform ü[>\\] ǜ'
+    - 'xform [-;] ˉ'
+    - 'xform / ˊ'
+    - 'xform [<,] ˇ'
+    - 'xform [\\.] ˋ'
+    - 'xform ([aeiou])(ng?|r)(ˉ|ˊ|ˇ|ˋ) $1$3$2'
+    - 'xform ([aeo])([iuo])(ˉ|ˊ|ˇ|ˋ) $1$3$2'
+    - 'xform aˉ ā'
+    - 'xform aˊ á'
+    - 'xform aˇ ǎ'
+    - 'xform aˋ à'
+    - 'xform eˉ ē'
+    - 'xform eˊ é'
+    - 'xform eˇ ě'
+    - 'xform eˋ è'
+    - 'xform oˉ ō'
+    - 'xform oˊ ó'
+    - 'xform oˇ ǒ'
+    - 'xform oˋ ò'
+    - 'xform iˉ ī'
+    - 'xform iˊ í'
+    - 'xform iˇ ǐ'
+    - 'xform iˋ ì'
+    - 'xform uˉ ū'
+    - 'xform uˊ ú'
+    - 'xform uˇ ǔ'
+    - 'xform uˋ ù'
+    - 'xform üˉ ǖ'
+    - 'xform üˊ ǘ'
+    - 'xform üˇ ǚ'
+    - 'xform üˋ ǜ'
   comment_format:
     - xform ([aeiou])(ng?|r)([1234]) $1$3$2
     - xform ([aeo])([iuo])([1234]) $1$3$2
@@ -193,13 +207,15 @@ punctuator:
 key_binder:
   import_preset: default
   bindings:
-    - { when: has_menu, accept: minus, send: minus }  # tone 1
-    - { when: paging, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: minus, send: minus }  # - 輸入第一聲
+    - { when: paging, accept: minus, send: Page_Up }  # 可用作向前翻頁
+    - { when: has_menu, accept: period, send: period }  # . 輸入第四聲
+    - { when: paging, accept: period, send: Page_Down }  # 不可開始向後翻頁
 
 recognizer:
-  import_preset: default
   patterns:
     reverse_lookup: "`[a-z]*'?$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
 
 __patch:
   # 使用八股文語言模型

@@ -57,5 +57,5 @@ patch:
 #    font_face: "DFKai-SB"	#标楷体(中国台湾字形)
 #    font_face: "SimSun"	#宋体(系统自带)
 #    font_face: "KaiTi"	#楷体(系统自带)
-    font_face: "Jigmo Regular"
+    font_face: "WenJin Mincho Plane 0"
     font_point: 24

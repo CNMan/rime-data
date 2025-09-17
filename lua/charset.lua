@@ -1,6 +1,17 @@
 --[[
-charset_filter: 滤除含 CJK 扩展汉字的候选项
-charset_comment_filter: 为候选项加上其所属字符集的注释
+关于CJK扩展字符
+  CJK = 中日韩（China, Japan, Korea），这个主要是指的东亚地区使用汉字及部分衍生偏僻字的字符集
+  （由于其使用频率非常低，一般的电脑系统里没有相关的字符，因此不能显示这些字）
+
+查询unicode 编码
+  1. https://unicode.org/charts/
+
+查询 Unicode 编码区
+  https://www.unicode.org/Public/UCD/latest/ucd/Blocks.txt
+
+导出函数
+  1. charset_filter: 滤除含 CJK 扩展汉字的候选项
+  2. charset_comment_filter: 为候选项加上其所属字符集的注释
 
 本例说明了 filter 最基本的写法。
 
@@ -204,6 +215,7 @@ local charset = {
    ["Hatran"] = { first = 0x108E0, last = 0x108FF },
    ["Phoenician"] = { first = 0x10900, last = 0x1091F },
    ["Lydian"] = { first = 0x10920, last = 0x1093F },
+   ["Sidetic"] = { first = 0x10940, last = 0x1095F },
    ["Meroitic Hieroglyphs"] = { first = 0x10980, last = 0x1099F },
    ["Meroitic Cursive"] = { first = 0x109A0, last = 0x109FF },
    ["Kharoshthi"] = { first = 0x10A00, last = 0x10A5F },
@@ -255,11 +267,13 @@ local charset = {
    ["Unified Canadian Aboriginal Syllabics Extended-A"] = { first = 0x11AB0, last = 0x11ABF },
    ["Pau Cin Hau"] = { first = 0x11AC0, last = 0x11AFF },
    ["Devanagari Extended-A"] = { first = 0x11B00, last = 0x11B5F },
+   ["Sharada Supplement"] = { first = 0x11B60, last = 0x11B7F },
    ["Sunuwar"] = { first = 0x11BC0, last = 0x11BFF },
    ["Bhaiksuki"] = { first = 0x11C00, last = 0x11C6F },
    ["Marchen"] = { first = 0x11C70, last = 0x11CBF },
    ["Masaram Gondi"] = { first = 0x11D00, last = 0x11D5F },
    ["Gunjala Gondi"] = { first = 0x11D60, last = 0x11DAF },
+   ["Tolong Siki"] = { first = 0x11DB0, last = 0x11DEF },
    ["Makasar"] = { first = 0x11EE0, last = 0x11EFF },
    ["Kawi"] = { first = 0x11F00, last = 0x11F5F },
    ["Lisu Supplement"] = { first = 0x11FB0, last = 0x11FBF },
@@ -280,12 +294,14 @@ local charset = {
    ["Pahawh Hmong"] = { first = 0x16B00, last = 0x16B8F },
    ["Kirat Rai"] = { first = 0x16D40, last = 0x16D7F },
    ["Medefaidrin"] = { first = 0x16E40, last = 0x16E9F },
+   ["Beria Erfe"] = { first = 0x16EA0, last = 0x16EDF },
    ["Miao"] = { first = 0x16F00, last = 0x16F9F },
    ["Ideographic Symbols and Punctuation"] = { first = 0x16FE0, last = 0x16FFF },
    ["Tangut"] = { first = 0x17000, last = 0x187FF },
    ["Tangut Components"] = { first = 0x18800, last = 0x18AFF },
    ["Khitan Small Script"] = { first = 0x18B00, last = 0x18CFF },
    ["Tangut Supplement"] = { first = 0x18D00, last = 0x18D7F },
+   ["Tangut Components Supplement"] = { first = 0x18D80, last = 0x18DFF },
    ["Kana Extended-B"] = { first = 0x1AFF0, last = 0x1AFFF },
    ["Kana Supplement"] = { first = 0x1B000, last = 0x1B0FF },
    ["Kana Extended-A"] = { first = 0x1B100, last = 0x1B12F },
@@ -294,6 +310,7 @@ local charset = {
    ["Duployan"] = { first = 0x1BC00, last = 0x1BC9F },
    ["Shorthand Format Controls"] = { first = 0x1BCA0, last = 0x1BCAF },
    ["Symbols for Legacy Computing Supplement"] = { first = 0x1CC00, last = 0x1CEBF },
+   ["Miscellaneous Symbols Supplement"] = { first = 0x1CEC0, last = 0x1CEFF },
    ["Znamenny Musical Notation"] = { first = 0x1CF00, last = 0x1CFCF },
    ["Byzantine Musical Symbols"] = { first = 0x1D000, last = 0x1D0FF },
    ["Musical Symbols"] = { first = 0x1D100, last = 0x1D1FF },
@@ -312,6 +329,7 @@ local charset = {
    ["Wancho"] = { first = 0x1E2C0, last = 0x1E2FF },
    ["Nag Mundari"] = { first = 0x1E4D0, last = 0x1E4FF },
    ["Ol Onal"] = { first = 0x1E5D0, last = 0x1E5FF },
+   ["Tai Yo"] = { first = 0x1E6C0, last = 0x1E6FF },
    ["Ethiopic Extended-B"] = { first = 0x1E7E0, last = 0x1E7FF },
    ["Mende Kikakui"] = { first = 0x1E800, last = 0x1E8DF },
    ["Adlam"] = { first = 0x1E900, last = 0x1E95F },
@@ -343,6 +361,7 @@ local charset = {
    ["CJK Compatibility Ideographs Supplement"] = { first = 0x2F800, last = 0x2FA1F },
    ["CJK Unified Ideographs Extension G"] = { first = 0x30000, last = 0x3134F },
    ["CJK Unified Ideographs Extension H"] = { first = 0x31350, last = 0x323AF },
+   ["CJK Unified Ideographs Extension J"] = { first = 0x323B0, last = 0x3347F },
    ["Tags"] = { first = 0xE0000, last = 0xE007F },
    ["Variation Selectors Supplement"] = { first = 0xE0100, last = 0xE01EF },
    ["Supplementary Private Use Area-A"] = { first = 0xF0000, last = 0xFFFFF },
@@ -352,7 +371,7 @@ local function exists(single_filter, text)
   for i in utf8.codes(text) do
      local c = utf8.codepoint(text, i)
      if (not single_filter(c)) then
-	return false
+      return false
      end
   end
   return true
@@ -560,6 +579,7 @@ local function is_cjk_ext(c)
       is_charset("Hatran")(c) or
       is_charset("Phoenician")(c) or
       is_charset("Lydian")(c) or
+      is_charset("Sidetic")(c) or
       is_charset("Meroitic Hieroglyphs")(c) or
       is_charset("Meroitic Cursive")(c) or
       is_charset("Kharoshthi")(c) or
@@ -611,11 +631,13 @@ local function is_cjk_ext(c)
       is_charset("Unified Canadian Aboriginal Syllabics Extended-A")(c) or
       is_charset("Pau Cin Hau")(c) or
       is_charset("Devanagari Extended-A")(c) or
+      is_charset("Sharada Supplement")(c) or
       is_charset("Sunuwar")(c) or
       is_charset("Bhaiksuki")(c) or
       is_charset("Marchen")(c) or
       is_charset("Masaram Gondi")(c) or
       is_charset("Gunjala Gondi")(c) or
+      is_charset("Tolong Siki")(c) or
       is_charset("Makasar")(c) or
       is_charset("Kawi")(c) or
       is_charset("Lisu Supplement")(c) or
@@ -636,12 +658,14 @@ local function is_cjk_ext(c)
       is_charset("Pahawh Hmong")(c) or
       is_charset("Kirat Rai")(c) or
       is_charset("Medefaidrin")(c) or
+      is_charset("Beria Erfe")(c) or
       is_charset("Miao")(c) or
       is_charset("Ideographic Symbols and Punctuation")(c) or
       is_charset("Tangut")(c) or
       is_charset("Tangut Components")(c) or
       is_charset("Khitan Small Script")(c) or
       is_charset("Tangut Supplement")(c) or
+      is_charset("Tangut Components Supplement")(c) or
       is_charset("Kana Extended-B")(c) or
       is_charset("Kana Supplement")(c) or
       is_charset("Kana Extended-A")(c) or
@@ -650,6 +674,7 @@ local function is_cjk_ext(c)
       is_charset("Duployan")(c) or
       is_charset("Shorthand Format Controls")(c) or
       is_charset("Symbols for Legacy Computing Supplement")(c) or
+      is_charset("Miscellaneous Symbols Supplement")(c) or
       is_charset("Znamenny Musical Notation")(c) or
       is_charset("Byzantine Musical Symbols")(c) or
       is_charset("Musical Symbols")(c) or
@@ -668,6 +693,7 @@ local function is_cjk_ext(c)
       is_charset("Wancho")(c) or
       is_charset("Nag Mundari")(c) or
       is_charset("Ol Onal")(c) or
+      is_charset("Tai Yo")(c) or
       is_charset("Ethiopic Extended-B")(c) or
       is_charset("Mende Kikakui")(c) or
       is_charset("Adlam")(c) or
@@ -699,6 +725,7 @@ local function is_cjk_ext(c)
       is_charset("CJK Compatibility Ideographs Supplement")(c) or
       is_charset("CJK Unified Ideographs Extension G")(c) or
       is_charset("CJK Unified Ideographs Extension H")(c) or
+      is_charset("CJK Unified Ideographs Extension J")(c) or
       is_charset("Tags")(c) or
       is_charset("Variation Selectors Supplement")(c) or
       is_charset("Supplementary Private Use Area-A")(c) or
@@ -723,8 +750,8 @@ local function charset_filter(input)
       -- 如果当前候选项 `cand` 不含 CJK 扩展汉字
       if (not exists(is_cjk_ext, cand.text))
       then
-	 -- 结果中仍保留此候选
-	 yield(cand)
+       -- 结果中仍保留此候选
+       yield(cand)
       end
       --[[ 上述条件不满足时，当前的候选 `cand` 没有被 yield。
            因此过滤结果中将不含有该候选。
@@ -741,14 +768,14 @@ local function charset_comment_filter(input)
    for cand in input:iter() do
       -- 判断当前候选内容 `cand.text` 中文字属哪个字符集
       for s, r in pairs(charset) do
-	 if (exists(is_charset(s), cand.text)) then
-	    --[[ 修改候选的注释 `cand.comment`
+       if (exists(is_charset(s), cand.text)) then
+          --[[ 修改候选的注释 `cand.comment`
                  因复杂类型候选项的注释不能被直接修改，
                  因此使用 `get_genuine()` 得到其对应真实的候选项
             --]]
-	    cand:get_genuine().comment = cand.comment .. " " .. s
-	    break
-	 end
+          cand:get_genuine().comment = cand.comment .. " " .. s
+          break
+       end
       end
       -- 在结果中对应产生一个带注释的候选
       yield(cand)
@@ -757,4 +784,4 @@ end
 
 -- 本例中定义了两个 filter，故使用一个表将两者导出
 return { filter = charset_filter,
-	 comment_filter = charset_comment_filter }
+       comment_filter = charset_comment_filter }

@@ -28,7 +28,7 @@
 
 ---
 name: luna_pinyin
-version: "2020.08.03"
+version: "2024.02.10"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -6660,6 +6660,7 @@ use_preset_vocabulary: true
 䴆	pu
 䴇	ling
 䴈	ao
+䴉	huan
 䴉	xuan
 䴊	yi
 䴋	huan
@@ -7340,7 +7341,7 @@ use_preset_vocabulary: true
 你	ni
 佡	xian
 佡	xuan
-佢	ju
+佢	ju	5%
 佢	qu
 佣	yong
 佤	wa
@@ -7888,7 +7889,7 @@ use_preset_vocabulary: true
 儝	qiong
 儞	er
 償	chang
-償	shang
+償	shang	0%
 儠	lie
 儡	lei
 儢	lv
@@ -8684,8 +8685,9 @@ use_preset_vocabulary: true
 厛	ting
 厜	chui
 厜	zui
-厝	cu
+厝	cu	0%
 厝	cuo
+厝	ji	1%
 厞	fei
 原	yuan
 厠	ce
@@ -8891,7 +8893,6 @@ use_preset_vocabulary: true
 吭	kang	0%
 吭	keng	72.93%
 吮	shun
-吮	yun
 启	qi
 吰	hong
 吰	hu
@@ -9795,7 +9796,7 @@ use_preset_vocabulary: true
 囀	zhuan
 囁	nie
 囁	zhe
-囂	qi
+囂	ao	1%
 囂	xiao
 囃	ca
 囄	li
@@ -11698,10 +11699,10 @@ use_preset_vocabulary: true
 岨	zu
 岩	yan
 岪	fu
-岫	di
+岫	di	0%
 岫	xiu
-岫	you
-岫	zhou
+岫	you	0%
+岫	zhou	0%
 岬	jia
 岭	ling
 岮	tuo
@@ -12655,8 +12656,8 @@ use_preset_vocabulary: true
 徳	de
 徴	zheng
 徴	zhi
-徵	zheng	95%
-徵	zhi	5%
+徵	zheng	96%
+徵	zhi	4%
 徶	bie
 德	de
 徸	zhong
@@ -13393,7 +13394,7 @@ use_preset_vocabulary: true
 懼	ju
 懽	guan
 懽	huan
-懾	nie
+懾	nie	0%
 懾	she
 懾	zhe
 懿	yi
@@ -13720,6 +13721,7 @@ use_preset_vocabulary: true
 拢	long
 拣	jian
 拤	ka
+拤	qia
 拥	yong
 拦	lan
 拧	ning
@@ -13839,6 +13841,8 @@ use_preset_vocabulary: true
 挻	shan
 挼	hui
 挼	nuo
+挼	rua
+挼	ruo
 挽	wan
 挾	jia
 挾	xia
@@ -14437,7 +14441,6 @@ use_preset_vocabulary: true
 擴	kuo
 擵	mo
 擶	jian
-擷	ji
 擷	jie
 擷	xie
 擸	la
@@ -14991,8 +14994,8 @@ use_preset_vocabulary: true
 暩	gui
 暩	ji
 暪	men
-暫	zan
-暫	zhan	0%
+暫	zan	100%
+暫	zhan	5%
 暬	nie
 暬	xie
 暭	gao
@@ -15236,7 +15239,8 @@ use_preset_vocabulary: true
 杬	wan
 杬	yuan
 杭	hang
-杮	lin
+杮	bei
+杮	fei
 杯	bei
 杰	jie
 東	dong
@@ -15301,7 +15305,7 @@ use_preset_vocabulary: true
 枞	zong
 枟	yun
 枡	dou
-枢	qu
+枢	ou	1%
 枢	shu
 枣	zao
 枥	li
@@ -15900,8 +15904,8 @@ use_preset_vocabulary: true
 榙	ta
 榚	yao
 榛	zhen
-榜	bang	50%
-榜	peng	50%
+榜	bang	100%
+榜	peng	0%
 榝	sha
 榞	yuan
 榟	zi
@@ -16058,7 +16062,7 @@ use_preset_vocabulary: true
 樛	jiu
 樜	zhe
 樝	zha
-樞	qu
+樞	ou	1%
 樞	shu
 樟	zhang
 樠	man
@@ -16837,8 +16841,8 @@ use_preset_vocabulary: true
 沑	nv
 沒	mei	99.89%
 沒	mo	0.11%
-沓	miao	23.44%
-沓	ta	76.56%
+沓	da	25%
+沓	ta	75%
 沔	mian
 沕	wu
 沖	chong
@@ -17152,7 +17156,7 @@ use_preset_vocabulary: true
 涊	nian
 涋	tu
 涌	chong
-涌	yong  0%
+涌	yong	0%
 涍	xiao
 涎	xian
 涎	yan
@@ -17239,9 +17243,10 @@ use_preset_vocabulary: true
 淓	fang
 淔	chi
 淕	lu
-淖	diao
+淖	chuo	1%
 淖	nao
-淖	zhao
+淖	zhao	1%
+淖	zhuo	1%
 淗	ju
 淘	tao
 淙	cong
@@ -19946,6 +19951,7 @@ use_preset_vocabulary: true
 癱	tan
 癲	dian
 癳	luo
+癴	luan
 癴	lvan
 癵	luan
 癵	lvan
@@ -20940,7 +20946,6 @@ use_preset_vocabulary: true
 禇	chu
 禈	hui
 禉	you
-禊	qi
 禊	xi
 禋	yan
 禋	yin
@@ -21069,8 +21074,8 @@ use_preset_vocabulary: true
 秵	yin
 秶	zi
 秷	zhi
-秸	ji
-秸	jia
+秸	ji	0%
+秸	jia	0%
 秸	jie
 秹	ren
 秺	du
@@ -21131,8 +21136,9 @@ use_preset_vocabulary: true
 稪	fu
 稫	bi
 稬	nuo
-稭	ji
-稭	jia
+稭	ji	0%
+稭	jia	0%
+稭	jie
 種	zhong
 稯	zong
 稰	xu
@@ -21503,7 +21509,6 @@ use_preset_vocabulary: true
 筯	zhu
 筰	zuo
 筱	xiao
-筱	you
 筲	shao
 筳	ting
 筴	ce
@@ -21629,7 +21634,7 @@ use_preset_vocabulary: true
 篝	gou
 篞	nie
 篟	qian
-篠	tiao
+篠	diao	1%
 篠	xiao
 篡	cuan
 篢	gong
@@ -22073,9 +22078,9 @@ use_preset_vocabulary: true
 絙	huan
 絚	geng
 絚	heng
-絛	di
+絛	di	0%
 絛	tao
-絛	tiao
+絛	tiao	0%
 絜	jie
 絜	xie
 絝	ku
@@ -22332,7 +22337,7 @@ use_preset_vocabulary: true
 縥	zhen
 縦	zong
 縧	tao
-縧	tiao
+縧	tiao	0%
 縩	cai
 縪	bi
 縪	bie
@@ -22561,7 +22566,7 @@ use_preset_vocabulary: true
 绣	xiu
 绤	xi
 绥	sui
-绦	di
+绦	di	0%
 绦	tao
 继	ji
 绨	ti
@@ -23118,7 +23123,6 @@ use_preset_vocabulary: true
 肯	keng	0%
 肰	ran
 肱	gong
-肱	hong
 育	yu
 肳	wen
 肴	xiao
@@ -23772,7 +23776,6 @@ use_preset_vocabulary: true
 芮	rui	100%
 芯	xin
 芰	ji
-芰	zhi
 花	hua
 芲	hua
 芲	lun
@@ -24793,6 +24796,7 @@ use_preset_vocabulary: true
 藦	mo
 藧	huan
 藨	biao
+藨	pao
 藩	fan
 藪	sou
 藫	tan
@@ -24905,6 +24909,7 @@ use_preset_vocabulary: true
 虇	quan
 虈	xiao
 虉	yi
+虊	luan
 虊	lvan
 虋	men
 虌	bie
@@ -25455,7 +25460,6 @@ use_preset_vocabulary: true
 蟳	xun
 蟴	si
 蟶	cheng
-蟶	sheng
 蟷	dang
 蟸	li
 蟹	xie
@@ -26263,7 +26267,6 @@ use_preset_vocabulary: true
 詡	xu
 詢	xun
 詣	yi
-詣	zhi
 詤	huang
 詥	ge
 詥	he
@@ -26505,7 +26508,6 @@ use_preset_vocabulary: true
 謔	xue	100%
 謕	si
 謕	ti
-謖	ji
 謖	su
 謗	bang
 謘	chi
@@ -26533,9 +26535,9 @@ use_preset_vocabulary: true
 謪	shang
 謫	di
 謫	zhe
-謬	miao
+謬	miao	0%
 謬	miu
-謬	niu
+謬	niu	0%
 謭	jian
 謮	ze
 謯	zha
@@ -27257,7 +27259,6 @@ use_preset_vocabulary: true
 趃	die
 趄	ju
 趄	qie
-趄	qu
 超	chao
 趆	di
 趇	se
@@ -27730,8 +27731,8 @@ use_preset_vocabulary: true
 軶	e
 軷	ba
 軷	bo
-軸	zhou
-軸	zhu
+軸	zhou	100%
+軸	zhu	4%
 軹	zhi
 軺	yao
 軻	ke
@@ -29763,7 +29764,9 @@ use_preset_vocabulary: true
 閧	hong
 閨	gui
 閩	min
-閪	se
+閪	hai
+閪	hei
+閪	xi
 閫	kun
 閬	gen
 閬	lang
@@ -30020,7 +30023,6 @@ use_preset_vocabulary: true
 陶	tao	99.94%
 陶	yao	0.06%
 陷	xian
-陷	xuan
 陸	liu	6.25%
 陸	lu	93.75%
 陹	sheng
@@ -30171,6 +30173,7 @@ use_preset_vocabulary: true
 雩	yu
 雪	xue
 雫	na
+雫	xia
 雬	fou
 雬	fu
 雭	se
@@ -30422,6 +30425,7 @@ use_preset_vocabulary: true
 鞲	gou
 鞲	jiang
 鞳	ta
+鞴	bei
 鞴	fu
 鞵	hai
 鞵	xie
@@ -31209,10 +31213,7 @@ use_preset_vocabulary: true
 驊	hua
 驋	bo
 驌	su
-驍	nao
-驍	rao
 驍	xiao
-驍	yao
 驎	lin
 驏	chan
 驏	zhan
@@ -31343,7 +31344,7 @@ use_preset_vocabulary: true
 髀	pi
 髁	ke
 髂	ka
-髂	ke
+髂	ke	0%
 髂	qia
 髃	ou
 髄	sui
@@ -49683,6 +49684,7 @@ use_preset_vocabulary: true
 乾剝剝	gan bo bo
 乾吊着下巴	gan diao zhe xia ba
 乾和	gan he
+乾和	qian he
 乾咳	gan ke
 乾咽	gan ye
 乾哭	gan ku
@@ -50363,7 +50365,9 @@ use_preset_vocabulary: true
 作育菁莪	zuo yu jing e
 作諢	zuo hun
 作麼生	zuo mo sheng
+佝僂	gou lou
 佝僂	kou lou
+佝僂病	gou lou bing
 佝僂病	kou lou bing
 你哦	ni o
 你快樂	ni kuai le
@@ -51164,6 +51168,7 @@ use_preset_vocabulary: true
 出糗	chu qiu
 出紅差	chu hong chai
 出芽生殖	chu ya sheng zhi
+出蟄	chu zhe
 出蟄	chu zhi
 出血	chu xie
 出血	chu xue
@@ -51326,6 +51331,10 @@ use_preset_vocabulary: true
 削麪	xiao mian
 剌戾	la li
 剌謬	la miu
+前不着村	qian bu zhao cun
+前不着村	qian bu zhuo cun
+前不着村後不着店	qian bu zhao cun hou bu zhao dian
+前不着村後不着店	qian bu zhuo cun hou bu zhuo dian
 前仆後繼	qian pu hou ji
 前仆後起	qian pu hou qi
 前仇	qian chou
@@ -51995,6 +52004,7 @@ use_preset_vocabulary: true
 叫囂	jiao xiao
 叫地地不靈	jiao di di bu ling
 叫聒	jiao gua
+叫聒	jiao guo
 召南	shao nan
 召棠	shao tang
 召父杜母	shao fu du mu
@@ -52443,6 +52453,7 @@ use_preset_vocabulary: true
 哏毒	hen du
 員弁	yuan bian
 哤聒	mang gua
+哤聒	mang guo
 哥倆好	ge lia hao
 哦呀	o ya
 哦呵	o he
@@ -52545,6 +52556,7 @@ use_preset_vocabulary: true
 啑血	jie xue
 啓白	qi bai
 啓白	qi bo
+啓蟄	qi zhe
 啓蟄	qi zhi
 啓行	qi xing
 啜賺	chuo zuan
@@ -52732,6 +52744,7 @@ use_preset_vocabulary: true
 嘁哩喀喳	qi li ka cha
 嘁嘁喳喳	qi qi cha cha
 嘈聒	cao gua
+嘈聒	cao guo
 嘉南大圳	jia nan da zun
 嘉肴	jia yao
 嘉言善行	jia yan shan xing
@@ -52797,6 +52810,7 @@ use_preset_vocabulary: true
 器皿	qi min
 器重	qi zhong
 噪聒	zao gua
+噪聒	zao guo
 噪音音樂	zao yin yin yue
 噫吁戲	yi xu xi
 噯喲	ai yao
@@ -54176,7 +54190,6 @@ use_preset_vocabulary: true
 婆藪槃豆法師傳	po sou pan dou fa shi zhuan
 婆那娑	po nuo suo
 婉娩	wan wan
-婉孌	wan lvan
 婐㛂	e nuo
 婑媠	wo tuo
 婚姻失調	hun yin shi tiao
@@ -54769,7 +54782,7 @@ use_preset_vocabulary: true
 就行	jiu xing
 就要扎腳	jiu yao zha jiao
 尷尬	gan ga
-尷尬	jian jie
+尷尬	jian jie	0%
 尷尬局面	gan ga ju mian
 尸居龍見	shi ju long xian
 尺寸之地	chi cun zhi di
@@ -55385,6 +55398,7 @@ use_preset_vocabulary: true
 強敵環伺	qiang di huan si
 強盛	qiang sheng
 強聒不舍	qiang gua bu she
+強聒不舍	qiang guo bu she
 強行	qiang xing
 強行法	qiang xing fa
 強行軍	qiang xing jun
@@ -55706,6 +55720,7 @@ use_preset_vocabulary: true
 心餘力絀	xin yu li chu
 心驚肉顫	xin jing rou chan
 心驚肉顫	xin jing rou zhan
+心驚膽懾	xin jing dan she
 心驚膽懾	xin jing dan zhe
 心驚膽顫	xin jing dan zhan
 必得	bi dei
@@ -55795,6 +55810,7 @@ use_preset_vocabulary: true
 急管繁絃	ji guan fan xian
 急絃	ji xian
 急聒	ji gua
+急聒	ji guo
 急脈緩受	ji mai huan shou
 急脈緩受	ji mo huan shou
 急行軍	ji xing jun
@@ -55965,6 +55981,7 @@ use_preset_vocabulary: true
 惡露	e lu
 惱懆	nao cao
 惱聒	nao gua
+惱聒	nao guo
 想什麼	xiang shen me
 想度	xiang duo
 惹禍招愆	re huo zhao qian
@@ -56092,7 +56109,6 @@ use_preset_vocabulary: true
 憑藉	ping jie
 憔悴	qiao cui
 憔慮	qiao lv
-憤怒痙攣	fen nu jing lvan
 憤愾	fen kai
 憤懣	fen men
 憤薄	fen bo
@@ -56148,10 +56164,14 @@ use_preset_vocabulary: true
 懸針垂露	xuan zhen chui lou
 懽喜	huan xi
 懽悰	huan cong
+懾人	she ren
 懾人	zhe ren
+懾人心魄	she ren xin po
 懾人心魄	zhe ren xin po
+懾息	she xi
 懾息	zhe xi
 懾慴	zhe zhe
+懾服	she fu
 懾服	zhe fu
 懿濞	yi pi
 懿範長昭	yi fan chang zhao
@@ -56785,8 +56805,6 @@ use_preset_vocabulary: true
 拗蠻	ao man
 拗體	ao ti
 拗體詩	ao ti shi
-拘攣	ju lvan
-拘攣補衲	ju lvan bu na
 拙著	zhuo zhu
 拚卻	pan que
 拚命	pan ming
@@ -56832,7 +56850,6 @@ use_preset_vocabulary: true
 拱手垂裳	gong shou chui chang
 拱手投降	gong shou tou xiang
 拱手而降	gong shou er xiang
-拳攣	quan lvan
 拴搐豔段	shuan chu yan duan
 拴着	shuan zhe
 拶子	zan zi
@@ -57037,7 +57054,6 @@ use_preset_vocabulary: true
 掠食	lve shi
 採取行動	cai qu xing dong
 採摭	cai zhi
-採擷	cai jie
 採行	cai xing
 探囊胠篋	tan nang qu qie
 探本溯源	tan ben su yuan
@@ -57484,7 +57500,6 @@ use_preset_vocabulary: true
 擲色	zhi shai
 擲還	zhi huan
 擲骰子	zhi tou zi
-擷取	jie qu
 擺地攤	bai di tan
 擺番	bai fan
 擺行陣	bai hang zhen
@@ -57529,10 +57544,8 @@ use_preset_vocabulary: true
 攢蹄	cuan ti
 攢蹙	cuan cu
 攢露	cuan lou
-攣弱	lvan ruo
+攣攣	luan luan
 攣攣	lvan lvan
-攣踠	lvan wan
-攣躄	lvan bi
 攤薄	tan bo
 攤還	tan huan
 攧攧仆仆	dian dian pu pu
@@ -60689,6 +60702,7 @@ use_preset_vocabulary: true
 澹蕩	dan dang
 澹話	dan hua
 激聒	ji gua
+激聒	ji guo
 濁醪	zhuo lao
 濃妝淡抹	nong zhuang dan mo
 濃妝豔抹	nong zhuang yan mo
@@ -60856,6 +60870,7 @@ use_preset_vocabulary: true
 焯爍	zhuo shuo
 焯著	zhuo zhu
 煎聒	jian gua
+煎聒	jian guo
 煖和	nuan huo
 煖房	nuan fang
 煖爐	nuan lu
@@ -60978,7 +60993,6 @@ use_preset_vocabulary: true
 熱火朝天	re huo chao tian
 熱爪哇	re zhao wa
 熱爪哇	re zhua wa
-熱痙攣	re jing lvan
 熱血	re xie
 熱血	re xue
 熱血沸騰	re xue fei teng
@@ -61824,8 +61838,6 @@ use_preset_vocabulary: true
 病理解剖	bing li jie pou
 病重	bing zhong
 病革	bing ji
-痙攣	jing lvan
-痙攣派	jing lvan pai
 痛惡	tong wu
 痛覺	tong jue
 痲痹不了	ma bi bu liao
@@ -62526,6 +62538,7 @@ use_preset_vocabulary: true
 碇泊區	ding bo qu
 碎屑	sui xie
 碎聒	sui gua
+碎聒	sui guo
 碑碣	bei jie
 碑趺	bei fu
 碓房	dui fang
@@ -62595,12 +62608,7 @@ use_preset_vocabulary: true
 社稷爲墟	she ji wei xu
 社長	she zhang
 祁奚薦仇	qi xi jian chou
-祇好	zhi hao
-祇是	zhi shi
-祇有	zhi you
 祇洹精舍	qi yuan jing she
-祇管	zhi guan
-祇要	zhi yao
 祓濯	fu zhuo
 祓禊	fu xi
 祓除	fu chu
@@ -63289,7 +63297,9 @@ use_preset_vocabulary: true
 給足	ji zu
 給養	ji yang
 絮絮聒聒	xu xu gua gua
+絮絮聒聒	xu xu guo guo
 絮聒	xu gua
+絮聒	xu guo
 統括	tong gua
 統括	tong kuo
 統率	tong shuai
@@ -63711,7 +63721,6 @@ use_preset_vocabulary: true
 羯羶	jie shan
 羯鼓	jie gu
 羯鼓催花	jie gu cui hua
-羰基	tan ji
 羶行	shan xing
 羸瘵	lei zhai
 羸露	lei lu
@@ -63864,17 +63873,29 @@ use_preset_vocabulary: true
 聆樂	ling yue
 聊以塞責	liao yi se ze
 聐聐聒聒	ya ya gua gua
+聐聐聒聒	ya ya guo guo
 聐聒	ya gua
+聐聒	ya guo
 聒噪	gua zao
+聒噪	guo zao
 聒天	gua tian
+聒天	guo tian
 聒子	gua zi
+聒子	guo zi
 聒擾	gua rao
+聒擾	guo rao
 聒氣	gua qi
+聒氣	guo qi
 聒絮	gua xu
+聒絮	guo xu
 聒耳	gua er
+聒耳	guo er
 聒聒	gua gua
+聒聒	guo guo
 聒聒叫	gua gua jiao
+聒聒叫	guo guo jiao
 聒躁	gua zao
+聒躁	guo zao
 聖地	sheng di
 聖地牙哥	sheng di ya ge
 聖德懿行	sheng de yi xing
@@ -64152,6 +64173,7 @@ use_preset_vocabulary: true
 膴仕	wu shi
 膴膴	wu wu
 膻中	dan zhong
+膽懾	dan she
 膽懾	dan zhe
 膽顫心寒	dan zhan xin han
 膽顫心驚	dan zhan xin jing
@@ -64181,7 +64203,9 @@ use_preset_vocabulary: true
 臨深履薄	lin shen lv bo
 臨淵履薄	lin yuan lv bo
 臨行	lin xing
+臨難不懾	lin nan bu she
 臨難不懾	lin nan bu zhe
+臨難無懾	lin nan wu she
 臨難無懾	lin nan wu zhe
 臨風搖曳	lin feng yao ye
 臨風搖曳	lin feng yao yi
@@ -64835,6 +64859,7 @@ use_preset_vocabulary: true
 蕁麻疹	xun ma zhen
 蕃侯	fan hou
 蕃坊	fan fang
+蕃孌	fan luan
 蕃孌	fan lvan
 蕃帽	fan mao
 蕃庶	fan shu
@@ -65191,7 +65216,6 @@ use_preset_vocabulary: true
 蛤蠣	ge li
 蛻化	tui hua
 蛻皮	tui pi
-蛻變	shui bian
 蛾子	e zi
 蛾子	yi zi
 蛾綠	e lu
@@ -65273,12 +65297,19 @@ use_preset_vocabulary: true
 螵蛸	piao xiao
 螺螄	luo si
 螺鈿	luo dian
+蟄伏	zhe fu
 蟄伏	zhi fu
+蟄居	zhe ju
 蟄居	zhi ju
+蟄獸	zhe shou
 蟄獸	zhi shou
+蟄蟄	zhe zhe
 蟄蟄	zhi zhi
+蟄蟲	zhe chong
 蟄蟲	zhi chong
+蟄陷	zhe xian
 蟄陷	zhi xian
+蟄雷	zhe lei
 蟄雷	zhi lei
 蟊賊	mao ze
 蟋蟀	xi shuai
@@ -65754,6 +65785,11 @@ use_preset_vocabulary: true
 表率	biao shuai
 表識	biao zhi
 表露	biao lu
+衹好	zhi hao
+衹是	zhi shi
+衹有	zhi you
+衹管	zhi guan
+衹要	zhi yao
 衾枕之樂	qin zhen zhi le
 袁樞	yuan shu
 袍笏	pao hu
@@ -66982,6 +67018,7 @@ use_preset_vocabulary: true
 起高調	qi gao diao
 趁熟	chen shou
 趄趄	ju ju
+趄趄	qie qie
 超感覺	chao gan jue
 超詣	chao yi
 超重	chao zhong
@@ -66995,8 +67032,8 @@ use_preset_vocabulary: true
 趑趄	zi ju
 趑趄不前	zi ju bu qian
 趑趄卻顧	zi ju que gu
-趔趄	lie ju
 趔趔趄趄	lie lie ju ju
+趔趔趄趄	lie lie qie qie
 趕着增福神着棍打	gan zhe zeng fu shen zhao gun da
 趙令畤	zhao ling zhi
 趙伯駒	zhao bo ju
@@ -68537,6 +68574,7 @@ use_preset_vocabulary: true
 錯角	cuo jiao
 鍉針	di zhen
 鍠聒	huang gua
+鍠聒	huang guo
 鍥薄	qie bo
 鍵盤樂器	jian pan yue qi
 鍼芥相投	zhen jie xiang tou
@@ -68568,6 +68606,7 @@ use_preset_vocabulary: true
 鎬鎬	hao hao
 鎬頭	gao tou
 鎮嚇	zhen he
+鎮懾	zhen she
 鎮懾	zhen zhe
 鎮長	zhen zhang
 鏈接地址	lian jie di zhi
@@ -69011,6 +69050,7 @@ use_preset_vocabulary: true
 閉戹	bi e
 閉明塞聰	bi ming se cong
 閉目塞聽	bi mu se ting
+閉蟄	bi zhe
 閉蟄	bi zhi
 閉門塞竇	bi men se dou
 閉門造車	bi men zao che
@@ -69036,6 +69076,7 @@ use_preset_vocabulary: true
 閒氣	jian qi
 閒氣	xian qi
 閒聒七	xian gua qi
+閒聒七	xian guo qi
 閒行	jian xing
 閒覷	jian qu
 閒言	jian yan
@@ -69355,6 +69396,7 @@ use_preset_vocabulary: true
 隘口	ai kou
 隘害	ai hai
 隘巷	ai xiang
+隘懾	ai she
 隘懾	ai zhe
 隘窘	ai jiong
 隘路	ai lu
@@ -69544,6 +69586,7 @@ use_preset_vocabulary: true
 震天價響	zhen tian ga xiang
 震天動地	zhen tian dong di
 震天駭地	zhen tian hai di
+震懾	zhen she
 震懾	zhen zhe
 震撼彈	zhen han dan
 震顫麻痺	zhen chan ma bi
@@ -69727,6 +69770,7 @@ use_preset_vocabulary: true
 鞭辟入裏	bian bi ru li
 鞭辟近裏	bian bi jin li
 鞭長莫及	bian chang mo ji
+鞲鞴	gou bei
 鞴馬	bei ma
 韁繩	jiang sheng
 韁轡	jiang pei
@@ -70250,7 +70294,6 @@ use_preset_vocabulary: true
 髀肉復生	bi rou fu sheng
 髀骨	bi gu
 髀骶	bi di
-髂骨	ka gu
 體液	ti ye
 體癬	ti xian
 體臭	ti chou
