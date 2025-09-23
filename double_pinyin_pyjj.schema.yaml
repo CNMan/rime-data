@@ -95,7 +95,6 @@ translator:
     - xform/([gkhvuirzcs])b/$1UA/
     - xform/(\w)b/$1IA/
     - xform/([dtnlgkhjqxyvuirzcs])c/$1UAN/
-    - xform/0r/ER/
     - xform/([dtgkhvuirzcs])v/$1UI/
     - xform/(\w)v/$1V/
     - xform/([gkhvuirzcs])x/$1UAI/
@@ -116,13 +115,13 @@ translator:
     - xform/(\w)k/$1IAO/
     - xform/(\w)p/$1OU/
     - xform/(\w)j/$1IAN/
-    - xform/(0)q/$1ER/
+    - xform/0q/ER/
     - xform/(\w)q/$1ING/
     - xform/0(\w)/$1/
     - xlit/QWRTYUIOPSDFGHMJCKLZXVBNAEIOU/qwrtyuiopsdfghmjcklzxvbnaeiou/
     - "xform/(^|[ '])v/$1zh/"
-    - "xform/(^|[ ‘])u/$1ch/"
-    - "xform/(^|[ ‘])i/$1sh/"
+    - "xform/(^|[ '])u/$1ch/"
+    - "xform/(^|[ '])i/$1sh/"
     - xform/([jqxy])v/$1u/
     - xform/([nl])v/$1ü/
 
