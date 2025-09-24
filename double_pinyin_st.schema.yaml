@@ -1,0 +1,153 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: double_pinyin_st
+  name: 四通雙拼
+  version: "0.1"
+  author:
+    - 佛振 <chen.sst@gmail.com>
+  description: |
+    朙月拼音＋四通雙拼方案。
+
+    該方案見於四通打字機鍵盤。
+    如圖中文雙拼刻印鍵帽在客製化鍵盤上復用，兼具實用和欣賞價值。
+
+    https://github.com/lotem/alps75
+
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba;
+  initials: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - xform/^([aoe].*)$/o$1/
+    - xform/^sh/I/
+    - xform/^ch/U/
+    - xform/^zh/A/
+    - xform/er$/Q/
+    - xform/ei$/W/
+    - xform/en$/R/
+    - xform/eng$/T/
+    - xform/i?ong$/Y/
+    - xform/uo$/O/
+    - xform/ou$/P/
+    - xform/[iu]ang$/H/
+    - xform/ian$/J/
+    - xform/iao$/K/
+    - xform/in$/L/
+    - xform/ing$/;/
+    - xform/[uv]n$/Z/
+    - xform/v$|uai$/X/
+    - xform/[uv]an$/C/
+    - xform/ui$|[uv]e$/V/
+    - xform/[iu]a$/B/
+    - xform/iu$/N/
+    - xform/ie$/M/
+    - xform/ai$/S/
+    - xform/ao$/D/
+    - xform/an$/F/
+    - xform/ang$/G/
+    - xlit/QWERTYUIOPASDFGHJKLZXCVBNM/qwertyuiopasdfghjklzxcvbnm/
+    #- abbrev/^(.).+$/$1/
+
+translator:
+  dictionary: luna_pinyin
+  prism: double_pinyin_st
+  preedit_format:
+    - xform/oq/ER/
+    - xform/(\w)w/$1EI/
+    - xform/(\w)r/$1EN/
+    - xform/(\w)t/$1ENG/
+    - xform/([jqx])y/$1IONG/
+    - xform/(\w)y/$1ONG/
+    - xform/([dtnlgkhvuirzcs])o/$1UO/
+    - xform/(\w)p/$1OU/
+    - xform/([jqxnl])h/$1IANG/
+    - xform/(\w)h/$1UANG/
+    - xform/(\w)j/$1IAN/
+    - xform/(\w)k/$1IAO/
+    - xform/(\w)l/$1IN/
+    - xform/(\w);/$1ING/
+    - xform/(\w)z/$1UN/
+    - xform/([gkhvuirzcs])x/$1UAI/
+    - xform/(\w)x/$1V/
+    - xform/(\w)c/$1UAN/
+    - xform/([dtgkhvuirzcs])v/$1UI/
+    - xform/(\w)v/$1VE/
+    - xform/([gkhvuirzcs])b/$1UA/
+    - xform/(\w)b/$1IA/
+    - xform/(\w)n/$1IU/
+    - xform/(\w)m/$1IE/
+    - xform/(\w)s/$1AI/
+    - xform/(\w)d/$1AO/
+    - xform/(\w)f/$1AN/
+    - xform/(\w)g/$1ANG/
+    - "xform/(^|[ '])a/$1zh/"
+    - "xform/(^|[ '])u/$1ch/"
+    - "xform/(^|[ '])i/$1sh/"
+    - xform/o(\w)/$1/
+    - xlit/QWERTYUIOPASDFGHJKLZXCVBNM/qwertyuiopasdfghjklzxcvbnm/
+    - xform/([jqxy])v/$1u/
+    - xform/([nl])v/$1ü/
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔筆畫〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
