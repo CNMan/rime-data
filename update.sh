@@ -28,6 +28,8 @@ cp -f ~/githubrepo/rime/rime-stroke/*.yaml ~/githubrepo/rime/rime-data/
 cp -f ~/githubrepo/rime/rime-terra-pinyin/*.yaml ~/githubrepo/rime/rime-data/
 cp -f ~/githubrepo/rime/rime-wubi/*.yaml ~/githubrepo/rime/rime-data/
 
+cat Unihan_Readings-kMandarin.txt >> luna_pinyin.dict.yaml
+
 cd ~/githubrepo/rime/rime-data/
 git add .
 git commit -m "Sync Pre-Installed Official Schemas"
