@@ -49358,6 +49358,8 @@ use_preset_vocabulary: true
 不完全給付	bu wan quan ji fu
 不容樂觀	bu rong le guan
 不對勁	bu dui jin
+不對稱	bu dui chen
+不對稱	bu dui cheng
 不尷不尬	bu gan bu ga
 不尷尬	bu gan ga
 不屑	bu xie
@@ -49548,6 +49550,8 @@ use_preset_vocabulary: true
 中幡會	zhong fan hui
 中彈	zhong dan
 中心匯率	zhong xin hui lv
+中心對稱	zhong xin dui chen
+中心對稱	zhong xin dui cheng
 中心角	zhong xin jiao
 中懣之症	zhong men zhi zheng
 中朝	zhong chao
@@ -49621,8 +49625,8 @@ use_preset_vocabulary: true
 之都	zhi du
 之重	zhi zhong
 之長	zhi chang
-乍入蘆圩	zha ru lu yu
 乍入蘆圩	zha ru lu wei
+乍入蘆圩	zha ru lu yu
 乍暖還寒	zha nuan huan han
 乍熟	zha shu
 乏地	fa di
@@ -53036,14 +53040,14 @@ use_preset_vocabulary: true
 在朝	zai chao
 在莒	zai ju
 在行	zai hang
-圩堤	yu di
 圩堤	wei di
-圩堤	yu ti
 圩堤	wei ti
-圩子	yu zi
+圩堤	yu di
+圩堤	yu ti
 圩子	wei zi
-圩田	yu tian
+圩子	yu zi
 圩田	wei tian
+圩田	yu tian
 圭臬	gui nie
 圭角	gui jiao
 圮剝	pi bo
@@ -67329,6 +67333,8 @@ use_preset_vocabulary: true
 軥車	qu che
 軷涉	ba she
 軸子	zhou zi
+軸對稱	zhou dui chen
+軸對稱	zhou dui cheng
 軸心	zhou xin
 軸心國	zhou xin guo
 軸承	zhou cheng
