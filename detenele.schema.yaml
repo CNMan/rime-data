@@ -1,0 +1,245 @@
+# 動態能力注音 Rime 輸入方案
+
+schema:
+  schema_id: detenele
+  name: 動態能力注音
+  version: "0.4"
+  author:
+    - 居戎氏
+  description: |
+    動態切換聲母、韻母層級的注音鍵盤。
+
+    小寫：聲母；大寫(Shift)：韻母及聲調。
+    聲調使用字母鍵：V (1) B (2) N (3) M (4) P (5)。
+
+    零聲母：q (例：<an> = qs)，或以大寫的韻母鍵起首；
+    非零聲母音節自動識別聲母、韻母、聲調，無須切換 Shift。
+
+    簡拼：省略聲調、僅輸入聲母、輸入聲母+聲調。
+  dependencies:
+    - terra_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ., ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  # 字母表
+  alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA"
+  delimiter: " '"
+  
+  initials: 'qwertyuiopasdfghjklzxcvbnmWERTYUIOSDFGHJKL'
+  
+  # 符號鍵作為強制終止符
+  # 這保證了輸入這些符號時，音節立即切分
+  finals: "VBNMP"
+
+  algebra:
+    # ============================================================
+    # 1. 拼音預處理
+    # ============================================================
+    # 聲調轉碼 -> 符號
+    - xform|1$|V|
+    - xform|2$|B|
+    - xform|3$|N|
+    - xform|4$|M|
+    - xform|5$|P|
+
+    # 零聲母與拼音還原
+    # 注意：r (er) 也是零聲母的一種
+    - xform/^r([VBNMP])$/er$1/
+    # 零聲母處理：在 a, o, e 開頭的音節前插入 Q
+    - derive/^([aoe])/Q$1/
+    - xform/([jqx])u/$1v/
+    - xform/^yu/v/
+    - xform/^yi?/i/
+    - xform/^wu?/u/
+    
+    # 韻母/介音還原
+    - xform/iu/iou/
+    - xform/ui/uei/
+    - xform/un/uen/
+    - xform/iong/vng/
+    - xform/ong/ung/
+
+    # 翹舌音轉臨時碼
+    - xform/^zhi?/Z/
+    - xform/^chi?/C/
+    - xform/^shi?/S/
+    - xform/^([zcsr])i([VBNMP])/$1$2/
+
+    # ============================================================
+    # 2. 嚴格映射
+    # ============================================================
+    - xform/ang/F/
+    - xform/ing/JG/
+    - xform/ung/KG/
+    - xform/vng/LG/
+    - xform/eng/G/
+    - xform/an/A/
+    - xform/in/JD/
+    - xform/vn/LD/
+    - xform/en/D/
+    - xform/er/H/
+
+    - xform/ai/Y/
+    - xform/ei/U/
+    - xform/ao/I/
+    - xform/ou/O/
+
+    - xform/a/W/
+    - xform/o/E/
+    - xform/ie/JT/
+    - xform/ve/LT/
+    - xform/eh/T/
+    - xform/e/R/
+    
+    - xform/i/J/
+    - xform/u/K/
+    - xform/v/L/
+
+    # ============================================================
+    # 3. 聲母映射
+    # ============================================================
+    - xform/^b/w/
+    - xform/^p/e/
+    - xform/^r/v/
+    - xform/^m/r/
+    - xform/^t/u/
+    - xform/^f/t/
+    - xform/^d/y/
+    - xform/^n/i/
+    - xform/^l/o/
+    - xform/^g/a/
+    - xform/^s/m/
+    - xform/^k/s/
+    - xform/^h/d/
+    - xform/^j/f/
+    - xform/^q/g/
+    - xform/^x/h/
+    - xform/^z/b/
+    - xform/^c/n/
+    - xform/^Z/z/
+    - xform/^C/x/
+    - xform/^S/c/
+    - xform/^Q/q/
+
+    - xform/A/S/
+
+    # ============================================================
+    # 4. 連鎖動態衍生
+    # ============================================================
+    - derive/^J/j/
+    - derive/^K/k/
+    - derive/^L/l/
+
+    # 支持小寫輸入韻母、聲調
+    - derive/^(.)([WERTYUIOSDFGHJKL]+)([VBNMP]?)$/$1\L$2\E$3/
+    - derive/^(.*)([VBNMP])$/$1\L$2\E/
+
+    # ============================================================
+    # 5. 簡拼與聲調
+    # ============================================================
+    - abbrev/^([qwertyuioasdfghzxcvbnm]).+$/$1/
+
+    # 省略韻母，保留聲調
+    - abbrev/^([qwertyuioasdfghzxcvbnm]).*([VBNMP])$/$1$2/
+    - abbrev/^([qwertyuioasdfghzxcvbnm]).*([VBNMP])$/$1\L$2\E/
+
+    # 省略聲調
+    - derive/^(.+)[VBNMP]$/$1/
+
+translator:
+  dictionary: terra_pinyin
+  prism: detenele
+  preedit_format:
+    # 顯示優化：符號 -> 注音聲調
+    - "xform/V([ ']|$)/ˉ$1/"
+    - "xform/B([ ']|$)/ˊ$1/"
+    - "xform/N([ ']|$)/ˇ$1/"
+    - "xform/M([ ']|$)/ˋ$1/"
+    - "xform/[Pp]([ ']|$)/˙$1/"
+    - "xform/([A-Za-z])v([ ']|$)/$1ˉ$2/"
+    - "xform/([A-Za-z])b([ ']|$)/$1ˊ$2/"
+    - "xform/([A-Za-z])n([ ']|$)/$1ˇ$2/"
+    - "xform/([A-Za-z])m([ ']|$)/$1ˋ$2/"
+
+    # 零聲母 Q 顯示
+    - xform/q/〇/
+
+    # 聲母
+    - "xform/(^|[ '])w/$1ㄅ/"
+    - "xform/(^|[ '])e/$1ㄆ/"
+    - "xform/(^|[ '])r/$1ㄇ/"
+    - "xform/(^|[ '])t/$1ㄈ/"
+    - "xform/(^|[ '])y/$1ㄉ/"
+    - "xform/(^|[ '])u/$1ㄊ/"
+    - "xform/(^|[ '])i/$1ㄋ/"
+    - "xform/(^|[ '])o/$1ㄌ/"
+    - xform/a/ㄍ/
+    - "xform/(^|[ '])s/$1ㄎ/"
+    - "xform/(^|[ '])d/$1ㄏ/"
+    - "xform/(^|[ '])f/$1ㄐ/"
+    - "xform/(^|[ '])g/$1ㄑ/"
+    - "xform/(^|[ '])h/$1ㄒ/"
+    - "xform/(^|[ '])z/$1ㄓ/"
+    - "xform/(^|[ '])x/$1ㄔ/"
+    - "xform/(^|[ '])c/$1ㄕ/"
+    - "xform/(^|[ '])v/$1ㄖ/"
+    - "xform/(^|[ '])b/$1ㄗ/"
+    - xform/n/ㄘ/
+    - xform/m/ㄙ/
+    # 介音
+    - xform/J|j/ㄧ/
+    - xform/K|k/ㄨ/
+    - xform/L|l/ㄩ/
+    # 韻母
+    - xform/W|w/ㄚ/
+    - xform/E|e/ㄛ/
+    - xform/R|r/ㄜ/
+    - xform/T|t/ㄝ/
+    - xform/Y|y/ㄞ/
+    - xform/U|u/ㄟ/
+    - xform/I|i/ㄠ/
+    - xform/O|o/ㄡ/
+    - xform/S|s/ㄢ/
+    - xform/D|d/ㄣ/
+    - xform/F|f/ㄤ/
+    - xform/G|g/ㄥ/
+    - xform/H|h/ㄦ/
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
