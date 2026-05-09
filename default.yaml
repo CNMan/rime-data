@@ -5,11 +5,9 @@ config_version: '0.50'
 
 schema_list:
   - schema: luna_pinyin
-  - schema: luna_pinyin_simp
-  - schema: luna_pinyin_fluency
   - schema: bopomofo
-  - schema: bopomofo_tw
   - schema: cangjie5
+  - schema: quick5
   - schema: stroke
   - schema: terra_pinyin
 
@@ -49,10 +47,15 @@ key_binder:
       - key_bindings:/numbered_mode_switch
 
 selector:
-  bindings:
-    ISO_Left_Tab: previous_candidate
-    Shift+Tab: previous_candidate
-    Tab: next_candidate
+  __patch:
+    bindings:
+      __include: key_bindings:/rotate_candidate_with_tab
+    linear/bindings:
+      __include: key_bindings:/rotate_candidate_with_tab
+    vertical/bindings:
+      __include: key_bindings:/rotate_candidate_with_tab
+    vertical/linear/bindings:
+      __include: key_bindings:/rotate_candidate_with_tab
 
 recognizer:
   patterns:
