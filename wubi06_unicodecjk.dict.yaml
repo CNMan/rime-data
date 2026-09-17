@@ -3,14 +3,14 @@
 #
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ羣：38021162
-# 含 Unicode 17.0.0 已定义 CJK/CJK-A/CJK-B/CJK-C/CJK-D/CJK-E/CJK-F/CJK-G/CJK-H/CJK-I/CJK-J 编码区共 101984 个单字
-# 含 Unicode 17.0.0 已定义 CJK Compatibility Ideographs 编码区共 472 个单字
-# 含 Unicode 17.0.0 已定义 CJK Compatibility Ideographs Supplement 编码区共 542 个单字
-# 含 Unicode 17.0.0 已定义 Counting Rod Numerals 编码区 5 个正字算筹字符“𝍲𝍳𝍴𝍵𝍶”
-# 含 Unicode 17.0.0 已定义 CJK Symbols and Punctuation 编码区 1 个汉字“〇”
-# 含 Unicode 17.0.0 已定义 Kangxi Radicals 编码区 214 个部首
-# 含 Unicode 17.0.0 已定义 CJK Radicals Supplement 编码区 115 个部首
-# 含 Unicode 17.0.0 已定义 CJK Strokes 编码区 39 个笔画
+# 含 Unicode 18.0.0 已定义 CJK/CJK-A/CJK-B/CJK-C/CJK-D/CJK-E/CJK-F/CJK-G/CJK-H/CJK-I/CJK-J 编码区共 101985 个单字
+# 含 Unicode 18.0.0 已定义 CJK Compatibility Ideographs 编码区共 472 个单字
+# 含 Unicode 18.0.0 已定义 CJK Compatibility Ideographs Supplement 编码区共 542 个单字
+# 含 Unicode 18.0.0 已定义 Counting Rod Numerals 编码区 5 个正字算筹字符“𝍲𝍳𝍴𝍵𝍶”
+# 含 Unicode 18.0.0 已定义 CJK Symbols and Punctuation 编码区 1 个汉字“〇”
+# 含 Unicode 18.0.0 已定义 Kangxi Radicals 编码区 214 个部首
+# 含 Unicode 18.0.0 已定义 CJK Radicals Supplement 编码区 115 个部首
+# 含 Unicode 18.0.0 已定义 CJK Strokes 编码区 39 个笔画
 # 专为输入“生僻字”而生，日常使用请购买正版王码五笔字型大一统 2018 高级版(人民币 9.90 元)：http://www.wangma.net.cn/prodetail.aspx?sm=2&p=7
 # 问题请反馈至：https://github.com/CNMan/UnicodeCJK-WuBi06
 
@@ -18,7 +18,7 @@
 #內部字典名，也即schema所引用的字典名，確保與文件名相一致
 name: wubi06_unicodecjk
 #如果發佈，請確保每次改動陞版本號
-version: "20250916"
+version: "20260917"
 #字典初始排序，可選original或by_weight
 sort: by_weight
 #是否引入「八股文」〔含字詞頻、詞庫〕
@@ -86762,6 +86762,7 @@ encoder:
 𫠛	hbjg	1	# U+2B81B	178203
 𫠜	hwbq	2	# U+2B81C	178204
 𫠝	imkn	1	# U+2B81D	178205
+𫠞	jqwy	1	# U+2B81E	178206
 𫠠	agn	1	# U+2B820	178208
 𫠡	gwhj	1	# U+2B821	178209
 𫠢	hgsj	1	# U+2B822	178210
@@ -93128,7 +93129,7 @@ encoder:
 𭃽	vnhg	1	# U+2D0FD	184573
 𭃾	axjj	1	# U+2D0FE	184574
 𭃿	fjfv	1	# U+2D0FF	184575
-𭄀	wgjy	1	# U+2D100	184576
+𭄀	uogy	1	# U+2D100	184576
 𭄁	qyvj	1	# U+2D101	184577
 𭄂	tfhv	1	# U+2D102	184578
 𭄃	wvgb	1	# U+2D103	184579
