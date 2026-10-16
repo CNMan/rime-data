@@ -274,6 +274,7 @@ local charset = {
    ["Masaram Gondi"] = { first = 0x11D00, last = 0x11D5F },
    ["Gunjala Gondi"] = { first = 0x11D60, last = 0x11DAF },
    ["Tolong Siki"] = { first = 0x11DB0, last = 0x11DEF },
+   ["Bengali Supplement"] = { first = 0x11DF0, last = 0x11DFF },
    ["Makasar"] = { first = 0x11EE0, last = 0x11EFF },
    ["Kawi"] = { first = 0x11F00, last = 0x11F5F },
    ["Lisu Supplement"] = { first = 0x11FB0, last = 0x11FBF },
@@ -281,6 +282,7 @@ local charset = {
    ["Cuneiform"] = { first = 0x12000, last = 0x123FF },
    ["Cuneiform Numbers and Punctuation"] = { first = 0x12400, last = 0x1247F },
    ["Early Dynastic Cuneiform"] = { first = 0x12480, last = 0x1254F },
+   ["Archaic Cuneiform Numerals"] = { first = 0x12550, last = 0x1268F },
    ["Cypro-Minoan"] = { first = 0x12F90, last = 0x12FFF },
    ["Egyptian Hieroglyphs"] = { first = 0x13000, last = 0x1342F },
    ["Egyptian Hieroglyph Format Controls"] = { first = 0x13430, last = 0x1345F },
@@ -302,6 +304,8 @@ local charset = {
    ["Khitan Small Script"] = { first = 0x18B00, last = 0x18CFF },
    ["Tangut Supplement"] = { first = 0x18D00, last = 0x18D7F },
    ["Tangut Components Supplement"] = { first = 0x18D80, last = 0x18DFF },
+   ["Jurchen"] = { first = 0x18E00, last = 0x1919F },
+   ["Jurchen Radicals"] = { first = 0x191A0, last = 0x191DF },
    ["Kana Extended-B"] = { first = 0x1AFF0, last = 0x1AFFF },
    ["Kana Supplement"] = { first = 0x1B000, last = 0x1B0FF },
    ["Kana Extended-A"] = { first = 0x1B100, last = 0x1B12F },
@@ -315,12 +319,14 @@ local charset = {
    ["Byzantine Musical Symbols"] = { first = 0x1D000, last = 0x1D0FF },
    ["Musical Symbols"] = { first = 0x1D100, last = 0x1D1FF },
    ["Ancient Greek Musical Notation"] = { first = 0x1D200, last = 0x1D24F },
+   ["Musical Symbols Supplement"] = { first = 0x1D250, last = 0x1D28F },
    ["Kaktovik Numerals"] = { first = 0x1D2C0, last = 0x1D2DF },
    ["Mayan Numerals"] = { first = 0x1D2E0, last = 0x1D2FF },
    ["Tai Xuan Jing Symbols"] = { first = 0x1D300, last = 0x1D35F },
    ["Counting Rod Numerals"] = { first = 0x1D360, last = 0x1D37F },
    ["Mathematical Alphanumeric Symbols"] = { first = 0x1D400, last = 0x1D7FF },
    ["Sutton SignWriting"] = { first = 0x1D800, last = 0x1DAAF },
+   ["Miscellaneous Symbols and Arrows Extended"] = { first = 0x1DB00, last = 0x1DBFF },
    ["Latin Extended-G"] = { first = 0x1DF00, last = 0x1DFFF },
    ["Glagolitic Supplement"] = { first = 0x1E000, last = 0x1E02F },
    ["Cyrillic Extended-D"] = { first = 0x1E030, last = 0x1E08F },
@@ -362,6 +368,7 @@ local charset = {
    ["CJK Unified Ideographs Extension G"] = { first = 0x30000, last = 0x3134F },
    ["CJK Unified Ideographs Extension H"] = { first = 0x31350, last = 0x323AF },
    ["CJK Unified Ideographs Extension J"] = { first = 0x323B0, last = 0x3347F },
+   ["Seal"] = { first = 0x3D000, last = 0x3FC3F },
    ["Tags"] = { first = 0xE0000, last = 0xE007F },
    ["Variation Selectors Supplement"] = { first = 0xE0100, last = 0xE01EF },
    ["Supplementary Private Use Area-A"] = { first = 0xF0000, last = 0xFFFFF },
@@ -638,6 +645,7 @@ local function is_cjk_ext(c)
       is_charset("Masaram Gondi")(c) or
       is_charset("Gunjala Gondi")(c) or
       is_charset("Tolong Siki")(c) or
+      is_charset("Bengali Supplement")(c) or
       is_charset("Makasar")(c) or
       is_charset("Kawi")(c) or
       is_charset("Lisu Supplement")(c) or
@@ -645,6 +653,7 @@ local function is_cjk_ext(c)
       is_charset("Cuneiform")(c) or
       is_charset("Cuneiform Numbers and Punctuation")(c) or
       is_charset("Early Dynastic Cuneiform")(c) or
+      is_charset("Archaic Cuneiform Numerals")(c) or
       is_charset("Cypro-Minoan")(c) or
       is_charset("Egyptian Hieroglyphs")(c) or
       is_charset("Egyptian Hieroglyph Format Controls")(c) or
@@ -666,6 +675,8 @@ local function is_cjk_ext(c)
       is_charset("Khitan Small Script")(c) or
       is_charset("Tangut Supplement")(c) or
       is_charset("Tangut Components Supplement")(c) or
+      is_charset("Jurchen")(c) or
+      is_charset("Jurchen Radicals")(c) or
       is_charset("Kana Extended-B")(c) or
       is_charset("Kana Supplement")(c) or
       is_charset("Kana Extended-A")(c) or
@@ -679,12 +690,14 @@ local function is_cjk_ext(c)
       is_charset("Byzantine Musical Symbols")(c) or
       is_charset("Musical Symbols")(c) or
       is_charset("Ancient Greek Musical Notation")(c) or
+      is_charset("Musical Symbols Supplement")(c) or
       is_charset("Kaktovik Numerals")(c) or
       is_charset("Mayan Numerals")(c) or
       is_charset("Tai Xuan Jing Symbols")(c) or
       is_charset("Counting Rod Numerals")(c) or
       is_charset("Mathematical Alphanumeric Symbols")(c) or
       is_charset("Sutton SignWriting")(c) or
+      is_charset("Miscellaneous Symbols and Arrows Extended")(c) or
       is_charset("Latin Extended-G")(c) or
       is_charset("Glagolitic Supplement")(c) or
       is_charset("Cyrillic Extended-D")(c) or
@@ -726,6 +739,7 @@ local function is_cjk_ext(c)
       is_charset("CJK Unified Ideographs Extension G")(c) or
       is_charset("CJK Unified Ideographs Extension H")(c) or
       is_charset("CJK Unified Ideographs Extension J")(c) or
+      is_charset("Seal")(c) or
       is_charset("Tags")(c) or
       is_charset("Variation Selectors Supplement")(c) or
       is_charset("Supplementary Private Use Area-A")(c) or
